@@ -1,0 +1,19 @@
+body {
+    background-image: url('/public/images/titlephoto.jpg');
+    background-position: top left;
+}
+
+.kidsImages {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.teacherImages {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
