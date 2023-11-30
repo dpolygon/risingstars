@@ -1,6 +1,23 @@
-body {
+#Home {
+    display: flex;
+    flex-direction: column;
     background-image: url('/public/images/titlephoto.jpg');
     background-position: top left;
+    padding: 20px;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titleAreaPMessage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.smallText {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .kidsImages {
@@ -9,6 +26,7 @@ body {
     border-radius: 20px;
     object-fit: cover;
     padding: 4px;
+    margin-bottom: 60px;
 }
 
 .teacherImages {
@@ -16,4 +34,41 @@ body {
     width: 80px;
     object-fit: cover;
     border-radius: 50%;
+    margin-top: -30px;
+}
+
+
+
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(241, 241, 233, 0.12);
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    width: 100%;
+    height: 600px;
+    padding-inline: calc( calc( ( var(--replay-vw, 100vw) - 0px * 2 - 20px * (12 - 1) ) / 12) + 20px + 0px);
+}
+
+.aboutUsTitle {
+    color: white;
+
+}
+
+.aboutUsTeacherArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.daycareData {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.daycareDataTitle {
+    font-size: 48px;
+    color: white;
 }

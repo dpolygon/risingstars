@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.541);
   height: 80px;
   display: flex;
   justify-content: center;
