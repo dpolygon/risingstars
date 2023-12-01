@@ -2,31 +2,45 @@
     display: flex;
     flex-direction: column;
     background-image: url('/public/images/titlephoto.jpg');
-    background-position: top left;
-    padding: 20px;
+    background-position: center;
+    padding: 3%;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
 }
 
 .titleAreaPMessage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: white;
-    padding-bottom: 50px;
+}
+
+.messageTitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.companyName {
+    font-stretch: expanded;
+    font-size: 6rem;
+    padding-right: 10%;
+    font-weight: 450;
 }
 
 .smallText {
     color: rgba(255, 255, 255, 0.75);
+    font-size: .9rem;
 }
 
 .kidsImages {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
     object-fit: cover;
     padding: 4px;
     margin-bottom: 60px;
+    margin-top: 240px;
 }
 
 .teacherImages {
@@ -42,17 +56,19 @@
 .aboutUsContainer {
     display: flex;
     flex-direction: row;
-    background-color: rgba(241, 241, 233, 0.12);
+    justify-content: space-evenly;
+    background-color: #2525251d;
     border-radius: 12px;
     backdrop-filter: blur(100px);
     width: 100%;
-    height: 600px;
-    padding-inline: calc( calc( ( var(--replay-vw, 100vw) - 0px * 2 - 20px * (12 - 1) ) / 12) + 20px + 0px);
+    height: 700px;
+    padding: 40px;
 }
 
 .aboutUsTitle {
     color: white;
-
+    font-size: larger;
+    font-stretch: expanded;
 }
 
 .aboutUsTeacherArea {
@@ -65,10 +81,17 @@
     display: flex;
     flex-direction: column;
     max-width: 200px;
-    color: rgba(255, 255, 255, 0.75);
+    margin-right: 40px;
 }
 
 .daycareDataTitle {
-    font-size: 48px;
+    font-size: 5rem;
+    font-weight: 350;
     color: white;
+}
+
+.expertsTitle {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
 }
