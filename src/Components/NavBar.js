@@ -18,7 +18,7 @@ function Navbar() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
-              <FaChild className='navbar-icon'/>
+              <FaChild className='navbar-icon'/> rising stars
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -26,22 +26,22 @@ function Navbar() {
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
                 <NavLink to='/' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Home
+                  home
                 </NavLink>
               </li>
               <li className='nav-item'>
                 <NavLink to='/visit-us' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Visit Us
+                  visit us
                 </NavLink>
               </li>
               <li className='nav-item'>
                 <NavLink to='/contact' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Contact
+                  contact
                 </NavLink>
               </li>
               <li className='nav-item'>
                 <NavLink to='/about' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  About
+                  about
                 </NavLink>
               </li>
             </ul>
