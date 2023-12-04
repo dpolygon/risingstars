@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  background: linear-gradient(120deg, #4286f4cf, #1ed75fd3);
+  background: linear-gradient(120deg, #4286f4c9, #1ed75fca);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -74,7 +74,8 @@
   height: 80%;
   background-color: white;
   border-radius: 33px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   margin-top: 9px;
 }
 
