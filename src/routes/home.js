@@ -59,6 +59,7 @@ function Home() {
             <div cdlassName="images-container">
                 {renderKids()}
             </div>
+
             <div className="aboutUsContainer">
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                     <p className="aboutUsTitle">ABOUT US</p>
@@ -94,16 +95,16 @@ function Home() {
                     </div>
                     <div style={{display: 'flex', flexDirection: 'row', paddingTop: '80px', alignItems: 'center', justifyContent: 'space-between'}}>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
-                            <div style={{paddingBottom: '80px', maxWidth: '600px'}}>
+                            <div style={{maxWidth: '600px'}}>
                                 <h1 className='expertsTitle'>EXPERTS IN CHILDHOOD EDUCATION</h1>
                                 <p className='smallText'>Our seasoned team is devoted to providing an enriching educational experience, ensuring your child receives top-notch care and learning tailored to their individual needs.</p>
                             </div>
-                            <div style={{width: '50%'}}>
+                            <div style={{paddingTop: '40px', paddingBottom: '40px', width: '50%'}}>
                                 <Button buttonSize='btn-large' buttonStyle={'btn-outline'} onClick={handleVisitUs}>Learn More Visit Us <PiArrowSquareUpRightBold /></Button>
                             </div>
                         </div>
                         <div style={{width: '40%'}}>
-                            <video controls autoPlay loop style={{width: '100%', borderRadius: '30px'}}y>
+                            <video controls autoPlay loop style={{width: '100%', height: '100%', borderRadius: '30px'}}y>
                                 <source src="videos/video1.mp4" type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
@@ -111,14 +112,15 @@ function Home() {
                     </div>
                 </div>
             </div>
+
             <div className='programs'>
                 <div className='programsTop'>
                     <h1 style={{fontSize: '5rem'}}>OUR PROGRAMS</h1>
                     <div className='programOptions'>
-                        <Button custom='one'>Infants</Button>
-                        <Button>Toddlers</Button>
-                        <Button>Early Preschool</Button>
-                        <Button>Preschool</Button>
+                        <Button custom='btn-one'>Infants</Button>
+                        <Button custom='btn-one'>Toddlers</Button>
+                        <Button custom='btn-one'>Early Preschool</Button>
+                        <Button custom='btn-one'>Preschool</Button>
                     </div>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingTop: '50px'}}>
@@ -132,12 +134,19 @@ function Home() {
                             <img src='/images/homepagephotos/infant.jpg' style={{marginTop: '20px', height: '10rem', width: '100%', borderRadius: '10px', objectFit: 'cover'}}></img>
                         </div>
                     </div>
-                    <img src='/images/homepagephotos/infant2.jpg' style={{width: '30%', height: 'auto', borderRadius: '10px', objectFit: 'cover'}}></img>
-                    <div style={{display: 'flex', flexDirection: 'column', width: '30%'}}>
+                    <img src='/images/homepagephotos/infant2.jpg' style={{width: '35%', height: 'auto', borderRadius: '10px', objectFit: 'cover'}}></img>
+                    <div style={{display: 'flex', flexDirection: 'column', width: '25%'}}>
                         <div style={{display: 'flex', flexDirection: 'row'}}>
                             <img src='/images/homepagephotos/infant3.jpg' style={{height: '100px', width: '100px', objectFit: 'cover', borderRadius: '10px'}}></img>
                             <p style={{paddingLeft: '10px'}}>Essential Foundations: Nurturing Infants for Lifelong Development</p>
                         </div>
+                        <p style={{paddingTop: '3kdsf0px'}}>Nurturing Your Infant's Milestones
+Guiding Physical Progress
+Supportive Activities: Engage in tummy time exercises to strengthen muscles for head control, rolling, and sitting. Supervised play sessions encourage crawling and explorative movement.
+Fostering Cognitive Exploration
+Stimulating Experiences: Provide sensory-rich experiences with textured toys, playful sounds, and visual stimuli to encourage recognition of faces, sounds, and object exploration.
+Cultivating Language Foundations
+Interactive Engagement: Engage infants in storytelling, singing, and responsive interactions to foster language development and understanding.</p>
                     </div>
                 </div>
             </div>

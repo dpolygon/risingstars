@@ -5,10 +5,10 @@
     background-position: center;
     padding: 3%;
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
+    height: 100vh;
 }
-
+  
 .titleAreaPMessage {
     display: flex;
     flex-direction: row;
@@ -59,11 +59,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #2525251d;
+    background-color: #2525259e;
     border-radius: 12px;
     backdrop-filter: blur(100px);
     width: 100%;
-    height: 700px;
     padding: 40px;
 }
 
