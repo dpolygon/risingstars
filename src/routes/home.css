@@ -108,3 +108,22 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.program-btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 33px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(213, 213, 213);
+}
+
+.active {
+    background-color: black; /* Change to desired active color */
+  }
