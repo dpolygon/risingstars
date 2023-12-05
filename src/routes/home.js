@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 
+import programsData from '../data/programsData.json'
+
 import { Button } from '../Components/Button';
 import { useNavigate } from 'react-router-dom';
 import { PiArrowSquareUpRightBold } from "react-icons/pi";
 import { IoIosArrowUp } from "react-icons/io";
+import { FaChildren } from "react-icons/fa6";
+
 
 import './home.css'
 
@@ -16,9 +20,9 @@ function Home() {
 
     // Array of image URLs
     const kidsUrls = [
-        './images/homepagephotos/play1.jpg',
-        './images/homepagephotos/play2.jpg',
-        './images/homepagephotos/play3.jpg'
+        './images/homepagephotos/play1.webp',
+        './images/homepagephotos/play2.webp',
+        './images/homepagephotos/play3.webp'
     ];
 
     // Function to render images
@@ -30,10 +34,10 @@ function Home() {
 
     //Array of teacher image URLs
     const teacherUrls = [
-        './images/homepagephotos/teacher1.jpg',
-        './images/homepagephotos/teacher2.jpg',
-        './images/homepagephotos/teacher3.jpg',
-        './images/homepagephotos/teacher4.jpg'
+        './images/homepagephotos/teacher1.webp',
+        './images/homepagephotos/teacher2.webp',
+        './images/homepagephotos/teacher3.webp',
+        './images/homepagephotos/teacher4.webp'
     ];
 
     // Function to render teacher images
@@ -120,38 +124,32 @@ function Home() {
 
             <div className='programs'>
                 <div className='programsTop'>
-                    <h1 style={{fontSize: '5rem'}}>OUR PROGRAMS</h1>
+                    <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <FaChildren style={{paddingLeft: '20px'}} /></h1>
                     <div className='programOptions'>
-                        <button className={isActive === 'btn1' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn1')}>infants</button>
+                        <button className={isActive === 'btn1' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick("btn1")}>Infants</button>
                         <button className={isActive === 'btn2' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn2')}>Toddlers</button>
                         <button className={isActive === 'btn3' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn3')}>Early Preschool</button>
                         <button className={isActive === 'btn4' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn4')}>Preschool</button>
                     </div>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingTop: '50px'}}>
-                    <div style={{display: 'flex', flexDirection: 'column', width: '30%'}}>
+                    <div style={{display: 'flex', flexDirection: 'column', width: '31.6%'}}>
                         <div style={{display: 'flex', flexDirection: 'column', width: '60%'}}>
-                            <h1>Infants</h1>
-                            <p>From tender care to developmental milestones, our daycare embraces infants aged 6 weeks to 18 months, providing a nurturing environment where every coo and step is celebrated with warmth and guidance.</p>
+                            <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[isActive].title}</h1>
+                            <p style={{paddingTop: '30px'}}>{programsData[isActive].desc1}</p>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column', paddingTop: '3rem'}}>
-                            <p>Cherished beginnings and endless wonder</p>
-                            <img src='/images/homepagephotos/infant.jpg' style={{marginTop: '20px', height: '10rem', width: '100%', borderRadius: '10px', objectFit: 'cover'}}></img>
+                            <p>{programsData[isActive].desc2}</p>
+                            <img src={programsData[isActive].pic1} style={{marginTop: '20px', height: '10rem', width: '100%', borderRadius: '10px', objectFit: 'cover'}}></img>
                         </div>
                     </div>
-                    <img src='/images/homepagephotos/infant2.jpg' style={{width: '35%', height: 'auto', borderRadius: '10px', objectFit: 'cover'}}></img>
-                    <div style={{display: 'flex', flexDirection: 'column', width: '25%'}}>
-                        <div style={{display: 'flex', flexDirection: 'row'}}>
-                            <img src='/images/homepagephotos/infant3.jpg' style={{height: '100px', width: '100px', objectFit: 'cover', borderRadius: '10px'}}></img>
-                            <p style={{paddingLeft: '10px'}}>Essential Foundations: Nurturing Infants for Lifelong Development</p>
+                    <img src={programsData[isActive].pic2} style={{width: '36.6%', height: '80vh', borderRadius: '10px', objectFit: 'cover'}}></img>
+                    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%'}}>
+                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'start'}}>
+                            <img src={programsData[isActive].pic3} style={{height: '200px', width: '200px', objectFit: 'cover', borderRadius: '10px'}}></img>
+                            <p style={{padding: '8px 20px', borderRadius: '30px', width: '30%', backgroundColor: 'rgb(240, 240, 240)'}}>{programsData[isActive].title2}</p>
                         </div>
-                        <p style={{paddingTop: '3kdsf0px'}}>Nurturing Your Infant's Milestones
-Guiding Physical Progress
-Supportive Activities: Engage in tummy time exercises to strengthen muscles for head control, rolling, and sitting. Supervised play sessions encourage crawling and explorative movement.
-Fostering Cognitive Exploration
-Stimulating Experiences: Provide sensory-rich experiences with textured toys, playful sounds, and visual stimuli to encourage recognition of faces, sounds, and object exploration.
-Cultivating Language Foundations
-Interactive Engagement: Engage infants in storytelling, singing, and responsive interactions to foster language development and understanding.</p>
+                        <p style={{paddingTop: '60px'}}>{programsData[isActive].desc3}</p>
                     </div>
                 </div>
             </div>
