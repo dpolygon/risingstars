@@ -1,13 +1,18 @@
-import react from 'react'
+import React, { useState } from 'react'
 
-import './home.css'
 import { Button } from '../Components/Button';
 import { useNavigate } from 'react-router-dom';
 import { PiArrowSquareUpRightBold } from "react-icons/pi";
 import { IoIosArrowUp } from "react-icons/io";
 
+import './home.css'
 
 function Home() {
+    const [isActive, setIsActive] = useState('btn1');
+
+    const handleButtonClick = (buttonId) => {
+        setIsActive(buttonId);
+    };
 
     // Array of image URLs
     const kidsUrls = [
@@ -117,10 +122,10 @@ function Home() {
                 <div className='programsTop'>
                     <h1 style={{fontSize: '5rem'}}>OUR PROGRAMS</h1>
                     <div className='programOptions'>
-                        <Button custom='btn-one'>Infants</Button>
-                        <Button custom='btn-one'>Toddlers</Button>
-                        <Button custom='btn-one'>Early Preschool</Button>
-                        <Button custom='btn-one'>Preschool</Button>
+                        <button className={isActive === 'btn1' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn1')}>infants</button>
+                        <button className={isActive === 'btn2' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn2')}>Toddlers</button>
+                        <button className={isActive === 'btn3' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn3')}>Early Preschool</button>
+                        <button className={isActive === 'btn4' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn4')}>Preschool</button>
                     </div>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingTop: '50px'}}>
