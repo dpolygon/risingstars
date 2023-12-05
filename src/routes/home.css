@@ -100,6 +100,7 @@
 
 .programs {
     margin-top: 5rem;
+    height: 200px;
 }
 
 .programsTop {
@@ -116,7 +117,6 @@
     border: none;
     cursor: pointer;
     border: 1px solid var(--primary);
-    padding: 8px 20px;
     font-size: 20px;
     border-radius: 33px;
     margin: 10px;
@@ -126,4 +126,4 @@
 
 .active {
     background-color: black; /* Change to desired active color */
-  }
+}
