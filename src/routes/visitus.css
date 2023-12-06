@@ -1,0 +1,82 @@
+#VisitUs {
+    background: url('/public/images/visitusphotos/visitUsBG.jpg') center/cover;
+    padding: 3%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.messageForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#messageName, #messageEmail {
+    width: 300px;
+}
+
+#messageMessage {
+    width: 400px;
+    height: 150px;
+}
+
+.messageForm input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 6px solid #F7EFE5;
+    background-color: #AEDEFC;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+.columnContainer {
+    display: inline-block;
+    margin-right: 100px
+}
+
+.pageName {
+    font-size: 7rem;
+    padding-right: 10%;
+    font-weight: 500;
+    color: white;
+}
+
+.mediumText {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    max-width: 600px;
+}
+
+p#address {
+    color: #363062;
+}
+
+.roundedBox:hover p#address {
+    color: #9ADE7B;
+}
+
+.roundedBox:not(:hover) p#address {
+    color: #333;
+}
+
+.roundedBox {
+    background-color: #9BB8CD;
+    border-radius: 40px; /* Adjust the border-radius for the desired level of roundness */
+    padding: 20px; /* Adjust the padding for spacing inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for depth */
+    border: 8px solid #435585;
+    /* Center the text */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.roundedBox:hover {
+    background-color: #508D69;
+    border: 8px solid #A7D397;
+}
+
+

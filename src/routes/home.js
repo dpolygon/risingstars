@@ -65,7 +65,7 @@ function Home() {
                     <p className="smallText">graduated from our nurturing daycare</p>
                 </div>
             </div>
-            <div cdlassName="images-container">
+            <div className="imagesContainer">
                 {renderKids()}
             </div>
 
