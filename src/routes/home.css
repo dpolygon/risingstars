@@ -53,8 +53,6 @@
     margin-top: -30px;
 }
 
-
-
 .aboutUsContainer {
     display: flex;
     flex-direction: row;
@@ -100,7 +98,6 @@
 
 .programs {
     margin-top: 5rem;
-    height: 200px;
 }
 
 .programsTop {
@@ -112,9 +109,7 @@
 
 .program-btn {
     padding: 8px 20px;
-    border-radius: 2px;
     outline: none;
-    border: none;
     cursor: pointer;
     border: 1px solid var(--primary);
     font-size: 20px;

@@ -132,24 +132,31 @@ function Home() {
                         <button className={isActive === 'btn4' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn4')}>Preschool</button>
                     </div>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingTop: '50px'}}>
-                    <div style={{display: 'flex', flexDirection: 'column', width: '31.6%'}}>
+                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '50px', height: '80vh'}}>
+
+                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '31.6%'}}>
                         <div style={{display: 'flex', flexDirection: 'column', width: '60%'}}>
                             <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[isActive].title}</h1>
-                            <p style={{paddingTop: '30px'}}>{programsData[isActive].desc1}</p>
+                            <p style={{paddingTop: '30px', fontSize: '1rem'}}>{programsData[isActive].desc1}</p>
                         </div>
-                        <div style={{display: 'flex', flexDirection: 'column', paddingTop: '3rem'}}>
-                            <p>{programsData[isActive].desc2}</p>
-                            <img src={programsData[isActive].pic1} style={{marginTop: '20px', height: '10rem', width: '100%', borderRadius: '10px', objectFit: 'cover'}}></img>
+                        <p style={{paddingTop: '60px', fontSize: '1rem'}}>{programsData[isActive].milestones}</p>
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            <p style={{fontSize: '1rem'}}>{programsData[isActive].desc2}</p>
+                            <img src={programsData[isActive].pic1} style={{marginTop: '20px', borderRadius: '10px', objectFit: 'cover', height: '500px'}}></img>
                         </div>
                     </div>
-                    <img src={programsData[isActive].pic2} style={{width: '36.6%', height: '80vh', borderRadius: '10px', objectFit: 'cover'}}></img>
-                    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%'}}>
+
+                    <img style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[isActive].pic2}></img>
+
+                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '26.6%'}}>
                         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'start'}}>
-                            <img src={programsData[isActive].pic3} style={{height: '200px', width: '200px', objectFit: 'cover', borderRadius: '10px'}}></img>
-                            <p style={{padding: '8px 20px', borderRadius: '30px', width: '30%', backgroundColor: 'rgb(240, 240, 240)'}}>{programsData[isActive].title2}</p>
+                            <img src={programsData[isActive].pic3} style={{height: '200px', width: '50%', objectFit: 'cover', borderRadius: '10px'}}></img>
+                            <div style={{padding: '8px 15px', borderRadius: '30px', backgroundColor: 'rgb(230, 230, 230)', width: '47%'}}>
+                                <p style={{textAlign: 'center'}}>{programsData[isActive].title2}</p>
+                            </div>
                         </div>
-                        <p style={{paddingTop: '60px'}}>{programsData[isActive].desc3}</p>
+                        <p>{programsData[isActive].desc3}</p>
+                        <p style={{fontSize: '1rem'}}>{programsData[isActive].activities}</p>
                     </div>
                 </div>
             </div>
