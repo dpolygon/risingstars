@@ -1,10 +1,9 @@
 #VisitUs {
-    background: url('/public/images/visitusphotos/visitUsBG.jpg') center/cover;
+    background: url('/public/images/visitusphotos/visitUsBG2.jpg') center/cover;
     padding: 3%;
     background-repeat: no-repeat;
     height: 100vh;
 }
-
 
 .messageForm {
     display: flex;
@@ -30,10 +29,40 @@
     width: 100%;
 }
 
+.contentContainer {
+    display: flex;  /* Use flexbox to enable flexible layout */
+    flex-direction: row;  /* Arrange items horizontally */
+    justify-content: space-between;  /* Create space between items */
+}
+
+.textContainer {
+    max-width: 30vw;
+}
+
+.daycareImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.daycareImages {
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 4px;
+    width: 350px;
+    height: 350px;
+}
+
+.daycareImages:first-child {
+    margin-top: 120px; /* Adjust the top margin as needed */
+}
+
+.daycareImages:last-child {
+    margin-top: 120px; /* Adjust the bottom margin as needed */
+}
 
 .columnContainer {
-    display: inline-block;
-    margin-right: 100px
+    display: inline;
 }
 
 .pageName {
@@ -44,39 +73,37 @@
 }
 
 .mediumText {
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: bold;
     padding-top: 1rem;
-    max-width: 600px;
+    color: white;
 }
 
 p#address {
+    font-size: 20px;
     color: #363062;
+    padding-bottom: 10px;
 }
 
-.roundedBox:hover p#address {
-    color: #9ADE7B;
+span#address {
+    color: #A9B388;
 }
 
-.roundedBox:not(:hover) p#address {
-    color: #333;
-}
 
 .roundedBox {
-    background-color: #9BB8CD;
-    border-radius: 40px; /* Adjust the border-radius for the desired level of roundness */
+    background-color: #F6F4EB;
+    border-radius: 10px; /* Adjust the border-radius for the desired level of roundness */
     padding: 20px; /* Adjust the padding for spacing inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for depth */
-    border: 8px solid #435585;
+    box-shadow: 0 4px 8px rgba(111, 227, 113, 0.7); /* Add a subtle box shadow for depth */
+    border: 6px solid #D2E9E9;
     /* Center the text */
     display: grid;
     align-items: center;
     justify-content: center;
+    width: 600px;
+    height: auto;
+    padding: 30px;
 }
 
-.roundedBox:hover {
-    background-color: #508D69;
-    border: 8px solid #A7D397;
-}
 
 

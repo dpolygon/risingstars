@@ -4,9 +4,6 @@ import EmbeddedMap from '../EmbeddedMap';
 import './visitus.css';
 
 function VisitUs() {
-    const roundedBoxStyle = {
-        width: '600px', // Adjust the width as needed
-    };
 
      // Array of image URLs
      const quickImages = [
@@ -16,9 +13,9 @@ function VisitUs() {
     ];
 
     // Function to render images
-    const renderImages = () => {
+    const renderZigzagImages = () => {
         return quickImages.map((url, index) => (
-            <img className="kidsImages" key={index} src={url} alt={`Image ${index + 1}`} style={{height: "50%"}} />
+          <img className="daycareImages" key={index} src={url} alt={`Image ${index + 1}`} />
         ));
     };
 
@@ -27,41 +24,54 @@ function VisitUs() {
 
     <div id='VisitUs'>
         <div className = "columnContainer">
-            <h1 className="pageName">Visit Us</h1>
-
-            <div className="images-container">
-                {renderImages()}
+            <div>
+                <h1 className="pageName">Visit Us</h1>
+            </div>
+            
+            <div className="contentContainer">
+                <div className="textContainer">
+                    <p className='mediumText'>Come experience the magic of our daycare! 
+                        Our doors are open, and we look forward to 
+                        sharing smiles, laughter, and endless adventures with you and your little ones.
+                    </p>
+                </div>
+            
+                <div className="daycareImagesContainer">
+                    {renderZigzagImages()}
+                </div>
             </div>
 
-            <div className='roundedBox' style={roundedBoxStyle}>
-                <p className="mediumText" id="address">Our Location: 11406 Conroy Ln. Manchaca, TX 78652</p>
-                <EmbeddedMap />
+            <div className='contentContainer'>
+
+                <div className='roundedBox'>
+                    <p className="mediumText" id="address"><span id="address">Our Location:</span> 11406 Conroy Ln. Manchaca, TX 78652</p>
+                    <EmbeddedMap />
+                </div>
+
+
+                <div className='roundedBox'>
+                    <p className="mediumText" id="address">Interested? Send us a message!</p>
+                    <form>
+                        <div className='messageForm'>
+                            <input type='text' placeholder='Name' id ="messageName" ></input>
+                            <input type='text' placeholder='Email' id ="messageEmail"></input>
+                            <input type='text' placeholder='Message' id ="messageMessage"></input>
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-        </div>
 
-
-
-        <div className='columnContainer'>
-            <div className='roundedBox'>
-                <p className="mediumText" id="address">Interested? Send us a message!</p>
-                <form>
-                    <div className='messageForm'>
-                        <input type='text' placeholder='Name' id ="messageName" ></input>
-                        <input type='text' placeholder='Email' id ="messageEmail"></input>
-                        <input type='text' placeholder='Message' id ="messageMessage"></input>
-                    </div>
-                </form>
-            </div>
-        </div>
 
         
 
 
+            
+        </div>
+
 
     </div>
-
-
-    
 
 
   );
