@@ -1,19 +1,32 @@
-#Home {
-    display: flex;
-    flex-direction: column;
+.backGround {
     background: url('/public/images/titlephoto.jpg') center/cover;
-    background-position: center;
-    padding: 3%;
+    background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    position: relative;
+    z-index: 2;
 }
   
 .titleAreaPMessage {
+    padding-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: white;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
 }
 
 .messageTitle {
@@ -42,6 +55,8 @@
     padding: 4px;
     margin-bottom: 60px;
     margin-top: 240px;
+    z-index: 2;
+    position: relative;
 }
 
 .teacherImages {
@@ -132,22 +147,25 @@
 
 
 .hellow{
-    margin-top: 5rem;
+    display: flex;
     overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5rem;
     width: 100%;
-    display:inline-block;
-    height: 300px;
+    height: 30vh;
     white-space: nowrap;
-    background-color: rgba(82, 73, 73, 0.274);
+    background-color: #2525259e;
     border-radius: 33px;
     text-align: center;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(100px);
 }
   
 .containerw{
-    padding-top: 15px;
     width: 849px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: nowrap;
     animation: move 15s infinite linear; /* set the time to what you want of course */
 }
