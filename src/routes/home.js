@@ -125,10 +125,10 @@ function Home() {
                 <div className='programsTop'>
                     <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <FaChildren style={{paddingLeft: '20px'}} /></h1>
                     <div className='programOptions'>
-                        <button className={isActive === 'btn1' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick("btn1")}>Infants</button>
-                        <button className={isActive === 'btn2' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn2')}>Toddlers</button>
-                        <button className={isActive === 'btn3' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn3')}>Early Preschool</button>
-                        <button className={isActive === 'btn4' ? 'program-btn active' : 'program-btn'} onClick={ () => handleButtonClick('btn4')}>Preschool</button>
+                        <button className={isActive === 'btn1' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick("btn1")}>Infants</button>
+                        <button className={isActive === 'btn2' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick('btn2')}>Toddlers</button>
+                        <button className={isActive === 'btn3' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick('btn3')}>Early Preschool</button>
+                        <button className={isActive === 'btn4' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick('btn4')}>Preschool</button>
                     </div>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '50px', height: '90vh'}}>
@@ -139,15 +139,15 @@ function Home() {
                             <p style={{paddingTop: '30px', fontSize: '1rem'}}>{programsData[isActive].desc1}</p>
                         </div>
                         <div>
-                            <p style={{fontSize: '1rem'}}>{programsData[isActive].milestones}</p>
-                            <h2>{programsData[isActive].mile1}</h2>
-                            <p>{programsData[isActive].mile1d}</p>
-                            <h2>{programsData[isActive].mile2}</h2>
-                            <p>{programsData[isActive].mile2d}</p>
-                            <h2>{programsData[isActive].mile3}</h2>
-                            <p>{programsData[isActive].mile3d}</p>
-                            <h2>{programsData[isActive].mile4}</h2>
-                            <p>{programsData[isActive].mile4d}</p>
+                            <p style={{fontSize: '2rem'}}>{programsData[isActive].milestones}</p>
+                            <h2 style={{paddingTop: '40px'}}>{programsData[isActive].mile1}</h2>
+                            <p className='miles'>{programsData[isActive].mile1d}</p>
+                            <h2 className='miles'>{programsData[isActive].mile2}</h2>
+                            <p className='miles'>{programsData[isActive].mile2d}</p>
+                            <h2 className='miles'>{programsData[isActive].mile3}</h2>
+                            <p className='miles'>{programsData[isActive].mile3d}</p>
+                            <h2 className='miles'>{programsData[isActive].mile4}</h2>
+                            <p className='miles'>{programsData[isActive].mile4d}</p>
                         </div>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <p style={{fontSize: '1rem'}}>{programsData[isActive].desc2}</p>
@@ -157,27 +157,52 @@ function Home() {
 
                     <img style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[isActive].pic2}></img>
 
-                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '26.6%'}}>
+                    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%'}}>
                         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'start'}}>
                             <img src={programsData[isActive].pic3} style={{height: '200px', width: '50%', objectFit: 'cover', borderRadius: '10px'}}></img>
                             <div style={{padding: '8px 15px', borderRadius: '30px', backgroundColor: 'rgb(230, 230, 230)', width: '47%'}}>
                                 <p style={{textAlign: 'center'}}>{programsData[isActive].title2}</p>
                             </div>
                         </div>
-                        <p>{programsData[isActive].desc3}</p>
-                        <div>
-                            <p style={{fontSize: '1rem'}}>{programsData[isActive].activities}</p>
-                            <h2>{programsData[isActive].act1}</h2>
-                            <p>{programsData[isActive].act1d}</p>
-                            <h2>{programsData[isActive].act2}</h2>
-                            <p>{programsData[isActive].act2d}</p>
-                            <h2>{programsData[isActive].act3}</h2>
-                            <p>{programsData[isActive].act3d}</p>
-                            <h2>{programsData[isActive].act4}</h2>
-                            <p>{programsData[isActive].act4d}</p>
-                            <h2>{programsData[isActive].act5}</h2>
-                            <p>{programsData[isActive].act5d}</p>
+                        <div style={{display: 'flex', flexDirection: 'column', paddingTop: '10%'}}>
+                            <p style={{fontSize: '2rem'}}>{programsData[isActive].activities}</p>
+                            <h2 style={{paddingTop: '40px'}}>{programsData[isActive].act1}</h2>
+                            <p className='acts'>{programsData[isActive].act1d}</p>
+                            <h2 className='acts'>{programsData[isActive].act2}</h2>
+                            <p className='acts'>{programsData[isActive].act2d}</p>
+                            <h2 className='acts'>{programsData[isActive].act3}</h2>
+                            <p className='acts'>{programsData[isActive].act3d}</p>
+                            <h2 className='acts'>{programsData[isActive].act4}</h2>
+                            <p className='acts'>{programsData[isActive].act4d}</p>
+                            <h2 className='acts'>{programsData[isActive].act5}</h2>
+                            <p className='acts'>{programsData[isActive].act5d}</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='hellow'>
+                <h1 style={{color: 'white'}}>Hear from Happy Parents!</h1>
+                <div className="containerw">
+                    <div className='textw'>
+                        <p style={{padding: '8px 20px'}}>Cameron1</p>
+                        <p>ajkdfjk</p>
+                    </div>
+                    <div className='textw'>
+                        <p style={{padding: '8px 20px'}}>Cameron2</p>
+                    </div>
+                    <div className='textw'>
+                        <p style={{padding: '8px 20px'}}>Cameron3</p>
+                    </div>
+                    <div className='textw'>
+                        <p style={{padding: '8px 20px'}}>Cameron1</p>
+                        <p>ajkdfjk</p>
+                    </div>
+                    <div className='textw'>
+                        <p style={{padding: '8px 20px'}}>Cameron2</p>
+                    </div>
+                    <div className='textw'>
+                        <p style={{padding: '8px 20px'}}>Cameron3</p>
                     </div>
                 </div>
             </div>

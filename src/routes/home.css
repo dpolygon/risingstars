@@ -6,7 +6,6 @@
     padding: 3%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
   
 .titleAreaPMessage {
@@ -119,6 +118,52 @@
     background-color: rgb(213, 213, 213);
 }
 
-.active {
+.activep {
     background-color: black; /* Change to desired active color */
+}
+
+.miles {
+    padding-top: 15px;
+}
+
+.acts {
+    padding-top: 15px;
+}
+
+
+.hellow{
+    margin-top: 5rem;
+    overflow: hidden;
+    width: 100%;
+    display:inline-block;
+    height: 300px;
+    white-space: nowrap;
+    background-color: rgba(82, 73, 73, 0.274);
+    border-radius: 33px;
+    text-align: center;
+    backdrop-filter: blur(7px);
+}
+  
+.containerw{
+    padding-top: 15px;
+    width: 849px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: move 15s infinite linear; /* set the time to what you want of course */
+}
+
+@keyframes move {
+    to {
+      transform: translateX(-50%);
+    }
+}
+
+.textw{
+    font-size: 20px;
+    padding-left:0px;
+    background-color: white;
+    border-radius: 33px;
+    width: 283px;
+    height: 10vh;
+    margin-left: 10px;
 }
