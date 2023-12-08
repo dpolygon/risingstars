@@ -146,10 +146,10 @@
 }
 
 
-.hellow{
+.reviewsArea{
     display: flex;
     overflow: hidden;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 5rem;
     width: 100%;
@@ -160,28 +160,35 @@
     text-align: center;
     backdrop-filter: blur(100px);
 }
-  
-.containerw{
-    width: 849px;
+
+.reviewsContainer {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    background-color: black;
+    border-radius: 33px;
+    margin: 2%;
+}
+  
+.reviews{
     flex-wrap: nowrap;
     animation: move 15s infinite linear; /* set the time to what you want of course */
-}
-
-@keyframes move {
-    to {
-      transform: translateX(-50%);
-    }
-}
-
-.textw{
     font-size: 20px;
     padding-left:0px;
     background-color: white;
     border-radius: 33px;
-    width: 283px;
+    width: 10vw;
     height: 10vh;
-    margin-left: 10px;
+    margin: 30px;
+    animation: blur-layer 15s infinite
+}
+
+@keyframes blur-layer {
+    0% { filter: blur(30px);}
+    1% { filter: blur(1px);}
+    2% { filter: blur(0px);}
+    50% { filter: blur(0px);}
+    98% {filter: blur(0px);}
+    99% { filter: blur(1px);}
+    100% { filter: blur(30px);}
 }
