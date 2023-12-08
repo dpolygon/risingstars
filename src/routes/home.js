@@ -184,27 +184,11 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='hellow'>
-                    <div className="containerw">
-                        <div className='textw'>
+                <div className='reviewsArea'>
+                    <div className='reviewsContainer'>
+                        <div className="reviews">
                             <p style={{padding: '8px 20px'}}>Cameron1</p>
                             <p>ajkdfjk</p>
-                        </div>
-                        <div className='textw'>
-                            <p style={{padding: '8px 20px'}}>Cameron2</p>
-                        </div>
-                        <div className='textw'>
-                            <p style={{padding: '8px 20px'}}>Cameron3</p>
-                        </div>
-                        <div className='textw'>
-                            <p style={{padding: '8px 20px'}}>Cameron1</p>
-                            <p>ajkdfjk</p>
-                        </div>
-                        <div className='textw'>
-                            <p style={{padding: '8px 20px'}}>Cameron2</p>
-                        </div>
-                        <div className='textw'>
-                            <p style={{padding: '8px 20px'}}>Cameron3</p>
                         </div>
                     </div>
                     <h1 style={{color: 'white'}}>Hear from Happy Parents!</h1>
