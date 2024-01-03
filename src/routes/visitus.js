@@ -23,34 +23,37 @@ function VisitUs() {
   return (
 
     <div id='VisitUs'>
-        <div className = "columnContainer">
-            <div>
-                <h1 className="pageName">Visit Us</h1>
-            </div>
-            
-            <div className="contentContainer">
+        <div className = "container">
+
+            <div className='columnContainer' id = "leftCol">
+                <div>
+                    <h1 className='pageName'>Visit Us</h1>
+                </div>
+
                 <div className="textContainer">
                     <p className='mediumText'>Come experience the magic of our daycare! 
                         Our doors are open, and we look forward to 
                         sharing smiles, laughter, and endless adventures with you and your little ones.
                     </p>
                 </div>
-            
-                <div className="daycareImagesContainer">
-                    {renderZigzagImages()}
-                </div>
-            </div>
+       
 
-            <div className='contentContainer'>
-
-                <div className='roundedBox'>
+                <div className='roundedBox1'>
                     <p className="mediumText" id="address"><span id="address">Our Location:</span> 11406 Conroy Ln. Manchaca, TX 78652</p>
                     <EmbeddedMap />
                 </div>
 
+            </div>
 
-                <div className='roundedBox'>
-                    <p className="mediumText" id="address">Interested? Send us a message!</p>
+
+            <div className='columnContainer' id = "rightCol">
+                <div className="daycareImagesContainer">
+                    {renderZigzagImages()}
+                </div>
+
+
+                <div className='roundedBox2'>
+                    <p className="mediumText">Interested? Send us a message!</p>
                     <form>
                         <div className='messageForm'>
                             <input type='text' placeholder='Name' id ="messageName" ></input>
@@ -61,16 +64,11 @@ function VisitUs() {
                     </form>
                 </div>
 
+
+
             </div>
 
-
-        
-
-
-            
         </div>
-
-
     </div>
 
 
@@ -78,3 +76,4 @@ function VisitUs() {
 }
 
 export default VisitUs;
+
