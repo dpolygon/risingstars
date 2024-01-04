@@ -31,16 +31,20 @@ function VisitUs() {
                 </div>
 
                 <div className="textContainer">
-                    <p className='mediumText'>Come experience the magic of our daycare! 
-                        Our doors are open, and we look forward to 
-                        sharing smiles, laughter, and endless adventures with you and your little ones.
+                    <p className='wordDeco'>Located in South Austin, come experience the magic of our daycare! 
+                        Our doors are open, and we look forward to sharing smiles, laughter, and 
+                        endless adventures with you and your little ones.
                     </p>
                 </div>
        
 
                 <div className='roundedBox1'>
-                    <p className="mediumText" id="address"><span id="address">Our Location:</span> 11406 Conroy Ln. Manchaca, TX 78652</p>
-                    <EmbeddedMap />
+                    <div className='address'>
+                        <p className="mediumText" id="address"><span id="address">Our Location:</span> 11406 Conroy Ln. Manchaca, TX 78652</p>
+                    </div>
+                    <div className='map'>
+                        < EmbeddedMap/>
+                    </div>
                 </div>
 
             </div>
