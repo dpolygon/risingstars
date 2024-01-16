@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import programsData from '../data/programsData.json'
 
 import { Button } from '../Components/Button';
+import ProgramButtons from '../Components/ProgramButtons';
+
 import { useNavigate } from 'react-router-dom';
 import { PiArrowSquareUpRightBold } from "react-icons/pi";
 import { IoIosArrowUp } from "react-icons/io";
@@ -11,11 +13,7 @@ import { FaChildren } from "react-icons/fa6";
 import './home.css'
 
 function Home() {
-    const [isActive, setIsActive] = useState('btn1');
-
-    const handleButtonClick = (buttonId) => {
-        setIsActive(buttonId);
-    };
+    const [program, setProgram] = useState('Infants');
 
     // Array of image URLs
     const kidsUrls = [
@@ -51,6 +49,30 @@ function Home() {
     const handleVisitUs = () => {
         nav('visit-us')
     };
+
+    const options = {
+        method: 'GET',
+        headers: {
+            AccessControlAllowOrigin: '*',
+            accept: 'application/json',
+            Authorization: 'Bearer dBpln6L-4D8l5_CvqFDBxIG6MUZzwe8HYhZln7343Xvz7COJVRLnFqbLHPflYoWzqjknS7ht4s0YNF3EPpgyI9FSV4Rw0RWG1e-9Ten5tudvsdUT3Zk_hnB8IUpyZXYx'
+        }
+    };
+
+    async function fetchData() {
+        try {
+            const fetchReviews = await fetch('http://api.yelp.com/v3/businesses/rising-stars-bilingual-daycare-manchaca-2/reviews?limit=10&sort_by=newest/', options)
+            if (!fetchReviews.ok) {
+                throw new Error('Failed to fetch data');
+            }
+            const reviews = await fetchReviews.json()
+            console.log(reviews)
+        }  catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+
+    fetchData();
 
     return (
         <div id="homesource">
@@ -127,72 +149,67 @@ function Home() {
                 <div className='programs'>
                     <div className='programsTop'>
                         <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <FaChildren style={{paddingLeft: '20px'}} /></h1>
-                        <div className='programOptions'>
-                            <button className={isActive === 'btn1' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick("btn1")}>Infants</button>
-                            <button className={isActive === 'btn2' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick('btn2')}>Toddlers</button>
-                            <button className={isActive === 'btn3' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick('btn3')}>Early Preschool</button>
-                            <button className={isActive === 'btn4' ? 'program-btn activep' : 'program-btn'} onClick={ () => handleButtonClick('btn4')}>Preschool</button>
-                        </div>
+                        <ProgramButtons setProgram={setProgram}/>
                     </div>
                     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '50px', height: '90vh'}}>
 
                         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '31.6%'}}>
                             <div style={{display: 'flex', flexDirection: 'column', width: '70%'}}>
-                                <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[isActive].title}</h1>
-                                <p style={{paddingTop: '30px', fontSize: '1rem'}}>{programsData[isActive].desc1}</p>
+                                <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[program].title}</h1>
+                                <p style={{paddingTop: '30px', fontSize: '1rem'}}>{programsData[program].desc1}</p>
                             </div>
                             <div>
-                                <p style={{fontSize: '2rem'}}>{programsData[isActive].milestones}</p>
-                                <h2 style={{paddingTop: '40px'}}>{programsData[isActive].mile1}</h2>
-                                <p className='miles'>{programsData[isActive].mile1d}</p>
-                                <h2 className='miles'>{programsData[isActive].mile2}</h2>
-                                <p className='miles'>{programsData[isActive].mile2d}</p>
-                                <h2 className='miles'>{programsData[isActive].mile3}</h2>
-                                <p className='miles'>{programsData[isActive].mile3d}</p>
-                                <h2 className='miles'>{programsData[isActive].mile4}</h2>
-                                <p className='miles'>{programsData[isActive].mile4d}</p>
+                                <p style={{fontSize: '2rem'}}>{programsData[program].milestones}</p>
+                                <h2 style={{paddingTop: '40px'}}>{programsData[program].mile1}</h2>
+                                <p className='miles'>{programsData[program].mile1d}</p>
+                                <h2 className='miles'>{programsData[program].mile2}</h2>
+                                <p className='miles'>{programsData[program].mile2d}</p>
+                                <h2 className='miles'>{programsData[program].mile3}</h2>
+                                <p className='miles'>{programsData[program].mile3d}</p>
+                                <h2 className='miles'>{programsData[program].mile4}</h2>
+                                <p className='miles'>{programsData[program].mile4d}</p>
                             </div>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
-                                <p style={{fontSize: '1rem'}}>{programsData[isActive].desc2}</p>
-                                <img src={programsData[isActive].pic1} style={{marginTop: '20px', borderRadius: '10px', objectFit: 'cover', height: '25vh'}}></img>
+                                <p style={{fontSize: '1rem'}}>{programsData[program].desc2}</p>
+                                <img src={programsData[program].pic1} style={{marginTop: '20px', borderRadius: '10px', objectFit: 'cover', height: '25vh'}}></img>
                             </div>
                         </div>
 
-                        <img style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[isActive].pic2}></img>
+                        <img style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[program].pic2}></img>
 
                         <div style={{display: 'flex', flexDirection: 'column', width: '26.6%'}}>
                             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'start'}}>
-                                <img src={programsData[isActive].pic3} style={{height: '200px', width: '50%', objectFit: 'cover', borderRadius: '10px'}}></img>
+                                <img src={programsData[program].pic3} style={{height: '200px', width: '50%', objectFit: 'cover', borderRadius: '10px'}}></img>
                                 <div style={{padding: '8px 15px', borderRadius: '30px', backgroundColor: 'rgb(230, 230, 230)', width: '47%'}}>
-                                    <p style={{textAlign: 'center'}}>{programsData[isActive].title2}</p>
+                                    <p style={{textAlign: 'center'}}>{programsData[program].title2}</p>
                                 </div>
                             </div>
                             <div style={{display: 'flex', flexDirection: 'column', paddingTop: '10%'}}>
-                                <p style={{fontSize: '2rem'}}>{programsData[isActive].activities}</p>
-                                <h2 style={{paddingTop: '40px'}}>{programsData[isActive].act1}</h2>
-                                <p className='acts'>{programsData[isActive].act1d}</p>
-                                <h2 className='acts'>{programsData[isActive].act2}</h2>
-                                <p className='acts'>{programsData[isActive].act2d}</p>
-                                <h2 className='acts'>{programsData[isActive].act3}</h2>
-                                <p className='acts'>{programsData[isActive].act3d}</p>
-                                <h2 className='acts'>{programsData[isActive].act4}</h2>
-                                <p className='acts'>{programsData[isActive].act4d}</p>
-                                <h2 className='acts'>{programsData[isActive].act5}</h2>
-                                <p className='acts'>{programsData[isActive].act5d}</p>
+                                <p style={{fontSize: '2rem'}}>{programsData[program].activities}</p>
+                                <h2 style={{paddingTop: '40px'}}>{programsData[program].act1}</h2>
+                                <p className='acts'>{programsData[program].act1d}</p>
+                                <h2 className='acts'>{programsData[program].act2}</h2>
+                                <p className='acts'>{programsData[program].act2d}</p>
+                                <h2 className='acts'>{programsData[program].act3}</h2>
+                                <p className='acts'>{programsData[program].act3d}</p>
+                                <h2 className='acts'>{programsData[program].act4}</h2>
+                                <p className='acts'>{programsData[program].act4d}</p>
+                                <h2 className='acts'>{programsData[program].act5}</h2>
+                                <p className='acts'>{programsData[program].act5d}</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='reviewsArea'>
+                {/* <div className='reviewsArea'>
                     <div className='reviewsContainer'>
                         <div className="reviews">
-                            <p style={{padding: '8px 20px'}}>Cameron1</p>
+                            <p style={{padding: '8px 20px'}}>Reviewer Name</p>
                             <p>ajkdfjk</p>
                         </div>
                     </div>
                     <h1 style={{color: 'white'}}>Hear from Happy Parents!</h1>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 {
-    "btn1": {
+    "Infants": {
         "title": "Infants",
         "desc1": "From tender care to developmental milestones, our daycare embraces infants aged 6 weeks to 18 months, providing a nurturing environment where every coo and step is celebrated with warmth and guidance.",
         "desc2": "Cherished beginnings and endless wonder",
@@ -30,7 +30,7 @@
         "desc3": "Nurturing Infants for Lifelong Development"
     },
 
-    "btn2": {
+    "Toddlers": {
         "title": "Toddlers",
         "desc1": "Embarking on the journey of exploration and growth, our daycare welcomes toddlers, aged 18 months to 3 years, fostering an environment where each step, each discovery, and each playful moment is cherished, guided, and celebrated with joy and encouragement.",
         "desc2": "Nurturing a world of endless discoveries and boundless imagination.",
@@ -61,7 +61,7 @@
         "desc3": "Building lifelong foundations for success"
     }, 
 
-    "btn3": {
+    "Early Preschool": {
         "title": "Early Preschool",
         "desc1": "Stepping into the realm of discovery, our daycare warmly welcomes early preschoolers aged 2 to 3 years. In this nurturing haven, every smile, every new adventure, and each milestone achieved is celebrated, fostering a love for learning and growth.",
         "desc2": "Fostering a realm of boundless curiosity and endless adventures for our early preschoolers.",
@@ -92,7 +92,7 @@
         "desc3": "Building Pathways to Lifelong Achievement"
     },
 
-    "btn4": {
+    "Preschool": {
         "title": "Preschool",
         "desc1": "Preparing our preschoolers for their journey to Pre-K, our program embraces children aged 3 to 5 years. With engaging activities, supportive guidance, and a focus on foundational skills, we cultivate an environment where every achievement, every inquisitive moment, and each step towards readiness for Pre-K is joyfully nurtured and celebrated.",
         "desc2": "Empowering young minds with limitless curiosity and a world of imaginative exploration in our older preschool program.",
