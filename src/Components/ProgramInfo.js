@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
+import './ProgramInfo.css'
 import programsData from '../data/programsData.json'
 
 export default function ProgramInfo(prop) {

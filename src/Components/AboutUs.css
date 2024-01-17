@@ -1,0 +1,42 @@
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #2525259e;
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    width: 100%;
+    padding: 40px;
+}
+
+.aboutUsTitle {
+    color: white;
+    font-size: larger;
+    font-stretch: expanded;
+}
+
+.aboutUsTeacherArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daycareData {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-right: 40px;
+}
+
+.daycareDataTitle {
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.expertsTitle {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
