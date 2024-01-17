@@ -1,0 +1,43 @@
+{
+    "reviews": [
+        {
+            "id": "QWTCO1ZUEqa1N-wRcZLpvg",
+            "url": "https://www.yelp.com/biz/rising-stars-bilingual-daycare-manchaca-2?adjust_creative=AktJlX9LKL-ZQab1WMFlhQ&hrid=QWTCO1ZUEqa1N-wRcZLpvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=AktJlX9LKL-ZQab1WMFlhQ",
+            "text": "Rising Stars was a perfect fit for our 2 1/2yr old little girl. She loved her teacher, Ms. Mayra, and always was eager to share her crafts and report card...",
+            "rating": 5,
+            "time_created": "2023-06-04 19:17:30",
+            "user": {
+                "id": "PYi3kmiVor-2s2efUoWMFg",
+                "profile_url": "https://www.yelp.com/user_details?userid=PYi3kmiVor-2s2efUoWMFg",
+                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/1P9ZMnBOP16IGR8CMvz2LA/o.jpg",
+                "name": "Robert A."
+            }
+        },
+        {
+            "id": "mGvIuXaeb7e6WtuXItW3mA",
+            "url": "https://www.yelp.com/biz/rising-stars-bilingual-daycare-manchaca-2?adjust_creative=AktJlX9LKL-ZQab1WMFlhQ&hrid=mGvIuXaeb7e6WtuXItW3mA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=AktJlX9LKL-ZQab1WMFlhQ",
+            "text": "A fantastic safe, loving educational environment that has done an amazing job in preparing our son for \"big school.\" A wonderful professional daycare and...",
+            "rating": 5,
+            "time_created": "2021-08-20 14:38:32",
+            "user": {
+                "id": "u6dgNrbJbh8FCCe5D6B48Q",
+                "profile_url": "https://www.yelp.com/user_details?userid=u6dgNrbJbh8FCCe5D6B48Q",
+                "image_url": "https://s3-media3.fl.yelpcdn.com/photo/Smdwr4JiKopjtf_mRVX-WA/o.jpg",
+                "name": "Duncan C."
+            }
+        },
+        {
+            "id": "o19DNXqj7WXJc477JynXHA",
+            "url": "https://www.yelp.com/biz/rising-stars-bilingual-daycare-manchaca-2?adjust_creative=AktJlX9LKL-ZQab1WMFlhQ&hrid=o19DNXqj7WXJc477JynXHA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=AktJlX9LKL-ZQab1WMFlhQ",
+            "text": "Both my kids attended Rising Stars Bilingual\nDaycare. We started when my first kid was 1 yr old, and he stayed all the way till he was nearly 3.5 yrs old....",
+            "rating": 5,
+            "time_created": "2019-08-10 22:55:04",
+            "user": {
+                "id": "8QdbKvv6kkGZTaKTFYpbOw",
+                "profile_url": "https://www.yelp.com/user_details?userid=8QdbKvv6kkGZTaKTFYpbOw",
+                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/u2kLd_02Nn0zUfsSix8m5Q/o.jpg",
+                "name": "Shilpa R."
+            }
+        }
+    ]
+}

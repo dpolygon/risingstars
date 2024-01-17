@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
-
-import ProgramButtons from '../Components/ProgramButtons';
-import AboutUs from '../Components/AboutUs';
-import ProgramInfo from '../Components/ProgramInfo';
-
 import { FaChildren } from "react-icons/fa6";
 
-import './home.css'
 import HomeSplash from '../Components/HomeSplash';
+import AboutUs from '../Components/AboutUs';
+import ProgramButtons from '../Components/ProgramButtons';
+import ProgramInfo from '../Components/ProgramInfo';
+import reviewData from '../data/reviewsData.json';
+
+import './home.css'
 
 function Home() {
     const [program, setProgram] = useState('Infants');
-    const [reviews, setReviews] = useState();
+    const [reviewsData, setReviewsData] = useState(reviewData);
 
     const getYelpReviews = () => {
 
@@ -29,10 +29,7 @@ function Home() {
 
         return fetch(yelpApiRequest, options)
             .then((res) => res.json())
-            .then((json) => {setReviews(json);
-                            console.log('hi im here');
-                            console.log(json);
-                            })
+            .then((json) => {setReviewsData(json);})
     };
 
     useEffect(() => {
@@ -54,15 +51,15 @@ function Home() {
                     <ProgramInfo selectedProgram={program}/>
                 </div>
 
-                {/* <div className='reviewsArea'>
+                <div className='reviewsArea'>
                     <div className='reviewsContainer'>
                         <div className="reviews">
-                            <p style={{padding: '8px 20px'}}>Reviewer Name</p>
-                            <p>ajkdfjk</p>
+                            <p style={{padding: '8px 20px'}}>{reviewsData.reviews[0].user.name}</p>
+                            <p>{reviewsData.reviews[0].text}</p>
                         </div>
                     </div>
                     <h1 style={{color: 'white'}}>Hear from Happy Parents!</h1>
-                </div> */}
+                </div>
             </div>
         </div>
     );
