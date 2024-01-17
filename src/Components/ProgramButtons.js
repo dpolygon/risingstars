@@ -47,7 +47,8 @@ const ProgramButton = (props) => (
             border: '1px solid var(--primary)',
             padding: '8px 20px',
             borderRadius: '33px',
-            margin: '10px'
+            margin: '10px',
+            cursor: 'pointer'
         }}
         onClick = {() => {props.setActiveButton(props.text); 
                         props.setPrograms(props.text)}}
