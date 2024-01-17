@@ -121,22 +121,6 @@
     justify-content: space-between;
 }
 
-.program-btn {
-    padding: 8px 20px;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid var(--primary);
-    font-size: 20px;
-    border-radius: 33px;
-    margin: 10px;
-    color: white;
-    background-color: rgb(213, 213, 213);
-}
-
-.activep {
-    background-color: black; /* Change to desired active color */
-}
-
 .miles {
     padding-top: 15px;
 }
