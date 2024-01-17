@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import ProgramButtons from '../Components/ProgramButtons';
 import AboutUs from '../Components/AboutUs';
@@ -11,30 +11,33 @@ import HomeSplash from '../Components/HomeSplash';
 
 function Home() {
     const [program, setProgram] = useState('Infants');
+    const [reviews, setReviews] = useState();
 
-    const options = {
-        method: 'GET',
-        headers: {
-            AccessControlAllowOrigin: '*',
-            accept: 'application/json',
-            Authorization: 'Bearer dBpln6L-4D8l5_CvqFDBxIG6MUZzwe8HYhZln7343Xvz7COJVRLnFqbLHPflYoWzqjknS7ht4s0YNF3EPpgyI9FSV4Rw0RWG1e-9Ten5tudvsdUT3Zk_hnB8IUpyZXYx'
-        }
-    };
+    const getYelpReviews = () => {
 
-    async function fetchData() {
-        try {
-            const fetchReviews = await fetch('http://api.yelp.com/v3/businesses/rising-stars-bilingual-daycare-manchaca-2/reviews?limit=10&sort_by=newest/', options)
-            if (!fetchReviews.ok) {
-                throw new Error('Failed to fetch data');
+        const yelpApiRequest = 'https://cors-anywhere.herokuapp.com/http://api.yelp.com/v3/businesses/rising-stars-bilingual-daycare-manchaca-2/reviews?limit=10&sort_by=newest/'
+        const apiKey  = process.env.REACT_APP_YELP_REVIEWS_API
+        const bearerToken = 'Bearer ' + apiKey
+        const options = {
+            method: 'GET',
+            headers: {
+                AccessControlAllowOrigin: '*',
+                accept: 'application/json',
+                Authorization: bearerToken
             }
-            const reviews = await fetchReviews.json()
-            console.log(reviews)
-        }  catch (error) {
-            console.error('Error fetching data:', error);
-        }
+        };
+
+        return fetch(yelpApiRequest, options)
+            .then((res) => res.json())
+            .then((json) => {setReviews(json);
+                            console.log('hi im here');
+                            console.log(json);
+                            })
     };
 
-    fetchData();
+    useEffect(() => {
+        getYelpReviews();
+    }, []);
 
     return (
         <div id="homesource">
