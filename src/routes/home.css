@@ -112,6 +112,9 @@
     width: 30vw;
     height: 25vh;
     margin: 30px;
+}
+
+.blurReview{
     animation: blur-layer 10s infinite
 }
 
