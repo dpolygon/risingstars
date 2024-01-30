@@ -10,9 +10,11 @@ import { IoIosArrowUp } from "react-icons/io";
 export default function AboutUs() {
 
     return (
-        <div className="aboutUsContainer">
-            <LeftInfo/>
-            <RightInfo/>
+        <div style={{padding: '3%'}}>
+            <div className="aboutUsContainer">
+                <LeftInfo/>
+                <RightInfo/>
+            </div>
         </div>
     );
 }

@@ -10,7 +10,7 @@ export default function ProgramInfo(prop) {
                     flexDirection: 'row', 
                     justifyContent: 'space-between', 
                     marginTop: '50px', 
-                    height: '100%'
+                    height: '100%',
         }}>
             <InfoLeft program={prop.selectedProgram}/>
             <InfoMiddle program={prop.selectedProgram}/>

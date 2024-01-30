@@ -12,7 +12,6 @@
 .home {
     display: flex;
     flex-direction: column;
-    padding: 3%;
     position: relative;
     z-index: 2;
 }
@@ -65,10 +64,6 @@
     object-fit: cover;
     border-radius: 50%;
     margin-top: -30px;
-}
-
-.programs {
-    margin-top: 5rem;
 }
 
 .programsTop {

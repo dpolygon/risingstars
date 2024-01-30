@@ -8,10 +8,10 @@ import ProgramInfo from '../Components/ProgramInfo';
 
 import './home.css'
 import Reviews from '../Components/Reviews';
+import Footer from '../Components/Footer';
 
 function Home() {
     const [program, setProgram] = useState('Infants');
-
 
     return (
         <div id="homesource">
@@ -20,7 +20,7 @@ function Home() {
                 <HomeSplash/>
                 <AboutUs/>
 
-                <div className='programs'>
+                <div className='programs' style={{padding: '3%'}}>
                     <div className='programsTop'>
                         <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <FaChildren style={{paddingLeft: '20px'}} /></h1>
                         <ProgramButtons setProgram={setProgram}/>
@@ -29,6 +29,7 @@ function Home() {
                 </div>
 
                 <Reviews/>
+                <Footer/>
             </div>
         </div>
     );
