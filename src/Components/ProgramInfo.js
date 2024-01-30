@@ -49,9 +49,9 @@ const InfoMiddle = (prop) => (
 );
 
 const InfoRight = (prop) => (
-    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%', justifyContent: 'space-between'}}>
+    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%', justifyContent: 'space-evenly'}}>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'start'}}>
-            <img src={programsData[prop.program].pic3} style={{height: '200px', width: '100%', objectFit: 'cover', borderRadius: '10px'}}></img>
+            <img src={programsData[prop.program].pic3} style={{height: '300px', width: '100%', objectFit: 'cover', borderRadius: '10px'}}></img>
         </div>
         <div style={{display: 'flex', flexDirection: 'column'}}>
             <p style={{fontSize: '2rem'}}>{programsData[prop.program].activities}</p>
