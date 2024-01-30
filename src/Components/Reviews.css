@@ -1,22 +1,24 @@
 
 .reviewsContainer {
     display: flex;
+    flex-direction: column;
+    color: white;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(20, 23, 26);
     border-radius: 33px;
     height: 33vh;
     margin-top: 5rem;
 }
   
 .reviews{
-    flex-wrap: nowrap;
-    animation: move 15s infinite linear; /* set the time to what you want of course */
-    font-size: 20px;
-    padding-left:0px;
-    background-color: white;
-    border-radius: 33px;
-    width: 30vw;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 70vw;
     height: 25vh;
     margin: 30px;
 }

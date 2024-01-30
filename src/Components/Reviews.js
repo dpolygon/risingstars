@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
 import './Reviews.css';
+import { FaYelp } from "react-icons/fa";
+import { FaSquareArrowUpRight } from "react-icons/fa6";
+
+
 import reviewData from '../data/reviewsData.json';
 
 export default function Reviews() {
@@ -34,6 +38,7 @@ export default function Reviews() {
     return (
         <div>
             <div className='reviewsContainer'>
+                <p style={{paddingTop: '20px', color: 'grey'}}>Hear from our Parents</p>
                 <div id='rev' className="reviews" 
                 onClick={() => {const urlToOpen = reviewsData.reviews[count].url;
                                 window.open(urlToOpen, '_blank');
@@ -41,7 +46,8 @@ export default function Reviews() {
                     <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
                     <p style={{padding: '8px 20px'}}>{reviewsData.reviews[count].user.name}</p>
                     <p>⭐️⭐️⭐️⭐️⭐️</p>
-                    <p>{reviewsData.reviews[count].text}</p>
+                    <p style={{fontSize: '2rem'}}>{'\"' + reviewsData.reviews[count].text + '\"'}</p>
+                    <p style={{cursor: 'pointer', paddingTop: '20px'}}>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
                 </div>
             </div>
         </div>
