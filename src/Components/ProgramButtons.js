@@ -4,7 +4,7 @@ export default function ProgramButtons(props) {
     const [activeButton, setActiveButton] = useState('Infants');
 
     return (
-        <div style={{display: 'flex', flexDirection: 'row'}}>
+        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
             <ProgramButton 
                 text='Infants' 
                 btnColor='black' 

@@ -10,7 +10,7 @@ export default function ProgramInfo(prop) {
                     flexDirection: 'row', 
                     justifyContent: 'space-between', 
                     marginTop: '50px', 
-                    height: '90vh'
+                    height: '100%'
         }}>
             <InfoLeft program={prop.selectedProgram}/>
             <InfoMiddle program={prop.selectedProgram}/>
@@ -24,11 +24,11 @@ const InfoLeft = (prop) => (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '31.6%'}}>
         <div style={{display: 'flex', flexDirection: 'column', width: '70%'}}>
             <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[prop.program].title}</h1>
-            <p style={{paddingTop: '30px', fontSize: '1rem'}}>{programsData[prop.program].desc1}</p>
+            <p style={{paddingTop: '15px', fontSize: '1rem'}}>{programsData[prop.program].desc1}</p>
         </div>
-        <div>
+        <div style={{paddingTop: '2rem'}}>
             <p style={{fontSize: '2rem'}}>{programsData[prop.program].milestones}</p>
-            <h2 style={{paddingTop: '40px'}}>{programsData[prop.program].mile1}</h2>
+            <h2 style={{paddingTop: '1rem'}}>{programsData[prop.program].mile1}</h2>
             <p className='miles'>{programsData[prop.program].mile1d}</p>
             <h2 className='miles'>{programsData[prop.program].mile2}</h2>
             <p className='miles'>{programsData[prop.program].mile2d}</p>
@@ -49,16 +49,14 @@ const InfoMiddle = (prop) => (
 );
 
 const InfoRight = (prop) => (
-    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%'}}>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'start'}}>
-            <img src={programsData[prop.program].pic3} style={{height: '200px', width: '50%', objectFit: 'cover', borderRadius: '10px'}}></img>
-            <div style={{padding: '8px 15px', borderRadius: '30px', backgroundColor: 'rgb(230, 230, 230)', width: '47%'}}>
-                <p style={{textAlign: 'center'}}>{programsData[prop.program].title2}</p>
-            </div>
+    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%', justifyContent: 'space-between'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'start'}}>
+            <img src={programsData[prop.program].pic3} style={{height: '200px', width: '100%', objectFit: 'cover', borderRadius: '10px'}}></img>
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', paddingTop: '10%'}}>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
             <p style={{fontSize: '2rem'}}>{programsData[prop.program].activities}</p>
-            <h2 style={{paddingTop: '40px'}}>{programsData[prop.program].act1}</h2>
+            <p>{programsData[prop.program].title2}</p>
+            <h2 style={{paddingTop: '1rem'}}>{programsData[prop.program].act1}</h2>
             <p className='acts'>{programsData[prop.program].act1d}</p>
             <h2 className='acts'>{programsData[prop.program].act2}</h2>
             <p className='acts'>{programsData[prop.program].act2d}</p>
