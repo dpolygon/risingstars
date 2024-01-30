@@ -16,7 +16,7 @@ export default function HomeSplash() {
     };
 
     return (
-        <div>
+        <div style={{padding: '3%'}}>
             <div className="titleAreaPMessage">
                 <div className="titleArea">
                     <h1 className="companyName">Rising Stars Bilingual Learning Center</h1>

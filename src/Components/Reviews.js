@@ -4,7 +4,6 @@ import './Reviews.css';
 import { FaYelp } from "react-icons/fa";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 
-
 import reviewData from '../data/reviewsData.json';
 
 export default function Reviews() {
@@ -36,7 +35,7 @@ export default function Reviews() {
     }, []);
 
     return (
-        <div>
+        <div style={{padding: '3%'}}>
             <div className='reviewsContainer'>
                 <p style={{paddingTop: '20px', color: 'grey'}}>Hear from our Parents</p>
                 <div id='rev' className="reviews" 
