@@ -1,0 +1,36 @@
+
+.reviewsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 33px;
+    height: 33vh;
+    margin-top: 5rem;
+}
+  
+.reviews{
+    flex-wrap: nowrap;
+    animation: move 15s infinite linear; /* set the time to what you want of course */
+    font-size: 20px;
+    padding-left:0px;
+    background-color: white;
+    border-radius: 33px;
+    width: 30vw;
+    height: 25vh;
+    margin: 30px;
+}
+
+.blurReview{
+    animation: blur-layer 10s infinite
+}
+
+@keyframes blur-layer {
+    0% { filter: blur(30px); }
+    1% { filter: blur(1px); }
+    2% { filter: blur(0px); }
+    50% { filter: blur(0px); }
+    98% {filter: blur(0px); }
+    99% { filter: blur(1px); }
+    100% { filter: blur(30px); }
+}
