@@ -1,12 +1,14 @@
+import './home.css'
+
 import React, { useState } from 'react'
-import { FaChildren } from "react-icons/fa6";
+import { PiBooksDuotone } from "react-icons/pi";
+
 
 import HomeSplash from '../Components/HomeSplash';
 import AboutUs from '../Components/AboutUs';
 import ProgramButtons from '../Components/ProgramButtons';
 import ProgramInfo from '../Components/ProgramInfo';
-
-import './home.css'
+import OurValues from '../Components/OurValues';
 import Reviews from '../Components/Reviews';
 import Footer from '../Components/Footer';
 
@@ -22,12 +24,12 @@ function Home() {
 
                 <div className='programs' style={{padding: '3%'}}>
                     <div className='programsTop'>
-                        <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <FaChildren style={{paddingLeft: '20px'}} /></h1>
+                        <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <PiBooksDuotone style={{paddingLeft: '20px'}} /></h1>
                         <ProgramButtons setProgram={setProgram}/>
                     </div>
                     <ProgramInfo selectedProgram={program}/>
                 </div>
-
+                <OurValues/>
                 <Reviews/>
                 <Footer/>
             </div>
