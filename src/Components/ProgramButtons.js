@@ -18,7 +18,6 @@ export default function ProgramButtons(props) {
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
-
             />
             <ProgramButton 
                 text='Early Preschool' 
@@ -26,7 +25,6 @@ export default function ProgramButtons(props) {
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
-
             />
             <ProgramButton 
                 text='Preschool' 
@@ -34,7 +32,6 @@ export default function ProgramButtons(props) {
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
-
             />
         </div>
     );
