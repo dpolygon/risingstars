@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'OEGP';
+    src: local('OEFP'), url('../fonts/oldEnglishGothicPixel.ttf') format('truetype');
+}
+
+.logo{
+    font-family: 'Vollkorn';
+    font-optical-sizing: auto;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 700;
+}

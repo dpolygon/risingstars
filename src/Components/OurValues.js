@@ -9,7 +9,14 @@ import { RiLightbulbFlashLine } from "react-icons/ri";
 export default function OurValues() {
   return (
     <div style={{padding: '3%'}}>
-        <h1 style={{fontSize: '5rem'}}>Our Values</h1>
+        <h1 style={{textAlign: 'center', fontSize: '5rem'}}>Our Values</h1>
+        <p style={{fontSize: '1.5rem', paddingTop: '2rem', textAlign: 'center'}}>
+            At Rising Stars, we are dedicated to caring for the whole child. Our diverse community includes children, 
+            families, and teachers from various countries and walks of life. Each day presents a valuable opportunity 
+            for exploration, making friends, and personal growth. Our committed teachers are here to support and nurture 
+            your child's development in every aspect—cognitive, social, emotional, and physical—making every day a meaningful 
+            step in their journey.
+        </p>
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '2rem'}}>
             <ValueCell 
                 imageUrl='./images/homepagephotos/curiosity.jpg'
@@ -30,7 +37,6 @@ export default function OurValues() {
                 desc="Through our programs, we ignite a passion for discovery, fostering a lifelong love of learning."
             />
         </div>
-        <p style={{fontSize: '1.5rem', paddingTop: '2rem', textAlign: 'center'}}>Every day is an opportunity to explore, make friends, and grow. Our teachers support and nurture your child’s cognitive, social, emotional, and physical development.</p>
     </div>
   )
 }
@@ -39,7 +45,7 @@ const ValueCell = (props) => (
     <div style={{
         borderRadius: '50px',
         height: '40vh',
-        width: '40vh',
+        width: '30%',
         backgroundImage: "url(" + props.imageUrl + ")",
         backgroundSize: 'cover'
     }}>
@@ -50,8 +56,8 @@ const ValueCell = (props) => (
             justifyContent: 'center',
             color: 'white',
             borderRadius: '50px',
-            height: '40vh',
-            width: '40vh',
+            height: '100%',
+            width: '100%',
             padding: '16%',
             WebkitBackdropFilter: 'brightness(40%) saturate(200%)',
         }}>
