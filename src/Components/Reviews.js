@@ -36,8 +36,8 @@ export default function Reviews() {
 
     return (
         <div style={{padding: '3%'}}>
+            <h1 style={{marginBottom: '1rem', textAlign: 'center', fontSize: '5rem'}}>Hear from our Parents</h1>
             <div className='reviewsContainer'>
-                <p style={{paddingTop: '20px', color: 'grey'}}>Hear from our Parents</p>
                 <div id='rev' className="reviews" 
                 onClick={() => {const urlToOpen = reviewsData.reviews[count].url;
                                 window.open(urlToOpen, '_blank');
