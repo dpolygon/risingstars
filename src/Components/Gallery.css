@@ -1,0 +1,9 @@
+.kidsImages {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 4px;
+    z-index: 2;
+    position: relative;
+}

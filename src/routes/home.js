@@ -11,6 +11,7 @@ import ProgramInfo from '../Components/ProgramInfo';
 import OurValues from '../Components/OurValues';
 import Reviews from '../Components/Reviews';
 import Footer from '../Components/Footer';
+import Gallery from '../Components/Gallery';
 
 function Home() {
     const [program, setProgram] = useState('Infants');
@@ -21,7 +22,7 @@ function Home() {
             <div className='home'>
                 <HomeSplash/>
                 <AboutUs/>
-
+                <Gallery/>
                 <div className='programs' style={{padding: '3%'}}>
                     <div className='programsTop'>
                         <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', fontSize: '5rem'}}>OUR PROGRAMS <PiBooksDuotone style={{paddingLeft: '20px'}} /></h1>

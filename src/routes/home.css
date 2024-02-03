@@ -3,7 +3,8 @@
     background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 175vh;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -15,55 +16,11 @@
     position: relative;
     z-index: 2;
 }
-  
-.titleAreaPMessage {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    margin-top: -100px;
-    position: relative;
-    z-index: 2;
-}
-
-.messageTitle {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.companyName {
-    font-stretch: expanded;
-    font-size: 7rem;
-    padding-right: 10%;
-    font-weight: 500;
-}
 
 .smallText {
     color: rgba(255, 255, 255, 0.75);
     font-size: 1rem;
     padding-top: 1rem;
-}
-
-.kidsImages {
-    height: 250px;
-    width: 250px;
-    border-radius: 20px;
-    object-fit: cover;
-    padding: 4px;
-    margin-bottom: 60px;
-    margin-top: 240px;
-    z-index: 2;
-    position: relative;
-}
-
-.teacherImages {
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: -30px;
 }
 
 .programsTop {
