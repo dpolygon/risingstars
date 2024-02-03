@@ -1,0 +1,21 @@
+.titleArea {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.messageTitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.companyName {
+    font-stretch: expanded;
+    font-size: 7rem;
+    padding-right: 10%;
+    font-weight: 500;
+}
