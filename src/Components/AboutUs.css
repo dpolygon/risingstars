@@ -67,6 +67,10 @@
     padding-left: 60px;
 }
 
+.video {
+    width: 50%;
+}
+
 @media screen and (max-width: 870px) {
     .aboutUsTop {
         flex-direction: column;
@@ -85,6 +89,7 @@
     }
 
     .video {
+        width: 100%;
         margin-top: 2rem;
         vertical-align: middle;
     }
