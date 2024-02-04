@@ -36,8 +36,16 @@
     justify-content: space-between;
 }
 
+.programTitle {
+    font-size: 5rem;
+}
+
 @media screen and (max-width: 1200px) {
     .programsTop {
         flex-direction: column;
+    }
+
+    .programTitle {
+        font-size: 4.7rem;
     }
 }

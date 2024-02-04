@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import './ProgramButtons.css'
+
 export default function ProgramButtons(props) {
     const [activeButton, setActiveButton] = useState('Infants');
 
@@ -38,7 +40,7 @@ export default function ProgramButtons(props) {
 }
 
 const ProgramButton = (props) => (
-    <div 
+    <div className='progButtons'
         style={{
             display: 'flex',
             alignItems: 'center', 
@@ -47,7 +49,6 @@ const ProgramButton = (props) => (
             border: '1px solid var(--primary)',
             padding: '8px 20px',
             borderRadius: '33px',
-            margin: '10px',
             cursor: 'pointer'
         }}
         onClick = {() => {props.setActiveButton(props.text); 

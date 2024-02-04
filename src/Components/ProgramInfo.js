@@ -6,12 +6,7 @@ import programsData from '../data/programsData.json'
 export default function ProgramInfo(prop) {
 
     return (
-        <div style={{display: 'flex', 
-                    flexDirection: 'row', 
-                    justifyContent: 'space-between', 
-                    marginTop: '50px', 
-                    height: '100%',
-        }}>
+        <div className='progInfo'>
             <InfoLeft program={prop.selectedProgram}/>
             <InfoMiddle program={prop.selectedProgram}/>
             <InfoRight program={prop.selectedProgram}/>
@@ -21,7 +16,7 @@ export default function ProgramInfo(prop) {
 }
 
 const InfoLeft = (prop) => (
-    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '31.6%'}}>
+    <div className='infoL' style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
         <div style={{display: 'flex', flexDirection: 'column', width: '70%'}}>
             <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[prop.program].title}</h1>
             <p style={{paddingTop: '15px', fontSize: '1rem'}}>{programsData[prop.program].desc1}</p>
@@ -45,11 +40,11 @@ const InfoLeft = (prop) => (
 );
 
 const InfoMiddle = (prop) => (
-    <img style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[prop.program].pic2}></img>
+    <img className='infoM' style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[prop.program].pic2}></img>
 );
 
 const InfoRight = (prop) => (
-    <div style={{display: 'flex', flexDirection: 'column', width: '26.6%', justifyContent: 'space-evenly'}}>
+    <div className='infoR' style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'start'}}>
             <img src={programsData[prop.program].pic3} style={{height: '300px', width: '100%', objectFit: 'cover', borderRadius: '10px'}}></img>
         </div>

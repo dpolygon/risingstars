@@ -1,0 +1,9 @@
+.progButtons {
+    margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .progButtons {
+        margin: 0px;
+    }
+}

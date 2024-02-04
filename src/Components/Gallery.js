@@ -24,7 +24,7 @@ export default function Gallery() {
 
   return (
     <div style={{padding: '3%'}}>
-        <div style={{display: 'flex', justifyContent: 'center'}}>
+        <div style={{display: 'flex', justifyContent: 'start', overflow: 'auto'}}>
             {renderKids()}
         </div>
     </div>
