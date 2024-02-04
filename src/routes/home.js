@@ -17,23 +17,22 @@ function Home() {
     const [program, setProgram] = useState('Infants');
 
     return (
-        <div id="homesource">
-            <div className='backGround'></div>
-            <div className='home'>
-                <HomeSplash/>
-                <AboutUs/>
-                <Gallery/>
+        <div className='home'>
+            <HomeSplash/>
+            <AboutUs/>
+            <Gallery/>
+            <div style={{paddingTop: '1rem', backgroundColor: 'white', borderTopRightRadius: '33px', borderTopLeftRadius: '33px'}}>
                 <div className='programs' style={{padding: '3%'}}>
                     <div className='programsTop'>
-                        <h1 className='programTitle'>OUR PROGRAMS<PiBooksDuotone/></h1>
+                        <h1 className='programTitle'>OUR PROGRAMS<PiBooksDuotone/></h1>                        
                         <ProgramButtons setProgram={setProgram}/>
                     </div>
                     <ProgramInfo selectedProgram={program}/>
                 </div>
-                <OurValues/>
-                <Reviews/>
-                <Footer/>
             </div>
+            <OurValues/>
+            <Reviews/>
+            <Footer/>
         </div>
     );
 }

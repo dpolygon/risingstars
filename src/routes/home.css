@@ -1,26 +1,11 @@
-.backGround {
-    background: url('/public/images/titlephoto.webp') center/cover;
-    background-position: top left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 185vh;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-}
-
-@media screen and (max-width: 700px) {
-    .backGround {
-        height: 170vh;
-    }
-}
-
 .home {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 2;
+    background: url('/public/images/titlephoto.webp') center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .smallText {
@@ -42,15 +27,7 @@
     flex-direction: row; 
     align-items: end; 
     justify-content: start; 
-    mix-blend-mode: luminosity;
-    z-index: 3;
-    background-color: transparent;
-}
 
-@media screen and (max-width: 870px) {
-    .backGround {
-        height: 260vh;
-    }
 }
 
 @media screen and (max-width: 1200px) {

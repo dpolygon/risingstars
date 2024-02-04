@@ -8,34 +8,36 @@ import { RiLightbulbFlashLine } from "react-icons/ri";
 
 export default function OurValues() {
   return (
-    <div style={{padding: '3%'}}>
-        <h1 style={{textAlign: 'center', fontSize: '5rem'}}>Our Values</h1>
-        <p style={{fontSize: '1.5rem', paddingTop: '2rem', textAlign: 'center'}}>
-            At Rising Stars, we are dedicated to caring for the whole child. Our diverse community includes children, 
-            families, and teachers from various countries and walks of life. Each day presents a valuable opportunity 
-            for exploration, making friends, and personal growth. Our committed teachers are here to support and nurture 
-            your child's development in every aspect—cognitive, social, emotional, and physical—making every day a meaningful 
-            step in their journey.
-        </p>
-        <div className='cells'>
-            <ValueCell 
-                imageUrl='./images/homepagephotos/curiosity.webp'
-                icon={RiLightbulbFlashLine}
-                value='Curiosity'
-                desc="We celebrate your child's boundless curiosity by nurturing their insatiable desire to explore and discover."
-            />
-            <ValueCell
-                imageUrl='./images/homepagephotos/empathy.webp'
-                icon={FaChildren}
-                value='Empathy'
-                desc="Here, their unique journey is understood, ensuring they feel valued, secure, and cherished."
-            />
-            <ValueCell
-                imageUrl='./images/homepagephotos/explore.webp'
-                icon={IoRocket}
-                value='Exploration'
-                desc="Through our programs, we ignite a passion for discovery, fostering a lifelong love of learning."
-            />
+    <div style={{backgroundColor: 'white'}}>
+        <div style={{padding: '3%'}}>
+            <h1 style={{textAlign: 'center', fontSize: '5rem', color: 'black'}}>Our Values</h1>
+            <p style={{fontSize: '1.5rem', paddingTop: '2rem', textAlign: 'center'}}>
+                At Rising Stars, we are dedicated to caring for the whole child. Our diverse community includes children, 
+                families, and teachers from various countries and walks of life. Each day presents a valuable opportunity 
+                for exploration, making friends, and personal growth. Our committed teachers are here to support and nurture 
+                your child's development in every aspect—cognitive, social, emotional, and physical—making every day a meaningful 
+                step in their journey.
+            </p>
+            <div className='cells'>
+                <ValueCell 
+                    imageUrl='./images/homepagephotos/curiosity.webp'
+                    icon={RiLightbulbFlashLine}
+                    value='Curiosity'
+                    desc="We celebrate your child's boundless curiosity by nurturing their insatiable desire to explore and discover."
+                />
+                <ValueCell
+                    imageUrl='./images/homepagephotos/empathy.webp'
+                    icon={FaChildren}
+                    value='Empathy'
+                    desc="Here, their unique journey is understood, ensuring they feel valued, secure, and cherished."
+                />
+                <ValueCell
+                    imageUrl='./images/homepagephotos/explore.webp'
+                    icon={IoRocket}
+                    value='Exploration'
+                    desc="Through our programs, we ignite a passion for discovery, fostering a lifelong love of learning."
+                />
+            </div>
         </div>
     </div>
   )
