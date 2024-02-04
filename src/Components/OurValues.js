@@ -59,6 +59,7 @@ const ValueCell = (props) => (
             height: '100%',
             width: '100%',
             padding: '16%',
+            backdropFilter: 'brightness(40%) saturate(200%)',
             WebkitBackdropFilter: 'brightness(40%) saturate(200%)',
         }}>
             <props.icon style={{fontSize: '6rem'}}/>
