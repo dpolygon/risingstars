@@ -38,6 +38,13 @@
 
 .programTitle {
     font-size: 5rem;
+    display: flex; 
+    flex-direction: row; 
+    align-items: end; 
+    justify-content: start; 
+    mix-blend-mode: luminosity;
+    z-index: 3;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 870px) {

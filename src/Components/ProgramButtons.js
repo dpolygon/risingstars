@@ -46,7 +46,6 @@ const ProgramButton = (props) => (
             alignItems: 'center', 
             justifyContent: 'center',
             backgroundColor: props.activeButton === props.text ? 'black' : 'rgb(213, 213, 213)',
-            border: '1px solid var(--primary)',
             padding: '8px 20px',
             borderRadius: '33px',
             cursor: 'pointer'

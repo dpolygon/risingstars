@@ -23,7 +23,7 @@ export default function Gallery() {
     };
 
   return (
-    <div style={{padding: '3%'}}>
+    <div style={{padding: '3%', marginTop: '3rem'}}>
         <div style={{display: 'flex', justifyContent: 'start', overflow: 'auto'}}>
             {renderKids()}
         </div>

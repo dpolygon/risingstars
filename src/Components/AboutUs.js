@@ -89,7 +89,7 @@ const RightInfo = () => {
                     </div>
                 </div>
                 <div className='video'>
-                    <video controls autoPlay loop style={{width: '100%', height: '100%', borderRadius: '30px'}}y>
+                    <video controls autoPlay loop style={{width: '100%', borderRadius: '30px'}}y>
                         <source src="videos/video1.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>
