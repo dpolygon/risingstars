@@ -1,7 +1,42 @@
+.progInfo {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-top: 50px; 
+    height: 100%;
+}
+
+.infoL {
+    width: 31.6%;
+}
+
+.infoR {
+    width: 26.6%;
+}
+
 .miles {
     padding-top: 15px;
 }
 
 .acts {
     padding-top: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .progInfo {
+        flex-direction: column;
+    }
+
+    .infoL {
+        width: auto;
+    }
+
+    .infoM {
+        visibility: hidden;
+        display: none;
+    }
+
+    .infoR {
+        width: auto;
+    }
 }

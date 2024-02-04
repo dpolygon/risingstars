@@ -25,7 +25,7 @@ function Home() {
                 <Gallery/>
                 <div className='programs' style={{padding: '3%'}}>
                     <div className='programsTop'>
-                        <h1 style={{display: 'flex', flexDirection: 'row', alignItems: 'end', justifyContent: 'start', fontSize: '5rem'}}>OUR PROGRAMS<PiBooksDuotone/></h1>
+                        <h1 className='programTitle' style={{display: 'flex', flexDirection: 'row', alignItems: 'end', justifyContent: 'start'}}>OUR PROGRAMS<PiBooksDuotone/></h1>
                         <ProgramButtons setProgram={setProgram}/>
                     </div>
                     <ProgramInfo selectedProgram={program}/>
