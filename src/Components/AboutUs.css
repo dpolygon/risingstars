@@ -27,6 +27,7 @@
     flex-direction: column;
     max-width: 200px;
     margin-right: 40px;
+    padding-bottom: 1rem;
 }
 
 .daycareDataTitle {
@@ -49,16 +50,42 @@
     margin-top: -30px;
 }
 
+.aboutUsTop {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding-left: 60px;
+}
+
 .aboutUsBottom {
     display: flex; 
     flex-direction: row; 
-    padding-top: 80px; 
+    padding-top: 80px;
+    padding-left: 0px; 
     align-items: center; 
     justify-content: space-between;
+    padding-left: 60px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 870px) {
+    .aboutUsTop {
+        flex-direction: column;
+        margin-top: -1rem;
+    }
+
     .aboutUsBottom {
         flex-direction: column;
+        padding-left: 0px;
+        margin-left: -80px;
+    }
+
+    .aboutUsTeacherArea {
+        visibility: hidden;
+        display: none;
+    }
+
+    .video {
+        margin-top: 2rem;
+        vertical-align: middle;
     }
 }

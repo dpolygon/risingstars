@@ -106,7 +106,8 @@
     left: 100%;
     opacity: 1;
     transition: all 0.5s ease;
-    padding: 20px;
+    padding: 40px;
+    background: linear-gradient(120deg, #4286f4c9, #1ed75fca);
   }
 
   .nav-menu.active {
@@ -114,7 +115,10 @@
     opacity: 1;
     transition: all 0.3s ease;
     z-index: 1;
-    border-radius: 33px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 33px;
   }
 
   .nav-links {
@@ -136,6 +140,7 @@
 
   .nav-item {
     width: 100%;
+    margin-bottom: 1rem;
   }
 
   .navbar-logo {
