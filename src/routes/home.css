@@ -10,6 +10,12 @@
     z-index: 1;
 }
 
+@media screen and (max-width: 700px) {
+    .backGround {
+        height: 170vh;
+    }
+}
+
 .home {
     display: flex;
     flex-direction: column;
@@ -28,4 +34,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .programsTop {
+        flex-direction: column;
+    }
 }

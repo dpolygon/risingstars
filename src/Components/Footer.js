@@ -35,8 +35,8 @@ export default function Footer() {
                     alignItems: 'center'}}>
             <div style={{display: 'flex', flexDirection: 'column'}}>
                 <div style={{marginBottom: '1rem'}}>
-                    <p className='logo'>Rising Stars</p>
-                    <p className='logo'>Bilingual Learning Center</p>
+                    <p className='logoName'>Rising Stars</p>
+                    <p className='logoName'>Bilingual Learning Center</p>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '1rem'}}>
                     <IoLogoFacebook 
