@@ -12,3 +12,35 @@
     font-style: italic;
     font-weight: 700;
 }
+
+.footer {
+    flex-direction: row;
+    height: 25vh; 
+
+}
+
+.footerLinks {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+    .logoName {
+        font-size: 1.2rem;
+    }
+
+    .bttButton {
+        visibility: hidden;
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        height: 50vh;
+    }
+
+    .footerLinks {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

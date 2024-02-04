@@ -4,6 +4,10 @@ import './Footer.css'
 
 import { IoLogoFacebook } from "react-icons/io";
 import { ImYelp } from "react-icons/im";
+import { FaPhone } from "react-icons/fa6";
+import { MdLocationPin } from "react-icons/md";
+
+
 
 import { useNavigate } from 'react-router-dom';
 
@@ -24,12 +28,11 @@ export default function Footer() {
 
     return (
     <div style={{paddingTop: '3rem'}}>
-        <div style={{width: 'auto', 
-                    height: '25vh', 
+        <div    className='footer' 
+                style={{width: 'auto', 
                     background: 'linear-gradient(120deg, #4286f4c9, #1ed75fca)',
                     color: 'white', 
                     display: 'flex', 
-                    flexDirection: 'row', 
                     alignContent: 'center',
                     justifyContent: 'space-evenly', 
                     alignItems: 'center'}}>
@@ -55,7 +58,7 @@ export default function Footer() {
                 </div>
                 <Button/>
             </div>
-            <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div className='footerLinks' style={{display: 'flex'}}>
                 <p style={{fontSize: '1.2rem', marginBottom: '.5rem', cursor: 'pointer'}} onClick={handleAboutClick}>About</p>
                 <p style={{fontSize: '1.2rem', marginBottom: '.5rem', cursor: 'pointer'}} onClick={handleContactClick}>Contact</p>
                 <p style={{fontSize: '1.2rem', cursor: 'pointer'}} onClick={handleVisitUsClick}>Visit Us</p>
@@ -65,10 +68,9 @@ export default function Footer() {
                         onClick={ () => {  const urlToOpen = 'https://goo.gl/maps/QrgCANfTutVutyZa6';
                                         window.open(urlToOpen, '_blank');}
                 }>
-                    <p style={{fontSize: '1.2rem'}}>11406 Conroy Ln</p>
-                    <p style={{fontSize: '1.2rem', marginBottom: '.5rem'}}>Manchaca, Texas</p>
+                <p style={{fontSize: '1.2rem', marginBottom: '1rem'}}><MdLocationPin/> 11406 Conroy Ln Manchaca, Texas</p>
                 </div>
-                <p style={{fontSize: '1.2rem'}}>+1 (737) 226-0768</p>
+                <p style={{fontSize: '1.2rem'}}><FaPhone/> <a href='tel:7372260768'>+1 (737) 226-0768</a></p>
             </div>
         </div>
     </div>
@@ -77,7 +79,7 @@ export default function Footer() {
 
 
 const Button = () => (
-    <div 
+    <div className='bttButton'
         style={{
             backgroundColor: 'transparent',
             border: '1px solid var(--primary)',
