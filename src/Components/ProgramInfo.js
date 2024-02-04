@@ -7,6 +7,7 @@ export default function ProgramInfo(prop) {
 
     return (
         <div className='progInfo'>
+            <img className='infoH' src={programsData[prop.selectedProgram].pic2}/>
             <InfoLeft program={prop.selectedProgram}/>
             <InfoMiddle program={prop.selectedProgram}/>
             <InfoRight program={prop.selectedProgram}/>
@@ -34,7 +35,7 @@ const InfoLeft = (prop) => (
         </div>
         <div style={{display: 'flex', flexDirection: 'column'}}>
             <p style={{fontSize: '1rem'}}>{programsData[prop.program].desc2}</p>
-            <img src={programsData[prop.program].pic1} style={{marginTop: '20px', borderRadius: '10px', objectFit: 'cover', height: '25vh'}}></img>
+            <img className='leftImg' src={programsData[prop.program].pic1} style={{marginTop: '20px', borderRadius: '10px', objectFit: 'cover', height: '25vh'}}></img>
         </div>
     </div>
 );
