@@ -10,7 +10,7 @@ export default function HomeSplash() {
             <div className="titleArea">
                 <img className='logo' src="./images/logo.webp"></img>
                 <div style={{textAlign: 'center', backgroundColor: '#2525259e', backdropFilter: 'blur(12px)', borderRadius: '33px', padding: '1%'}}>
-                    <h1 style={{fontSize: '4rem'}}>Bilingual Learning Center</h1>
+                    <h1 className='blcTitle'>Bilingual Learning Center</h1>
                     <p >Where Little Ones Shine Bright & Smart Futures Begin!</p>
                 </div>
             </div>

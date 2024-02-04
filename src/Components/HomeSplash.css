@@ -10,7 +10,7 @@
 }
 
 .messageTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: white;
 }
@@ -46,7 +46,6 @@
 }
 
 .message {
-    display: block; 
     width: 12%;
     bottom: 5%;
     position: sticky; 
@@ -59,7 +58,17 @@
 
 @media screen and (max-width: 700px) {
     .message {
-      width: 100%;
       bottom: 15%;
+      visibility: hidden;
+    }
+}
+
+.blcTitle {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+    .blcTitle {
+        font-size: 3rem;
     }
 }
