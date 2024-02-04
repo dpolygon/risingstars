@@ -19,19 +19,19 @@ export default function OurValues() {
         </p>
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '2rem'}}>
             <ValueCell 
-                imageUrl='./images/homepagephotos/curiosity.jpg'
+                imageUrl='./images/homepagephotos/curiosity.webp'
                 icon={RiLightbulbFlashLine}
                 value='Curiosity'
                 desc="We celebrate your child's boundless curiosity by nurturing their insatiable desire to explore and discover."
             />
             <ValueCell
-                imageUrl='./images/homepagephotos/empathy.jpg'
+                imageUrl='./images/homepagephotos/empathy.webp'
                 icon={FaChildren}
                 value='Empathy'
                 desc="Here, their unique journey is understood, ensuring they feel valued, secure, and cherished."
             />
             <ValueCell
-                imageUrl='./images/homepagephotos/explore.jpg'
+                imageUrl='./images/homepagephotos/explore.webp'
                 icon={IoRocket}
                 value='Exploration'
                 desc="Through our programs, we ignite a passion for discovery, fostering a lifelong love of learning."

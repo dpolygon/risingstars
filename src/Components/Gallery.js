@@ -10,9 +10,9 @@ export default function Gallery() {
         './images/homepagephotos/play1.webp',
         './images/homepagephotos/play2.webp',
         './images/homepagephotos/play3.webp',
-        './images/homepagephotos/play4.jpg',
-        './images/homepagephotos/play5.jpg',
-        './images/homepagephotos/play6.jpg'
+        './images/homepagephotos/play4.webp',
+        './images/homepagephotos/play5.webp',
+        './images/homepagephotos/play6.webp'
     ];
 
     // Function to render images
