@@ -79,7 +79,7 @@ const RightInfo = () => {
                     <p className='smallText'>Children Empowered: Receiving top-tier care and education at our esteemed daycare.</p>
                 </div>
             </div>
-            <div style={{display: 'flex', flexDirection: 'row', paddingTop: '80px', alignItems: 'center', justifyContent: 'space-between'}}>
+            <div className='aboutUsBottom'>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     <div style={{maxWidth: '600px'}}>
                         <h1 className='expertsTitle'>EXPERTS IN CHILDHOOD EDUCATION</h1>

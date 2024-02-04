@@ -48,3 +48,17 @@
     border-radius: 50%;
     margin-top: -30px;
 }
+
+.aboutUsBottom {
+    display: flex; 
+    flex-direction: row; 
+    padding-top: 80px; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+    .aboutUsBottom {
+        flex-direction: column;
+    }
+}

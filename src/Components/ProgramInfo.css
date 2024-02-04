@@ -11,6 +11,7 @@
     object-fit: cover;
     visibility: hidden;
     display: none;
+    height: 40vh;
 }
 
 .infoL {
