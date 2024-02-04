@@ -5,7 +5,7 @@
     src: local('OEFP'), url('../fonts/oldEnglishGothicPixel.ttf') format('truetype');
 }
 
-.logo{
+.logoName{
     font-family: 'Vollkorn';
     font-optical-sizing: auto;
     font-size: 1.4rem;
