@@ -4,7 +4,6 @@ import './AboutUs.css'
 
 import { Button } from '../Components/Button';
 import { useNavigate } from 'react-router-dom';
-import { PiArrowSquareUpRightBold } from "react-icons/pi";
 import { IoIosArrowUp } from "react-icons/io";
 
 export default function AboutUs() {
@@ -60,10 +59,10 @@ const RightInfo = () => {
     };
     
     return (
-        <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '60px'}}>
-            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div className='aboutUsTop'>
                 <div className='daycareData'>
-                    <h1 className='daycareDataTitle'>4</h1>
+                    <h1 className='daycareDataTitle'>5</h1>
                     <p className='smallText'>Classrooms, tailored learning environments designed for each developmental stage.</p>
                 </div>
                 <div className='daycareData'>
@@ -80,16 +79,16 @@ const RightInfo = () => {
                 </div>
             </div>
             <div className='aboutUsBottom'>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
+                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'start'}}>
                     <div style={{maxWidth: '600px'}}>
                         <h1 className='expertsTitle'>EXPERTS IN CHILDHOOD EDUCATION</h1>
                         <p className='smallText'>Our seasoned team is devoted to providing an enriching educational experience, ensuring your child receives top-notch care and learning tailored to their individual needs.</p>
                     </div>
-                    <div style={{paddingTop: '40px', paddingBottom: '40px', width: '50%'}}>
-                        <Button buttonSize='btn-large' buttonStyle={'btn-outline'} onClick={handleVisitUs}>Learn More Visit Us <PiArrowSquareUpRightBold /></Button>
+                    <div style={{paddingTop: '40px', width: '70%'}}>
+                        <Button buttonSize='btn-large' buttonStyle={'btn-outline'} onClick={handleVisitUs}>Book A Tour</Button>
                     </div>
                 </div>
-                <div style={{width: '40%'}}>
+                <div className='video'>
                     <video controls autoPlay loop style={{width: '100%', height: '100%', borderRadius: '30px'}}y>
                         <source src="videos/video1.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.

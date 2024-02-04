@@ -40,6 +40,12 @@
     font-size: 5rem;
 }
 
+@media screen and (max-width: 870px) {
+    .backGround {
+        height: 260vh;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .programsTop {
         flex-direction: column;
