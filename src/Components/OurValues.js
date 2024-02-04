@@ -17,7 +17,7 @@ export default function OurValues() {
             your child's development in every aspect—cognitive, social, emotional, and physical—making every day a meaningful 
             step in their journey.
         </p>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', marginTop: '2rem'}}>
+        <div className='cells'>
             <ValueCell 
                 imageUrl='./images/homepagephotos/curiosity.webp'
                 icon={RiLightbulbFlashLine}
@@ -42,10 +42,7 @@ export default function OurValues() {
 }
 
 const ValueCell = (props) => (
-    <div style={{
-        borderRadius: '50px',
-        height: '40vh',
-        width: '30%',
+    <div className='valueCell' style={{
         backgroundImage: "url(" + props.imageUrl + ")",
         backgroundSize: 'cover'
     }}>

@@ -12,6 +12,7 @@
 .messageTitle {
     font-size: 2rem;
     font-weight: 400;
+    color: white;
 }
 
 .companyName {
@@ -19,4 +20,46 @@
     font-size: 7rem;
     padding-right: 10%;
     font-weight: 500;
+}
+
+.arrow {
+    bottom: 5%; 
+    width: 100%;
+    vertical-align: middle;
+    position: sticky; 
+    color: white; 
+    font-size: 3rem;
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+    margin-bottom: -50px;
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+      width: 90%;
+      height: auto;
+      margin-bottom: -25px;
+    }
+}
+
+.message {
+    display: block; 
+    width: 12%;
+    bottom: 5%;
+    position: sticky; 
+    background-color: #2525259e; 
+    backdrop-filter: blur(3px); 
+    border-radius: 33px; 
+    padding: 1%; 
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .message {
+      width: 100%;
+      bottom: 15%;
+    }
 }
