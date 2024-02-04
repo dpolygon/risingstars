@@ -64,11 +64,12 @@ export default function Footer() {
                 <p style={{fontSize: '1.2rem', cursor: 'pointer'}} onClick={handleVisitUsClick}>Visit Us</p>
             </div>
             <div>
-                <div    style={{cursor: 'pointer'}}
+                <div    style={{display: 'flex', flexDirection: 'column', cursor: 'pointer', marginBottom: '1rem', justifyContent: 'end'}}
                         onClick={ () => {  const urlToOpen = 'https://goo.gl/maps/QrgCANfTutVutyZa6';
                                         window.open(urlToOpen, '_blank');}
                 }>
-                <p style={{fontSize: '1.2rem', marginBottom: '1rem'}}><MdLocationPin/> 11406 Conroy Ln Manchaca, Texas</p>
+                    <p style={{fontSize: '1.2rem'}}><MdLocationPin/> 11406 Conroy Ln</p>
+                    <p style={{fontSize: '1.2rem'}}>Manchaca, Texas</p>
                 </div>
                 <p style={{fontSize: '1.2rem'}}><FaPhone/> <a href='tel:7372260768'>+1 (737) 226-0768</a></p>
             </div>
