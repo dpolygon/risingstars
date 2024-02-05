@@ -9,10 +9,12 @@ import { IoIosArrowUp } from "react-icons/io";
 export default function AboutUs() {
 
     return (
-        <div style={{padding: '3%'}}>
-            <div className="aboutUsContainer">
-                <LeftInfo/>
-                <RightInfo/>
+        <div style={{WebkitBackdropFilter: 'brightness(50%)', backdropFilter: 'brightness(50%)'}}>
+            <div style={{padding: '3%'}}>
+                <div className="aboutUsContainer">
+                    <LeftInfo/>
+                    <RightInfo/>
+                </div>
             </div>
         </div>
     );
@@ -63,19 +65,19 @@ const RightInfo = () => {
             <div className='aboutUsTop'>
                 <div className='daycareData'>
                     <h1 className='daycareDataTitle'>5</h1>
-                    <p className='smallText'>Classrooms, tailored learning environments designed for each developmental stage.</p>
+                    <p className='daycareDataDesc'>Classrooms, tailored learning environments designed for each developmental stage.</p>
                 </div>
                 <div className='daycareData'>
                     <h1 className='daycareDataTitle'>6</h1>
-                    <p className='smallText'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
+                    <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
                 </div>
                 <div className='daycareData'>
                     <h1 className='daycareDataTitle'>8+</h1>
-                    <p className='smallText'>Years of dedicated trusted care and early childhood education since establishment</p>
+                    <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
                 </div>
                 <div className='daycareData'>
                     <h1 className='daycareDataTitle'>2500+</h1>
-                    <p className='smallText'>Children Empowered: Receiving top-tier care and education at our esteemed daycare.</p>
+                    <p className='daycareDataDesc'>Children Empowered: Receiving top-tier care and education at our esteemed daycare.</p>
                 </div>
             </div>
             <div className='aboutUsBottom'>

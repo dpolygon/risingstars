@@ -37,17 +37,17 @@ export default function Reviews() {
     return (
         <div style={{backgroundColor: 'white'}}>
             <div style={{padding: '3%'}}>
-                <h1 style={{marginBottom: '1rem', textAlign: 'center', fontSize: '5rem'}}>Hear from our Parents</h1>
+                <h1 className='reviewsTitle'>Hear from our Parents</h1>
                 <div className='reviewsContainer'>
                     <div id='rev' className="reviews" 
                     onClick={() => {const urlToOpen = reviewsData.reviews[count].url;
                                     window.open(urlToOpen, '_blank');
                     }}>
                         <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
-                        <p style={{padding: '8px 20px'}}>{reviewsData.reviews[count].user.name}</p>
+                        <p className='reviewName' style={{padding: '8px 20px'}}>{reviewsData.reviews[count].user.name}</p>
                         <p>⭐️⭐️⭐️⭐️⭐️</p>
                         <p style={{fontSize: '2rem'}}>{'\"' + reviewsData.reviews[count].text + '\"'}</p>
-                        <p style={{cursor: 'pointer', paddingTop: '20px'}}>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
+                        <p className='readMore' style={{cursor: 'pointer', paddingTop: '20px'}}>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
                     </div>
                 </div>
             </div>
