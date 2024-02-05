@@ -1,8 +1,8 @@
-.progInfo {
+.progInfoMain {
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
-    margin-top: 50px; 
+    margin-top: 3rem; 
     height: 100%;
 }
 
@@ -23,19 +23,21 @@
 }
 
 .miles {
-    padding-top: 15px;
+    padding-bottom: 2vh;
 }
 
 .acts {
-    padding-top: 15px;
+    padding-bottom: 2vh;
 }
 
 @media screen and (max-width: 700px) {
-    .progInfo {
+    .progInfoMain {
         flex-direction: column;
     }
 
     .infoH {
+        margin-top: 4vh;
+        width: 100%;
         visibility: visible;
         display: block;
     }
@@ -56,5 +58,6 @@
 
     .infoR {
         width: auto;
+        padding-top: 4rem;
     }
 }

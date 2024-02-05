@@ -11,7 +11,7 @@ export default function OurValues() {
     <div style={{backgroundColor: 'white'}}>
         <div style={{padding: '3%'}}>
             <h1 style={{textAlign: 'center', fontSize: '5rem', color: 'black'}}>Our Values</h1>
-            <p style={{fontSize: '1.5rem', paddingTop: '2rem', textAlign: 'center'}}>
+            <p style={{fontSize: '1rem', paddingTop: '2rem', textAlign: 'center'}}>
                 At Rising Stars, we are dedicated to caring for the whole child. Our diverse community includes children, 
                 families, and teachers from various countries and walks of life. Each day presents a valuable opportunity 
                 for exploration, making friends, and personal growth. Our committed teachers are here to support and nurture 

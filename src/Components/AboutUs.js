@@ -81,8 +81,8 @@ const RightInfo = () => {
             <div className='aboutUsBottom'>
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'start'}}>
                     <div style={{maxWidth: '600px'}}>
-                        <h1 className='expertsTitle'>EXPERTS IN CHILDHOOD EDUCATION</h1>
-                        <p className='smallText'>Our seasoned team is devoted to providing an enriching educational experience, ensuring your child receives top-notch care and learning tailored to their individual needs.</p>
+                        <h1 className='expertsTitle'>OUR COMPREHENSIVE CURRICULUM</h1>
+                        <p className='expertsDesc'>Encompasses both English and Spanish language proficiency. We nurture giggles and growth in all aspects social, physical, emotional, and cognitive, ensuring your little one is kindergarten-ready. Our goal is that each kid leave with a pocketful of skills, ready to blossom into someone who sparkles in every situation, always eager to learn more and more. 🌟📚</p>
                     </div>
                     <div style={{paddingTop: '40px', width: '70%'}}>
                         <Button buttonSize='btn-large' buttonStyle={'btn-outline'} onClick={handleVisitUs}>Book A Tour</Button>
