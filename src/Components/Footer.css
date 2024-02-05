@@ -6,20 +6,33 @@
 }
 
 .logoName{
-    font-family: 'Vollkorn';
-    font-optical-sizing: auto;
-    font-size: 1.4rem;
-    font-style: italic;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
 .footer {
+    padding: 3%; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
     flex-direction: row;
     height: 25vh; 
-
+    width: auto;
+    color: white; 
+    align-content: center;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-.footerLinks {
+.rightFooter {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.footerContact {
+    font-size: 1.2rem;
+    display: flex;
     flex-direction: column;
 }
 
@@ -33,14 +46,23 @@
         display: none;
     }
 
+    .logoName {
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: center;
+    }
+
     .footer {
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: 50vh;
     }
 
-    .footerLinks {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
+    .rightFooter {
+        vertical-align: middle;   
+    }
+
+    .footerSocialLinks {
+        display: flex;
+        justify-content: center;
     }
 }
