@@ -1,9 +1,9 @@
 {
     "Infants": {
         "title": "Infants",
-        "desc1": "From tender care to developmental milestones, our daycare embraces infants aged 6 weeks to 18 months, providing a nurturing environment where every coo and step is celebrated with warmth and guidance.",
+        "desc1": "From tender care to developmental milestones, our daycare embraces infants aged 6 weeks to 18 months. We focus on your baby’s needs and providing a safe and consistent environment for your baby to grow and learn. Fundamental to your baby’s care is a deep trust in his or her primary caregiver which we actively nurture. Our infant classrooms are set up to help your baby feel attuned to the caregiver, develop fine and gross motor skills, begin language development, and be creative and curious.",
         "desc2": "Cherished beginnings and endless wonder",
-        "pic1": "/images/homepagephotos/infant.webp",
+        "pic1": "/images/homepagephotos/infant3.jpg",
         "pic2": "/images/homepagephotos/infant2.webp",
         "pic3": "/images/homepagephotos/infant3.webp",
         "title2": "Essential Foundations",
@@ -32,11 +32,11 @@
 
     "Toddlers": {
         "title": "Toddlers",
-        "desc1": "Embarking on the journey of exploration and growth, our daycare welcomes toddlers, aged 18 months to 3 years, fostering an environment where each step, each discovery, and each playful moment is cherished, guided, and celebrated with joy and encouragement.",
+        "desc1": "Embarking on the journey of exploration and growth, our daycare welcomes toddlers, aged 18 months to 3 years. Our top priority is to provide a welcoming, trusting, and safe environment for your toddler to explore and learn boundaries with loving guidance from their caregivers. A sense of trust is built between a caregiver and a child naturally. We encourage your child to learn skills independently at their own pace without excessive or unnecessary guidance. We make sure your child’s need for love and growth are met each day.",
         "desc2": "Nurturing a world of endless discoveries and boundless imagination.",
         "pic1": "/images/homepagephotos/toddler1.webp",
         "pic2": "/images/homepagephotos/toddler2.webp",
-        "pic3": "/images/homepagephotos/toddler3.webp",
+        "pic3": "/images/homepagephotos/toddler4.jpg",
         "title2": "Fostering toddler growth",
         "milestones": "Toddler Development Milestones      ",
         "mile1": "Physical Development:",
@@ -63,11 +63,11 @@
 
     "Early Preschool": {
         "title": "Early Preschool",
-        "desc1": "Stepping into the realm of discovery, our daycare warmly welcomes early preschoolers aged 2 to 3 years. In this nurturing haven, every smile, every new adventure, and each milestone achieved is celebrated, fostering a love for learning and growth.",
+        "desc1": "Stepping into the realm of discovery, our daycare warmly welcomes early preschoolers aged 2 to 3 years. Our goal is to provide new experiences that relate to each child’s needs, interests, and developmental level. In the Early Preschool classroom, your child will be interacting with peers in a loving, safe, and friendly environment. We provide experiences that challenge and support each child’s language, social, emotional, physical, and creative development. Everyday your child will have opportunities to create, develop personal interaction skills, and learn problem-solving skills and concepts through hands-on experiences.",
         "desc2": "Fostering a realm of boundless curiosity and endless adventures for our early preschoolers.",
         "pic1": "/images/homepagephotos/epreschool1.webp",
         "pic2": "/images/homepagephotos/epreschool2.webp",
-        "pic3": "/images/homepagephotos/epreschool3.webp",
+        "pic3": "/images/homepagephotos/epreschool4.jpg",
         "title2": "Guiding Early Preschool Explorations",
         "milestones": "Early Preschool Development Milestones",
         "mile1": "Motor Skills:",
@@ -94,9 +94,9 @@
 
     "Preschool": {
         "title": "Preschool",
-        "desc1": "Preparing our preschoolers for their journey to Pre-K, our program embraces children aged 3 to 5 years. With engaging activities, supportive guidance, and a focus on foundational skills, we cultivate an environment where every achievement, every inquisitive moment, and each step towards readiness for Pre-K is joyfully nurtured and celebrated.",
+        "desc1": "Preparing our preschoolers for their journey to Pre-K, our program embraces children aged 3 to 5 years. This is such a special time in your child's development when they're expressing more independence through self-help skills and learning to better navigate their world through play, communication, and socialization. Your child is building skills to be a friend. Our goal is to nurture each unique personality in our class and create an environment in which your child feels safe, happy, and secure to be themselves.",
         "desc2": "Empowering young minds with limitless curiosity and a world of imaginative exploration in our older preschool program.",
-        "pic1": "/images/homepagephotos/preschool1.webp",
+        "pic1": "/images/homepagephotos/preschool1.jpg",
         "pic2": "/images/homepagephotos/preschool2.webp",
         "pic3": "/images/homepagephotos/preschool3.webp",
         "title2": "Fueling Curiosity",
