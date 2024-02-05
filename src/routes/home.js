@@ -21,10 +21,13 @@ function Home() {
             <HomeSplash/>
             <AboutUs/>
             <Gallery/>
-            <div style={{marginTop: '-1.5rem', backgroundColor: 'white', borderTopRightRadius: '33px', borderTopLeftRadius: '33px', zIndex: '3'}}>
-                <div className='programs' style={{padding: '3%'}}>
+            <div style={{marginTop: '-1.5rem', backgroundColor: 'white', paddingBottom: '70px', borderTopRightRadius: '33px', borderTopLeftRadius: '33px', zIndex: '3'}}>
+                <div style={{padding: '3%'}}>
                     <div className='programsTop'>
-                        <h1 className='programTitle'>OUR PROGRAMS<PiBooksDuotone/></h1>                        
+                        <div className='programTitle' style={{display: 'flex', alignItems: 'end'}}>
+                            <h1 className='programTitle'>OUR PROGRAMS</h1>     
+                            <PiBooksDuotone/>                   
+                        </div>
                         <ProgramButtons setProgram={setProgram}/>
                     </div>
                     <ProgramInfo selectedProgram={program}/>

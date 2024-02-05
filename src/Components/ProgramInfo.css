@@ -12,7 +12,8 @@
 }
 
 .progDesc {
-    font-size: 21px;
+    font-size: 24px;
+    font-weight: 600;
     padding-top: 15px;
 }
 
@@ -33,11 +34,18 @@
 }
 
 .miles {
+    font-size: 21px;
+    font-weight: 600;
     padding-bottom: 21px;
+    color: #86868b;
 }
 
 .acts {
+    font-size: 21px;
+    font-weight: 600;
     padding-bottom: 21px;
+    color: #86868b;
+
 }
 
 @media screen and (max-width: 1064px) {
@@ -86,6 +94,6 @@
 
     .infoR {
         width: auto;
-        padding-top: 4rem;
+        padding-top: 3vh;
     }
 }
