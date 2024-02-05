@@ -13,7 +13,7 @@ export default function OurValues() {
             <h1 className='valuesTitle'>Our Values</h1>
             <p className='valuesDesc'>
                 At Rising Stars, we are dedicated to caring for the whole child. Our diverse community includes children, 
-                families, and teachers from various countries and walks of life. Each day presents a valuable opportunity 
+                families, and teachers from various walks of life. Each day presents a valuable opportunity 
                 for exploration, making friends, and personal growth. Our committed teachers are here to support and nurture 
                 your child's development in every aspect—cognitive, social, emotional, and physical—making every day a meaningful 
                 step in their journey.
