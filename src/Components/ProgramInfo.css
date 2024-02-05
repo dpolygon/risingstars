@@ -6,6 +6,16 @@
     height: 100%;
 }
 
+.progTitle {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.progDesc {
+    font-size: 21px;
+    padding-top: 15px;
+}
+
 .infoH {
     border-radius: 10px; 
     object-fit: cover;
@@ -23,16 +33,34 @@
 }
 
 .miles {
-    padding-bottom: 2vh;
+    padding-bottom: 21px;
 }
 
 .acts {
-    padding-bottom: 2vh;
+    padding-bottom: 21px;
+}
+
+@media screen and (max-width: 1064px) {
+    .progTitle {
+        font-size: 64px;
+    }
+
+    .miles {
+        font-size: 17px;
+    }
+
+    .acts {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .progInfoMain {
         flex-direction: column;
+    }
+
+    .progTitle {
+        font-size: 40px;
     }
 
     .infoH {

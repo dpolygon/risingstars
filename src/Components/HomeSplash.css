@@ -32,10 +32,11 @@
 }
 
 .logo {
-    height: 80%;
+    height: 60%;
     width: auto;
     margin-bottom: -50px;
 }
+
 
 @media screen and (max-width: 700px) {
     .logo {
@@ -56,19 +57,31 @@
     text-align: center;
 }
 
+.blcTitle {
+    font-size: 80px;
+}
+
+.blcDesc {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1064px) {
+    .blcTitle {
+        font-size: 64px;
+    }
+
+    .blcDesc {
+        font-size: 19px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .message {
       bottom: 15%;
       visibility: hidden;
     }
-}
 
-.blcTitle {
-    font-size: 4rem;
-}
-
-@media screen and (max-width: 700px) {
     .blcTitle {
-        font-size: 3rem;
+        font-size: 40px;
     }
 }

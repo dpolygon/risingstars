@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #2525259e;
+    background-color: rgb(20, 23, 26);
     border-radius: 12px;
-    backdrop-filter: blur(100px);
     height: auto;
     padding: 40px;
 }
@@ -30,16 +29,21 @@
     padding-bottom: 1rem;
 }
 
+.daycareDataDesc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 21px;
+}
+
 .daycareDataTitle {
-    font-size: 5rem;
+    font-size: 80px;
     font-weight: 400;
     color: white;
 }
 
 .expertsTitle {
     color: white;
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .teacherImages {
@@ -71,16 +75,31 @@
     padding-top: 1rem;
     width: 75%;
     color: rgba(255, 255, 255, 0.8);
+    font-size: 21px;
 }
 
 .video {
     width: 50%;
 }
 
+@media screen and (max-width: 1064px) {
+    .daycareDataTitle {
+        font-size: 64px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .daycareDataTitle {
+        font-size: 40px;
+    }
+
+    .daycareDataDesc {
+        font-size: 17px;
+    }
+}
+
 @media screen and (max-width: 870px) {
     .aboutUsTop {
         flex-direction: column;
-        margin-top: -1rem;
     }
 
     .aboutUsBottom {
@@ -94,7 +113,12 @@
         display: none;
     }
 
+    .expertsTitle {
+        font-size: 40px;
+    }
+
     .expertsDesc {
+        font-size: 17px;
         width: auto;
     }
 

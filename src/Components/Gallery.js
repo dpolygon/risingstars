@@ -23,9 +23,11 @@ export default function Gallery() {
     };
 
   return (
-    <div style={{padding: '3%', marginTop: '3rem', marginBottom: '1rem'}}>
-        <div style={{display: 'flex', justifyContent: 'start', overflow: 'auto'}}>
-            {renderKids()}
+    <div style={{WebkitBackdropFilter: 'brightness(50%)', backdropFilter: 'brightness(50%)'}}>
+        <div style={{padding: '3%', marginTop: '3rem', marginBottom: '3rem'}}>
+            <div style={{display: 'flex', justifyContent: 'start', overflow: 'auto'}}>
+                {renderKids()}
+            </div>
         </div>
     </div>
   )

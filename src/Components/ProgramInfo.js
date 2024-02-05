@@ -9,8 +9,8 @@ export default function ProgramInfo(prop) {
         <div className='progInfo'>
             <img className='infoH' src={programsData[prop.selectedProgram].pic2}/>
             <div style={{display: 'flex', flexDirection: 'column', width: '75%', marginTop: '4vh'}}>
-                <h1 style={{fontSize: '4rem', fontWeight: '600'}}>{programsData[prop.selectedProgram].title}</h1>
-                <p style={{paddingTop: '15px', fontSize: '1rem'}}>{programsData[prop.selectedProgram].desc1}</p>
+                <h1 className='progTitle'>{programsData[prop.selectedProgram].title}</h1>
+                <p className='progDesc'>{programsData[prop.selectedProgram].desc1}</p>
             </div>
             <div className='progInfoMain'>
                 <InfoLeft program={prop.selectedProgram}/>

@@ -21,7 +21,7 @@ function Home() {
             <HomeSplash/>
             <AboutUs/>
             <Gallery/>
-            <div style={{paddingTop: '1rem', backgroundColor: 'white', borderTopRightRadius: '33px', borderTopLeftRadius: '33px'}}>
+            <div style={{marginTop: '-1.5rem', backgroundColor: 'white', borderTopRightRadius: '33px', borderTopLeftRadius: '33px', zIndex: '3'}}>
                 <div className='programs' style={{padding: '3%'}}>
                     <div className='programsTop'>
                         <h1 className='programTitle'>OUR PROGRAMS<PiBooksDuotone/></h1>                        
