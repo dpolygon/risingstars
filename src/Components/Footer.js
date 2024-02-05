@@ -27,7 +27,7 @@ export default function Footer() {
     }
 
     return (
-        <div style={{background: 'linear-gradient(120deg, #4286f4, #1ed75fca)'}}>
+        <div style={{background: 'linear-gradient(120deg, #4286f4, #1ed75fda)'}}>
             <div className='footer'>
                 <div className='rightFooter'>
                     <div style={{marginBottom: '1rem'}}>
