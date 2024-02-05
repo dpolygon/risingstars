@@ -35,7 +35,7 @@ export default function Reviews() {
     }, []);
 
     return (
-        <div style={{backgroundColor: 'white'}}>
+        <div style={{backgroundColor: 'white', paddingTop: '110px', paddingBottom: '70px'}}>
             <div style={{padding: '3%'}}>
                 <h1 className='reviewsTitle'>Hear from our Parents</h1>
                 <div className='reviewsContainer'>
@@ -44,10 +44,10 @@ export default function Reviews() {
                                     window.open(urlToOpen, '_blank');
                     }}>
                         <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
-                        <p className='reviewName' style={{padding: '8px 20px'}}>{reviewsData.reviews[count].user.name}</p>
+                        <p className='reviewName'>{reviewsData.reviews[count].user.name}</p>
                         <p>⭐️⭐️⭐️⭐️⭐️</p>
-                        <p style={{fontSize: '2rem'}}>{'\"' + reviewsData.reviews[count].text + '\"'}</p>
-                        <p className='readMore' style={{cursor: 'pointer', paddingTop: '20px'}}>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
+                        <p className='usrReview'>{'\"' + reviewsData.reviews[count].text + '\"'}</p>
+                        <p className='readMore'>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
                     </div>
                 </div>
             </div>

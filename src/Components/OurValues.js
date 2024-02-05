@@ -8,7 +8,7 @@ import { RiLightbulbFlashLine } from "react-icons/ri";
 
 export default function OurValues() {
   return (
-    <div style={{backgroundColor: 'white'}}>
+    <div style={{backgroundColor: '#f5f5f7', paddingTop: '110px', paddingBottom: '70px'}}>
         <div style={{padding: '3%'}}>
             <h1 className='valuesTitle'>Our Values</h1>
             <p className='valuesDesc'>
@@ -63,7 +63,7 @@ const ValueCell = (props) => (
         }}>
             <props.icon style={{fontSize: '6rem'}}/>
             <h2 style={{borderBottom: '3px solid white', paddingBottom: '1rem'}}>{props.value}</h2>
-            <p style={{paddingTop: '1rem', textAlign: 'center'}}>{props.desc}</p>
+            <p style={{paddingTop: '1rem', textAlign: 'center', fontWeight: '600'}}>{props.desc}</p>
         </div>
     </div>
 );

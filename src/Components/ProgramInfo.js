@@ -8,7 +8,7 @@ export default function ProgramInfo(prop) {
     return (
         <div className='progInfo'>
             <img className='infoH' src={programsData[prop.selectedProgram].pic2}/>
-            <div style={{display: 'flex', flexDirection: 'column', width: '75%', marginTop: '4vh'}}>
+            <div style={{display: 'flex', flexDirection: 'column', width: '75%', marginTop: '3vh'}}>
                 <h1 className='progTitle'>{programsData[prop.selectedProgram].title}</h1>
                 <p className='progDesc'>{programsData[prop.selectedProgram].desc1}</p>
             </div>
@@ -46,7 +46,7 @@ const InfoRight = (prop) => (
         <img src={programsData[prop.program].pic3} style={{height: '300px', objectFit: 'cover', borderRadius: '10px'}}></img>
         <div style={{display: 'flex', flexDirection: 'column', marginTop: '4vh'}}>
             <h1>{programsData[prop.program].activities}</h1>
-            <p>{programsData[prop.program].title2}</p>
+            <p style={{fontWeight: '500'}}>{programsData[prop.program].title2}</p>
             <h3 style={{paddingTop: '1rem'}}>{programsData[prop.program].act1}</h3>
             <p className='acts'>{programsData[prop.program].act1d}</p>
             <h3>{programsData[prop.program].act2}</h3>

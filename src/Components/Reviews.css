@@ -1,15 +1,29 @@
 .reviewsTitle {
     font-size: 80px;
+    font-weight: 700;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .reviewName {
-    font-size: 21px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.usrReview {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 1rem;
 }
 
 .readMore {
     font-size: 21px;
+    font-weight: 600;
+    cursor: pointer; 
+    padding-top: 20px; 
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .reviewsContainer {
@@ -21,6 +35,7 @@
     background-color: rgb(20, 23, 26);
     border-radius: 33px;
     height: 40vh;
+    margin-top: 4vh;
 }
   
 .reviews{
@@ -30,7 +45,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    width: 70vw;
+    width: 70%;
     height: auto;
     margin: 30px;
 }
@@ -62,6 +77,10 @@
         font-size: 17px;
     }
 
+    .usrReview {
+        font-size: 24px;
+    }
+
     .readMore {
         font-size: 17px;
     }
@@ -70,5 +89,9 @@
 @media screen and (max-width: 1064px) {
     .reviewsTitle {
         font-size: 64px;
+    }
+
+    .usrReview {
+        font-size: 32px;
     }
 }

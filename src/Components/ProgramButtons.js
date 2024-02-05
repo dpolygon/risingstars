@@ -53,6 +53,6 @@ const ProgramButton = (props) => (
         onClick = {() => {props.setActiveButton(props.text); 
                         props.setPrograms(props.text)}}
     >
-        <p style={{color: 'white', fontSize: '20px'}}>{props.text}</p>
+        <p  className='progBttnText'>{props.text}</p>
     </div>
 );
