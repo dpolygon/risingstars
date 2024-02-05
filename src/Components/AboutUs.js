@@ -9,7 +9,7 @@ import { IoIosArrowUp } from "react-icons/io";
 export default function AboutUs() {
 
     return (
-        <div style={{WebkitBackdropFilter: 'brightness(50%)', backdropFilter: 'brightness(50%)'}}>
+        <div style={{WebkitBackdropFilter: 'brightness(50%)', backdropFilter: 'brightness(50%)', paddingBottom: '70px'}}>
             <div style={{padding: '3%'}}>
                 <div className="aboutUsContainer">
                     <LeftInfo/>

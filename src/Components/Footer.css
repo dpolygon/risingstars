@@ -30,8 +30,17 @@
     width: auto;
 }
 
+.footerHours {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .footerContact {
-    font-size: 1.2rem;
+    font-size: 17px;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
 }
@@ -53,12 +62,25 @@
     }
 
     .footer {
-        flex-direction: column;
-        height: 50vh;
+        flex-direction: column-reverse;
+        height: 100%;
     }
 
     .rightFooter {
-        vertical-align: middle;   
+        vertical-align: middle; 
+    }
+
+    .footerHours {
+        padding-bottom: 80px;
+    }
+
+    .footerAddy {
+        justify-content: center;
+    }
+
+    .footerContact {
+        padding-bottom: 80px;
+        text-align: center;
     }
 
     .footerSocialLinks {

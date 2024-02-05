@@ -20,7 +20,6 @@ function Home() {
         <div className='home'>
             <HomeSplash/>
             <AboutUs/>
-            <Gallery/>
             <div style={{marginTop: '-1.5rem', backgroundColor: 'white', paddingBottom: '70px', borderTopRightRadius: '33px', borderTopLeftRadius: '33px', zIndex: '3'}}>
                 <div style={{padding: '3%'}}>
                     <div className='programsTop'>
@@ -35,6 +34,7 @@ function Home() {
             </div>
             <OurValues/>
             <Reviews/>
+            <Gallery/>
             <Footer/>
         </div>
     );
