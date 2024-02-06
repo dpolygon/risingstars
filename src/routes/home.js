@@ -4,14 +4,14 @@ import React, { useState } from 'react'
 import { PiBooksDuotone } from "react-icons/pi";
 
 
-import HomeSplash from '../Components/HomeSplash';
-import AboutUs from '../Components/AboutUs';
-import ProgramButtons from '../Components/ProgramButtons';
-import ProgramInfo from '../Components/ProgramInfo';
-import OurValues from '../Components/OurValues';
-import Reviews from '../Components/Reviews';
+import HomeSplash from '../Components/home/HomeSplash';
+import AboutUs from '../Components/home/AboutUs';
+import ProgramButtons from '../Components/home/ProgramButtons';
+import ProgramInfo from '../Components/home/ProgramInfo';
+import OurValues from '../Components/home/OurValues';
+import Reviews from '../Components/home/Reviews';
 import Footer from '../Components/Footer';
-import Gallery from '../Components/Gallery';
+import Gallery from '../Components/home/Gallery';
 
 function Home() {
     const [program, setProgram] = useState('Infants');

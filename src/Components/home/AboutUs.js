@@ -2,7 +2,7 @@ import React from 'react'
 
 import './AboutUs.css'
 
-import { Button } from '../Components/Button';
+import { Button } from '../Button';
 import { useNavigate } from 'react-router-dom';
 import { IoIosArrowUp } from "react-icons/io";
 
