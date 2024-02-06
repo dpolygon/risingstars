@@ -4,7 +4,7 @@ import './Reviews.css';
 import { FaYelp } from "react-icons/fa";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
 
-import reviewData from '../data/reviewsData.json';
+import reviewData from '../../data/reviewsData.json';
 
 export default function Reviews() {
     const [reviewsData, setReviewsData] = useState(reviewData);
