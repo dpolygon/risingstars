@@ -11,14 +11,7 @@
 
 .navbar {
   display: flex;
-  justify-content: center;
   align-items: center;
-  mix-blend-mode: difference;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
   height: 80px;
   width: 100%;
   padding-right: 50px;
@@ -33,6 +26,9 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  mix-blend-mode: difference;
+  position:fixed;
+
 }
 
 .navbar-icon {
@@ -46,6 +42,8 @@
   list-style: none;
   text-align: center;
   justify-content: flex-end;
+  position: fixed;
+  right: 0;
 }
 
 .nav-item {
@@ -141,7 +139,8 @@
 
   .menu-icon {
     display: block;
-    position: absolute;
+    position: fixed;
+    mix-blend-mode: difference;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);

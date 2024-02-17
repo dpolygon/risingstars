@@ -17,7 +17,6 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="nav-wrapper">
           <nav className='navbar'>
-            <div className='navbar-container'>
               <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
                 <FaChild className='navbar-icon'/> rising stars
               </Link>
@@ -51,7 +50,6 @@ function Navbar() {
                   </NavLink>
                 </li>
               </ul>
-            </div>
           </nav>
         </div>
       </IconContext.Provider>
