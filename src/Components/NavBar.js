@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import './NavBar.css'
 
-import { FaChild } from 'react-icons/fa'
+import { RiStarSmileLine } from "react-icons/ri";
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 
@@ -18,7 +18,7 @@ function Navbar() {
         <div className="nav-wrapper">
           <nav className='navbar'>
               <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
-                <FaChild className='navbar-icon'/> rising stars
+                <RiStarSmileLine className='navbar-icon'/> Rising Stars
               </Link>
               <div className="menu-icon" onClick={handleClick}>
                 {click ? <FaTimes /> : <FaBars />}
