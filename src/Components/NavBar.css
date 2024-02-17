@@ -28,7 +28,6 @@
   align-items: center;
   mix-blend-mode: difference;
   position:fixed;
-
 }
 
 .navbar-icon {
@@ -83,10 +82,6 @@
 }
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -94,9 +89,11 @@
     position: absolute;
     top: 80px;
     left: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: all 0.5s ease;
     padding: 40px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     background: linear-gradient(120deg, #4286f4c9, #1ed75fca);
   }
 
@@ -105,8 +102,6 @@
     opacity: 1;
     transition: all 0.3s ease;
     z-index: 1;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     border-bottom-right-radius: 33px;
     border-bottom-left-radius: 33px;
   }
