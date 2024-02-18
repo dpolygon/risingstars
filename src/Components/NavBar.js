@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import './NavBar.css'
 
-import { FaChild } from 'react-icons/fa'
+import { RiStarSmileLine } from "react-icons/ri";
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
 
@@ -15,43 +15,43 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <nav className='navbar'>
-          <div className='navbar-container container'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
-              <FaChild className='navbar-icon'/> rising stars
-            </Link>
-            <div className="menu-icon" onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className='nav-item'>
-                <NavLink to='/' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Home
-                </NavLink>
-              </li>
-              <li className='nav-item'>
-                <NavLink to='/parents' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Parents
-                </NavLink>
-              </li>
-              <li className='nav-item'>
-                <NavLink to='/visit-us' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Visit Us
-                </NavLink>
-              </li>
-              <li className='nav-item'>
-                <NavLink to='/admissions' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Admissions
-                </NavLink>
-              </li>
-              <li className='nav-item'>
-                <NavLink to='/our-team' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                  Our Team
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div className="nav-wrapper">
+          <nav className='navbar'>
+              <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
+                <RiStarSmileLine className='navbar-icon'/> Rising Stars
+              </Link>
+              <div className="menu-icon" onClick={handleClick}>
+                {click ? <FaTimes /> : <FaBars />}
+              </div>
+              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                  <NavLink to='/' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                    Home
+                  </NavLink>
+                </li>
+                <li className='nav-item'>
+                  <NavLink to='/parents' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                    Parents
+                  </NavLink>
+                </li>
+                <li className='nav-item'>
+                  <NavLink to='/visit-us' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                    Visit Us
+                  </NavLink>
+                </li>
+                <li className='nav-item'>
+                  <NavLink to='/admissions' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                    Admissions
+                  </NavLink>
+                </li>
+                <li className='nav-item'>
+                  <NavLink to='/our-team' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                    Our Team
+                  </NavLink>
+                </li>
+              </ul>
+          </nav>
+        </div>
       </IconContext.Provider>
     </>
   )
