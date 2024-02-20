@@ -1,0 +1,20 @@
+.info-splash {
+    padding: 3%;
+    padding-top: calc(80px + 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-splash-title {
+    font-weight: 700;
+    font-size: 80px;
+}
+
+@media screen and (max-width: 900px) {
+    .info-splash-title {
+        font-size: 64px;
+    }
+}
