@@ -87,7 +87,7 @@ const RightInfo = () => {
                         <p className='expertsDesc'>Encompasses both English and Spanish language proficiency. We nurture giggles and growth in all aspects social, physical, emotional, and cognitive, ensuring your little one is kindergarten-ready. Our goal is that each kid leave with a pocketful of skills, ready to blossom into someone who sparkles in every situation, always eager to learn more and more. 🌟📚</p>
                     </div>
                     <div style={{paddingTop: '40px', width: '70%'}}>
-                        <Button buttonSize='btn-large' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour'/>
+                        <Button buttonSize='btn-medium' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour'/>
                     </div>
                 </div>
                 <div className='video'>

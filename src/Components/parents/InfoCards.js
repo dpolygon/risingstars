@@ -2,9 +2,14 @@ import React from 'react'
 
 import './InfoCards.css'
 
-import { Button } from '../Button'
+import Button from '../Button'
 
 export default function InfoCards() {
+
+    const handleHandbookClick = () => {
+
+    }
+
   return (
     <div style={{padding: '3%', paddingTop: '80px'}}>
         <ul className="grid">
@@ -91,6 +96,17 @@ export default function InfoCards() {
             <li className="info-card">
                 <div className='card-content-handbook'>
                     <h2 className='info-card-title'>Have a question? Want to read our handbook? Access it below!</h2>
+                    <div style={{paddingTop: '1rem'}}>
+                        <Button buttonSize='btn-large' buttonStyle='btn-primary' onClick={handleHandbookClick} children='Click Me!'/>
+                    </div>
+                </div>
+            </li>
+            <li className="info-card">
+                <div className='card-content-handbook'>
+                    <h2 className='info-card-title'>Have a question? Want to call or message us instead?</h2>
+                    <div style={{paddingTop: '1rem'}}>
+                        <Button buttonSize='btn-large' buttonStyle='btn-primary' onClick={handleHandbookClick} children='Contact Us'/>
+                    </div>
                 </div>
             </li>
         </ul>
