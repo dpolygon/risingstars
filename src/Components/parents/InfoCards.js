@@ -12,7 +12,7 @@ export default function InfoCards() {
 
   return (
     <div style={{padding: '3%', paddingTop: '80px'}}>
-        <ul className="grid">
+        <ul className="info-grid">
             <li className="info-card">
                 <div className='card-content'>
                     <h2 className='info-card-title'>When are Rising Stars' holiday and scheduled closure dates?</h2>

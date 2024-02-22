@@ -1,0 +1,14 @@
+.teamSplash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    line-height: .8;
+}
+
+@media screen and (max-width: 960px) {
+    .teamSplash {
+        font-size: 160px;
+    }
+}
