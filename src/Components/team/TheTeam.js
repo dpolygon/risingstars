@@ -8,27 +8,42 @@ export default function TheTeam() {
         <div className='teamSplash'>
             <ul className="team-grid">
                 <li className="team-card">
-                    <div className='team-member-card'>
-                        <h2 className='team-card-title'>When are Rising Stars' holiday and scheduled closure dates?</h2>
-                    </div>
-                    <div className='team-member-card2'> 
-                        <p>youre hovering over me :3</p>
-                    </div>
-                </li>
-                <li className="team-card">
-                    <div className='team-member-card'>
-                        <h2 className='team-card-title'>How will parents be informed about bad weather closures?</h2>
-                    </div>
-                    <div className='team-member-card2'> 
-                        <p>youre hovering over me :3</p>
+                    <div style={{backgroundImage: 'url("./images/ourteam/grisphoto.jpg")', backgroundSize: 'cover', borderRadius: '12px', fontSize: '12px', fontWeight: '600'}} className='team-member-card' >
+                        <div className='team-member-wrapper'>
+                            <div className='team-member-card2'>
+                                <p style={{fontSize: '20px', lineHeight: '1.15'}}>Hello, I'm Griselda Gonzalez, the owner and care provider at Rising Stars. With many years of experience working with children of all age levels, I founded Rising Stars in 2015 to create a bilingual, diverse, and nurturing environment. At Rising Stars, we strive to help young children grow into independent, self-confident, and inquisitive learners.</p>
+                            </div>
+                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 'auto', width: '100%'}}>
+                                <p>Griselda Gonzalez</p>
+                                <p>Early Childhood Educator | Director</p>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li className="team-card">
-                    <div className='team-member-card'>
-                        <h2 className='team-card-title'>Is it okay to bring my child to Rising Stars if they're sick?</h2>
+                    <div style={{backgroundImage: 'url("./images/ourteam/grisphoto.jpg")', backgroundSize: 'cover', borderRadius: '12px', fontSize: '12px', fontWeight: '600'}} className='team-member-card' >
+                        <div className='team-member-wrapper'>
+                            <div className='team-member-card2'>
+                                <p style={{fontSize: '20px', lineHeight: '1.15', mixBlendMode: 'difference'}}>Hello, I'm Griselda Gonzalez, the owner and care provider at Rising Stars. With many years of experience working with children of all age levels, I founded Rising Stars in 2015 to create a bilingual, diverse, and nurturing environment. At Rising Stars, we strive to help young children grow into independent, self-confident, and inquisitive learners.</p>
+                            </div>
+                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 'auto'}}>
+                                <p>Griselda Gonzalez</p>
+                                <p>Early Childhood Educator | Director</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className='team-member-card2'> 
-                        <p>youre hovering over me :3</p>
+                </li>
+                <li className="team-card">
+                    <div style={{backgroundImage: 'url("./images/ourteam/grisphoto.jpg")', backgroundSize: 'cover', borderRadius: '12px', fontSize: '12px', fontWeight: '600'}} className='team-member-card' >
+                        <div className='team-member-wrapper'>
+                            <div className='team-member-card2'>
+                                <p style={{fontSize: '20px', lineHeight: '1.15', mixBlendMode: 'difference'}}>Hello, I'm Griselda Gonzalez, the owner and care provider at Rising Stars. With many years of experience working with children of all age levels, I founded Rising Stars in 2015 to create a bilingual, diverse, and nurturing environment. At Rising Stars, we strive to help young children grow into independent, self-confident, and inquisitive learners.</p>
+                            </div>
+                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 'auto'}}>
+                                <p>Griselda Gonzalez</p>
+                                <p>Early Childhood Educator | Director</p>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
