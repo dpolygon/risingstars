@@ -27,7 +27,6 @@
 
 .team-member-card2 {
     display: none;
-    margin-top: auto;
 }
 
 .team-member-wrapper {
@@ -46,6 +45,7 @@
   
 .team-card:hover .team-member-card2{
     display: flex;
+    text-align: center;
 }
 
 .team-card-title {
