@@ -1,11 +1,15 @@
 import react from 'react'
 
-function OurTeam() {
+import './ourteam.css'
+
+import TeamSplash from '../Components/team/TeamSplash';
+import TheTeam from '../Components/team/TheTeam';
+
+export default function OurTeam() {
     return (
         <div className='OurTeam'>
-            <h1>Our Team</h1>
+            <TeamSplash/>
+            <TheTeam/>
         </div>
     );
 }
-
-export default OurTeam;

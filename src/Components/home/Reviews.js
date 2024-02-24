@@ -46,7 +46,7 @@ export default function Reviews() {
                         <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
                         <p className='reviewName'>{reviewsData.reviews[count].user.name}</p>
                         <p>⭐️⭐️⭐️⭐️⭐️</p>
-                        <p className='usrReview'>{'\"' + reviewsData.reviews[count].text + '\"'}</p>
+                        <p className='usrReview'>{'"' + reviewsData.reviews[count].text + '"'}</p>
                         <p className='readMore'>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
                     </div>
                 </div>
