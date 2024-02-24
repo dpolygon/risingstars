@@ -73,24 +73,24 @@ const RightInfo = () => {
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div className='aboutUsTop'>
-                <div className='daycareData'>
+            <ul className='aboutUsTop'>
+                <li className='daycareData'>
                     <h1 className='daycareDataTitle'>5</h1>
                     <p className='daycareDataDesc'>Classrooms, tailored learning environments designed for each developmental stage.</p>
-                </div>
-                <div className='daycareData'>
+                </li>
+                <li className='daycareData'>
                     <h1 className='daycareDataTitle'>6</h1>
                     <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
-                </div>
-                <div className='daycareData'>
+                </li>
+                <li className='daycareData'>
                     <h1 className='daycareDataTitle'>8+</h1>
                     <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
-                </div>
-                <div className='daycareData'>
+                </li>
+                <li className='daycareData'>
                     <h1 className='daycareDataTitle'>2500+</h1>
                     <p className='daycareDataDesc'>Children Empowered: Receiving top-tier care and education at our esteemed daycare.</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     )
 };

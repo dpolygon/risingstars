@@ -58,8 +58,9 @@
 }
 
 .aboutUsTop {
-    display: flex;
-    flex-direction: row; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 2rem;
     justify-content: space-between;
 }
 
