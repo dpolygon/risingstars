@@ -67,7 +67,7 @@
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
-    align-items: center; 
+    align-items: flex-start; 
     padding-bottom: 90px;
 }
 
@@ -85,9 +85,23 @@
     height: auto;
 }
 
+@media screen and (max-width: 1300px) {
+    .aboutUsBottom {
+        flex-direction: column;
+    }
+
+    .video {
+        margin-top: 70px;
+    }
+}
+
 @media screen and (max-width: 1064px) {
     .daycareDataTitle {
         font-size: 64px;
+    }
+
+    .aboutUsBottom {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 700px) {
@@ -106,6 +120,7 @@
     }
 
     .aboutUsBottom {
+        padding-top: 70px;
         flex-direction: column;
     }
 
