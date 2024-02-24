@@ -16,6 +16,7 @@ import Parents from './routes/parents';
 import OurTeam from './routes/ourteam';
 import VisitUs from './routes/visitus';
 import Admissions from './routes/admissions'
+import ContactUs from "./routes/contactus";
 import Navbar from "./Components/NavBar";
 import ErrorPage from "./routes/errorpage";
 
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/our-team",
         element: <OurTeam />,
+      },
+      {
+        path:"/contact-us",
+        element: <ContactUs />
       }
     ]
   }
