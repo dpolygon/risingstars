@@ -20,7 +20,7 @@ function Home() {
         <div className='home'>
             <HomeSplash/>
             <AboutUs/>
-            <div style={{marginTop: '-1.5rem', backgroundColor: 'white', paddingBottom: '70px', borderTopRightRadius: '33px', borderTopLeftRadius: '33px', zIndex: '3'}}>
+            <div style={{backgroundColor: 'white', paddingBottom: '70px', zIndex: '3'}}>
                 <div style={{padding: '3%'}}>
                     <div className='programsTop'>
                         <div className='programTitle' style={{display: 'flex', alignItems: 'end'}}>
