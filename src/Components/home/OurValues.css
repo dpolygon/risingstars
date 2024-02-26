@@ -1,0 +1,60 @@
+.valuesTitle {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.valuesDesc {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.cells {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.valueCell {
+    border-radius: 50px;
+    height: 40vh;
+    width: 30%;
+}
+
+.valueContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .valuesTitle {
+        font-size: 40px;
+    }
+
+    .valuesDesc {
+        font-size: 21px;
+    }
+
+    .cells {
+        flex-direction: column;
+    }
+
+    .valueCell {
+        height: 25%;
+        width: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .valuesTitle {
+        font-size: 64px;
+    }
+}

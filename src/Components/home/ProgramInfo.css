@@ -1,0 +1,115 @@
+.progInfoMain {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-top: 3rem; 
+    height: 100%;
+}
+
+.progTitle {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.progDesc {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.infoH {
+    border-radius: 10px; 
+    object-fit: cover;
+    visibility: hidden;
+    display: none;
+    height: 40vh;
+}
+
+.infoL {
+    width: 31.6%;
+}
+
+.infoR {
+    width: 26.6%;
+}
+
+.miles {
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 21px;
+    color: #86868b;
+}
+
+.acts {
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 21px;
+    color: #86868b;
+
+}
+
+.leftImg {
+    object-position: 50% -350px;
+}
+
+@media screen and (max-width: 2250px) {
+    .leftImg {
+        object-position: 50% -175px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .leftImg {
+        object-position: 50%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .progTitle {
+        font-size: 64px;
+    }
+
+    .miles {
+        font-size: 17px;
+    }
+
+    .acts {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .progInfoMain {
+        flex-direction: column;
+    }
+
+    .progTitle {
+        font-size: 40px;
+    }
+
+    .infoH {
+        margin-top: 4vh;
+        width: 100%;
+        visibility: visible;
+        display: block;
+    }
+
+    .infoL {
+        width: auto;
+    }
+
+    .leftImg {
+        visibility: hidden;
+        display: none;
+    }
+
+    .infoM {
+        visibility: hidden;
+        display: none;
+    }
+
+    .infoR {
+        width: auto;
+        padding-top: 3vh;
+    }
+}

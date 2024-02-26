@@ -1,0 +1,145 @@
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(20, 23, 26);
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    padding-bottom: 70px;
+}
+
+.aboutUsTitle {
+    color: white;
+    font-size: larger;
+    font-stretch: expanded;
+    position: relative;
+    top: 0;
+}
+
+.aboutUsTeacherArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+.daycareData {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-right: 40px;
+    padding-bottom: 1rem;
+}
+
+.daycareDataDesc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.daycareDataTitle {
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+}
+
+.expertsTitle {
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.teacherImages {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+
+.aboutUsTop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.aboutUsBottom {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding-bottom: 90px;
+}
+
+.expertsDesc {
+    padding-top: 1rem;
+    width: 75%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.video {
+    border-radius: 24px;
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .aboutUsBottom {
+        flex-direction: column;
+    }
+
+    .video {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .daycareDataTitle {
+        font-size: 64px;
+    }
+
+    .aboutUsBottom {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .daycareDataTitle {
+        font-size: 40px;
+    }
+
+    .daycareDataDesc {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .aboutUsTop {
+        flex-direction: column;
+    }
+
+    .aboutUsBottom {
+        padding-top: 70px;
+        flex-direction: column;
+    }
+
+    .aboutUsTeacherArea {
+        visibility: hidden;
+        display: none;
+    }
+
+    .expertsTitle {
+        font-size: 40px;
+    }
+
+    .expertsDesc {
+        font-size: 17px;
+        width: auto;
+    }
+
+    .video {
+        width: 100%;
+    }
+}

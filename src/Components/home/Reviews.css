@@ -1,0 +1,96 @@
+.reviewsTitle {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.reviewName {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.usrReview {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.readMore {
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer; 
+    padding-top: 20px; 
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reviewsContainer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 23, 26);
+    border-radius: 33px;
+    margin-top: 4vh;
+}
+  
+.reviews{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 70%;
+    height: auto;
+    margin: 30px;
+}
+
+.blurReview{
+    animation: blur-layer 10s infinite
+}
+
+@keyframes blur-layer {
+    0% { filter: blur(30px); }
+    1% { filter: blur(1px); }
+    2% { filter: blur(0px); }
+    50% { filter: blur(0px); }
+    98% {filter: blur(0px); }
+    99% { filter: blur(1px); }
+    100% { filter: blur(30px); }
+}
+
+@media screen and (max-width: 700px) {
+    .reviewsContainer {
+        height: 50%;
+    }
+
+    .reviewsTitle {
+        font-size: 40px;
+    }
+
+    .reviewName {
+        font-size: 17px;
+    }
+
+    .usrReview {
+        font-size: 24px;
+    }
+
+    .readMore {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .reviewsTitle {
+        font-size: 64px;
+    }
+
+    .usrReview {
+        font-size: 32px;
+    }
+}

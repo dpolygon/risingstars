@@ -1,129 +1,47 @@
-#Home {
+.home {
     display: flex;
     flex-direction: column;
-    background: url('/public/images/titlephoto.jpg') center/cover;
-    background-position: center;
-    padding: 3%;
-    background-size: cover;
+    position: relative;
+    background: url('/public/images/titlephoto.webp') center/cover;
+    background-size: fill;
     background-repeat: no-repeat;
-    height: 100vh;
-}
-  
-.titleAreaPMessage {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.messageTitle {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.companyName {
-    font-stretch: expanded;
-    font-size: 7rem;
-    padding-right: 10%;
-    font-weight: 500;
+    background-attachment: fixed;
 }
 
 .smallText {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1rem;
     padding-top: 1rem;
 }
 
-.kidsImages {
-    height: 250px;
-    width: 250px;
-    border-radius: 20px;
-    object-fit: cover;
-    padding: 4px;
-    margin-bottom: 60px;
-    margin-top: 240px;
-}
-
-.teacherImages {
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: -30px;
-}
-
-
-
-.aboutUsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #2525259e;
-    border-radius: 12px;
-    backdrop-filter: blur(100px);
-    width: 100%;
-    padding: 40px;
-}
-
-.aboutUsTitle {
-    color: white;
-    font-size: larger;
-    font-stretch: expanded;
-}
-
-.aboutUsTeacherArea {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.daycareData {
-    display: flex;
-    flex-direction: column;
-    max-width: 200px;
-    margin-right: 40px;
-}
-
-.daycareDataTitle {
-    font-size: 5rem;
-    font-weight: 400;
-    color: white;
-}
-
-.expertsTitle {
-    color: white;
-    font-size: 3rem;
-    font-weight: 500;
-}
-
-.programs {
-    margin-top: 5rem;
-    height: 200px;
-}
-
 .programsTop {
+    padding-top: 110px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
 }
 
-.program-btn {
-    padding: 8px 20px;
-    border-radius: 2px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border: 1px solid var(--primary);
-    font-size: 20px;
-    border-radius: 33px;
-    margin: 10px;
-    color: white;
-    background-color: rgb(213, 213, 213);
+.programTitle {
+    font-size: 80px;
+    font-weight: 700;
+
 }
 
-.active {
-    background-color: black; /* Change to desired active color */
+@media screen and (max-width: 700px) {
+    .programTitle {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .programsTop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .programTitle {
+        font-size: 64px;
+        text-align: center;
+    }
 }

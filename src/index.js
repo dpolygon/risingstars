@@ -1,5 +1,6 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,9 +12,11 @@ import {
 import './App.css';
 
 import Home from './routes/home';
-import About from './routes/about';
+import Parents from './routes/parents';
+import OurTeam from './routes/ourteam';
 import VisitUs from './routes/visitus';
-import Contact from './routes/contact'
+import Admissions from './routes/admissions'
+import ContactUs from "./routes/contactus";
 import Navbar from "./Components/NavBar";
 import ErrorPage from "./routes/errorpage";
 
@@ -36,16 +39,24 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/parents",
+        element: <Parents />
+      },
+      {
         path: "/visit-us",
         element: <VisitUs />
       },
       {
-        path: "/contact",
-        element: <Contact />
+        path: "/admissions",
+        element: <Admissions />
       },
       {
-        path: "about",
-        element: <About />,
+        path: "/our-team",
+        element: <OurTeam />,
+      },
+      {
+        path:"/contact-us",
+        element: <ContactUs />
       }
     ]
   }
