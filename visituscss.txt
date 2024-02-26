@@ -1,0 +1,177 @@
+#VisitUs {
+    background: url('/public/images/visitusphotos/visitUsBG2.jpg') center/cover;
+    padding: 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#VisitUs h1, p {
+    font-family: "Public Sans";
+    font-weight: bold;
+}
+
+#leftCol {
+    padding-right: 450px;
+}
+
+#rightCol{
+    justify-content: right;
+
+}
+
+.address {
+    padding-bottom: 20px;
+}
+
+.pageName {
+    font-stretch: expanded;
+    font-size: 8rem;
+    padding-right: 10%;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    display: inline-flex;
+}
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+.textContainer {
+    max-width: 40dvw;
+    padding-bottom: 100px;
+}
+
+.wordDeco {
+    font-size: 30px;
+    padding-top: 1rem;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.mediumText {
+    font-size: 35px;
+    padding-top: 1rem;
+    color: white;
+}
+
+p#address {
+    font-size: 27px;
+    color: #F6D6D6;
+    padding-bottom: 8px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+span#address {
+    font-weight: bold;
+    color: #EEF5FF;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.roundedBox1 {
+    padding: 30px; /* Adjust the padding for spacing inside the box */
+    /* Center the text */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: #2525259e;
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+}
+
+.map{
+    padding-left: 30px;
+}
+
+.roundedBox2 {
+    padding: 30px; /* Adjust the padding for spacing inside the box */
+    /* Center the text */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: #9AC5F4;
+    border: 10px solid #EEF5FF;
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+}
+
+.daycareImagesContainer {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+
+.daycareImages {
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 4px;
+    width: 350px;
+    height: 350px;
+}
+
+.daycareImages:first-child {
+    margin-top: 120px; /* Adjust the top margin as needed */
+}
+
+.daycareImages:last-child {
+    margin-top: 120px; /* Adjust the bottom margin as needed */
+}
+
+.messageForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#messageName, #messageEmail {
+    width: 300px;
+}
+
+#messageMessage {
+    width: 400px;
+    height: 150px;
+}
+
+.messageForm input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 6px solid #8294C4;
+    background-color: #B0DAFF;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.messageForm button {
+    background-color: #ACB1D6;
+    width: 350px;
+    height: 60px;
+}
+
+
+
+
+
+
+
