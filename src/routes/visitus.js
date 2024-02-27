@@ -23,55 +23,57 @@ function VisitUs() {
   return (
 
     <div id='VisitUs'>
-        <div className = "container">
-
-            <div className='columnContainer' id = "leftCol">
-                <div>
-                    <h1 className='pageName'>Visit Us</h1>
+        <div className='header'>
+            <div className='columnContainer'>
+                <div className='VSTitle'>
+                    Visit Us
                 </div>
+                <div className='rowContainer'>
+                    <div className='columnContainer'>
+                        <div className='VSTextContainer'>
+                                Located in South Austin, come experience the magic of our daycare! 
+                                    Our doors are open, and we look forward to sharing smiles, laughter, and 
+                                    endless adventures with you and your little ones.
+                        </div>
+                        <div className='formBox'>
+                            <div className='formBox2'>
+                                <div className= 'columnContainer'>
+                                    <div className='formTitle'>
+                                        To reach out to us, please fill in the form below:
+                                    </div>
 
-                <div className="textContainer">
-                    <p className='wordDeco'>Located in South Austin, come experience the magic of our daycare! 
-                        Our doors are open, and we look forward to sharing smiles, laughter, and 
-                        endless adventures with you and your little ones.
-                    </p>
-                </div>
-       
+                                    <div className='formTitle2'>
+                                        Contact Form
+                                    </div>
 
-                <div className='roundedBox1'>
-                    <div className='address'>
-                        <p className="mediumText" id="address"><span id="address">Our Location:</span> 11406 Conroy Ln. Manchaca, TX 78652</p>
+                                    <hr/>
+                                    <input type='text' placeholder='Name' id ="formName" ></input>
+                                    <input type='text' placeholder='Email' id ="formEmail"></input>
+                                    <input type='text' placeholder='Message' id ="formMessage"></input>
+
+                                    <div className='rowContainer'>
+                                        <div className='ageButton'>Baby</div>
+                                        <div className='ageButton'>Toddler</div>
+                                        <div className='ageButton'>Young Child</div>
+                                        <div className='ageButton'>Big Child</div>
+                                    </div>
+
+                                    <button>
+                                        Send Message
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                     <div className='map'>
                         < EmbeddedMap/>
                     </div>
-                </div>
 
+                </div>
             </div>
-
-
-            <div className='columnContainer' id = "rightCol">
-                <div className="daycareImagesContainer">
-                    {renderZigzagImages()}
-                </div>
-
-
-                <div className='roundedBox2'>
-                    <p className="mediumText">Interested? Send us a message!</p>
-                    <form>
-                        <div className='messageForm'>
-                            <input type='text' placeholder='Name' id ="messageName" ></input>
-                            <input type='text' placeholder='Email' id ="messageEmail"></input>
-                            <input type='text' placeholder='Message' id ="messageMessage"></input>
-                            <button>Submit</button>
-                        </div>
-                    </form>
-                </div>
-
-
-
-            </div>
-
         </div>
     </div>
 
