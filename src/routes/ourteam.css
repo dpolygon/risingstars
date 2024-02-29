@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Kalnia';
+    src: local('Kalnia'), url('../fonts/Kalnia.ttf') format('truetype');
+}
+
 .OurTeam {
     padding-top: 80px;
+}
+
+.team-message-one {
+    background-color: rgb(179, 174, 245);
+    font-size: 50px;
+    font-weight: 550; 
+    color: black;
+    padding: 10px;
+    font-family: Kalnia;
+}
+
+@media screen and (max-width: 960px) {
+    .team-message-one {
+        font-size: 42px;
+    }
 }
