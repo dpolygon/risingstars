@@ -18,7 +18,7 @@ export default function InfoCards() {
     }
 
   return (
-    <div style={{padding: '3%', paddingTop: '80px'}}>
+    <div style={{padding: '3%', paddingTop: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <ul className="info-grid">
             <li className="info-card">
                 <div className='card-content'>
