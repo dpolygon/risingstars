@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Kalnia';
-    src: local('Kalnia'), url('../fonts/Kalnia.ttf') format('truetype');
+    font-family: 'Slackside';
+    src: local('Slackside'), url('../fonts/Slackside.ttf') format('truetype');
 }
 
 .OurTeam {
@@ -10,10 +10,10 @@
 .team-message-one {
     background-color: rgb(179, 174, 245);
     font-size: 50px;
-    font-weight: 550; 
+    font-weight: 700; 
     color: black;
     padding: 10px;
-    font-family: Kalnia;
+    font-family: Slackside;
 }
 
 @media screen and (max-width: 960px) {

@@ -35,7 +35,7 @@ export default function Reviews() {
     }, []);
 
     return (
-        <div style={{backgroundColor: 'white', paddingTop: '110px', paddingBottom: '70px', borderBottomRightRadius: '33px', borderBottomLeftRadius: '33px'}}>
+        <div style={{backgroundColor: 'white', paddingTop: '110px', paddingBottom: '70px'}}>
             <div style={{padding: '3%'}}>
                 <h1 className='reviewsTitle'>Hear from our Parents</h1>
                 <div className='reviewsContainer'>
