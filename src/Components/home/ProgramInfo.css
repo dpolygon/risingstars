@@ -48,6 +48,22 @@
 
 }
 
+.leftImg {
+    object-position: 50% -350px;
+}
+
+@media screen and (max-width: 2250px) {
+    .leftImg {
+        object-position: 50% -175px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .leftImg {
+        object-position: 50%;
+    }
+}
+
 @media screen and (max-width: 1064px) {
     .progTitle {
         font-size: 64px;
