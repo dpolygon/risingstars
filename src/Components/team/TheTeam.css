@@ -1,11 +1,11 @@
 .team-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
     padding: 3%;
     list-style-type: none;
-    width: 80%;
+    width: 90%;
   }
   
 .team-card {
@@ -39,7 +39,7 @@
 }
 
 .team-member-wrapper:hover {
-    backdrop-filter: blur(6px) grayscale(100%);
+    backdrop-filter: blur(124px);
     border-radius: 12px;
 }
   

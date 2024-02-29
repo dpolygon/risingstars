@@ -4,7 +4,12 @@
     justify-content: center;
     align-items: center;
     font-size: 160px;
+}
+
+.team-splash-title {
+    font-weight: 600;
     line-height: .8;
+
 }
 
 @media screen and (max-width: 960px) {
