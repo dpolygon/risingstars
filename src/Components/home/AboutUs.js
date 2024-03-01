@@ -25,10 +25,11 @@ const Teachers = () => {
 
     //Array of teacher image URLs
     const teacherUrls = [
-        './images/homepagephotos/teacher1.webp',
-        './images/homepagephotos/teacher2.webp',
-        './images/homepagephotos/teacher3.webp',
-        './images/homepagephotos/teacher4.webp'
+        './images/ourteam/monica.webp',
+        './images/ourteam/claudia.webp',
+        './images/ourteam/rosy.webp',
+        './images/ourteam/martha.webp',
+        './images/ourteam/grisphoto.jpg'
     ];
 
     // Function to render teacher images
@@ -38,8 +39,13 @@ const Teachers = () => {
         ));
     };
 
+    const nav = useNavigate();
+    const handleMeetTeachers = () => {
+        nav('our-team')
+    };
+
     return (
-        <div className="aboutUsTeacherArea">
+        <div className="aboutUsTeacherArea" onClick={handleMeetTeachers}>
             <div style={{color: 'white', marginBottom: '30px', fontSize: '30px'}}>
                 <IoIosArrowUp />
             </div>

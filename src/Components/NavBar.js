@@ -30,11 +30,6 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink to='/parents' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
-                    Parents
-                  </NavLink>
-                </li>
-                <li className='nav-item'>
                   <NavLink to='/visit-us' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
                     Visit Us
                   </NavLink>
@@ -42,6 +37,11 @@ function Navbar() {
                 <li className='nav-item'>
                   <NavLink to='/admissions' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
                     Admissions
+                  </NavLink>
+                </li>
+                <li className='nav-item'>
+                  <NavLink to='/parents' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                    Parents
                   </NavLink>
                 </li>
                 <li className='nav-item'>
