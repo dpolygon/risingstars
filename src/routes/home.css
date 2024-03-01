@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background: url('/public/images/titlephoto.webp') center/cover;
-    background-size: fill;
+    background: url('/public/images/titlephoto.webp');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
