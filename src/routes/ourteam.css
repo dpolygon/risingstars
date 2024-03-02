@@ -12,8 +12,7 @@
     font-size: 60px;
     font-weight: 700; 
     color: black;
-    padding: 10px;
-    font-family: Slackside;
+    font-style: italic;
 }
 
 @media screen and (max-width: 960px) {
