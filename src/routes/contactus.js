@@ -8,23 +8,53 @@ function ContactUs() {
         message: "",
     });
 
-    const handleStateChange = (e) => {
-        
+    const handleStateChange = (event) => {
+        const { name, value } = event.target;
+        setText({
+            ...text,
+            [name]: value
+        });
     }
 
     const handleEmailClick = async () => {
         fetch('/send-text', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify("test luv diva")
-        }) 
+            body: JSON.stringify(text)
+        })
+            .then(() => {
+                setText({
+                    name: "",
+                    phoneNumber: "",
+                    message: "",
+                })
+            })
     } 
     
     return (
         <div className='ContactUs'>
             <h1>Contact Us</h1>
-            <button onClick={handleEmailClick}>click me</button>
-            <a href='sms:5129175055?body=hi'>test</a>
+            <form style={{display: 'flex', flexDirection: 'column'}}>
+                <input
+                    value={text.name}
+                    onChange={handleStateChange}
+                    name="name"
+                    placeholder="First Name"
+                />
+                <input
+                    value={text.phoneNumber}
+                    onChange={handleStateChange}
+                    name="phoneNumber"
+                    placeholder="Mobile Number"
+                />
+                <input
+                    value={text.message}
+                    onChange={handleStateChange}
+                    name='message'
+                    placeholder='ask us anything!'
+                />
+                <button onClick={handleEmailClick}>send</button>
+            </form>
         </div>
     );
 }
