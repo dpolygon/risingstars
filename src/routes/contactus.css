@@ -5,12 +5,16 @@
 
 .ContactUs {
     display: flex;
-    height: 100vh;
-    padding-top: 100px;
+    flex-direction: column;
+    padding-top: 80px;
     align-items: flex-start;
     justify-content: space-around;
     font-size: 3rem;
     color: white;
+}
+
+.ContactUsTitle {
+    font-size: 120px;
 }
 
 .ContactUsInput {
@@ -27,9 +31,26 @@
     color: black
 }
 
+.ContactUsInfo {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 1024px) {
     .ContactUs {
         flex-direction: column;
         align-items: center;
+    }
+
+    .ContactUsTitle {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ContactUsTitle {
+        font-size: 70px;
     }
 }
