@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    font-size: 160px;
+    font-size: 120px;
 }
 
 .team-splash-title {
-    font-weight: 600;
+    font-weight: 700;
     line-height: .8;
 
 }
@@ -21,6 +21,6 @@
 
 @media screen and (max-width: 960px) {
     .teamSplash {
-        font-size: 130px;
+        font-size: 90px;
     }
 }

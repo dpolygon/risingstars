@@ -9,7 +9,7 @@ export default function TheTeam() {
     const renderTeam = () => {
         return teamMembers["team-members"].map((member, index) => (
             <li key={index} className="team-card">
-                <div style={{backgroundImage: `url(${member.image})`, backgroundSize: 'cover', borderRadius: '12px', backgroundPosition: '50%', fontSize: '12px', fontWeight: '600'}} className='team-member-card' >
+                <div style={{backgroundImage: `url(${member.image})`, backgroundSize: 'cover', borderRadius: '12px', backgroundPosition: '50%', fontSize: '12px', fontWeight: '600'}} className='team-member-card'>
                     <div className='team-member-wrapper'>
                         <div className='team-member-card2'>
                             <p style={{fontSize: '18px', lineHeight: '1.15', }}>{member.summary}</p>

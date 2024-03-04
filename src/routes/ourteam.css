@@ -9,11 +9,10 @@
 
 .team-message-one {
     background-color: rgb(179, 174, 245);
-    font-size: 60px;
+    font-size: 42px;
     font-weight: 700; 
     color: black;
-    padding: 10px;
-    font-family: Slackside;
+    font-style: italic;
 }
 
 @media screen and (max-width: 960px) {
