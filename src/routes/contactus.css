@@ -13,11 +13,6 @@
     padding-top: 5rem;
 }
 
-.ContactUsTitle {
-    font-size: 120px;
-    margin-bottom: 2rem;
-}
-
 .ContactUsInfo {
     font-size: 17px;
     font-weight: 500;
@@ -29,15 +24,5 @@
     .ContactUs {
         flex-direction: column;
         align-items: center;
-    }
-
-    .ContactUsTitle {
-        font-size: 96px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .ContactUsTitle {
-        font-size: 70px;
     }
 }
