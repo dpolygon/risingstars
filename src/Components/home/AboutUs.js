@@ -89,7 +89,7 @@ const RightInfo = () => {
                     <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
                 </li>
                 <li className='daycareData'>
-                    <h1 className='daycareDataTitle'>8+</h1>
+                    <h1 className='daycareDataTitle'>9+</h1>
                     <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
                 </li>
                 <li className='daycareData'>
