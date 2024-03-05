@@ -38,16 +38,18 @@ export default function Reviews() {
         <div style={{backgroundColor: 'white', paddingTop: '110px', paddingBottom: '70px'}}>
             <div style={{padding: '3%'}}>
                 <h1 className='reviewsTitle'>Testimonials<br></br>From Parents</h1>
-                <div className='reviewsContainer'>
-                    <div id='rev' className="reviews" 
-                    onClick={() => {const urlToOpen = reviewsData.reviews[count].url;
-                                    window.open(urlToOpen, '_blank');
-                    }}>
-                        <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
-                        <p className='reviewName'>{reviewsData.reviews[count].user.name}</p>
-                        <p>⭐️⭐️⭐️⭐️⭐️</p>
-                        <p className='usrReview'>{'"' + reviewsData.reviews[count].text + '"'}</p>
-                        <p className='readMore'>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
+                <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                    <div className='reviewsContainer'>
+                        <div id='rev' className="reviews" 
+                        onClick={() => {const urlToOpen = reviewsData.reviews[count].url;
+                                        window.open(urlToOpen, '_blank');
+                        }}>
+                            <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
+                            <p className='reviewName'>{reviewsData.reviews[count].user.name}</p>
+                            <p>⭐️⭐️⭐️⭐️⭐️</p>
+                            <p className='usrReview'>{'"' + reviewsData.reviews[count].text + '"'}</p>
+                            <p className='readMore'>Read Full Review on <FaYelp />Yelp <FaSquareArrowUpRight /></p>
+                        </div>
                     </div>
                 </div>
             </div>

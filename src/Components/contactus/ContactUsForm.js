@@ -71,7 +71,7 @@ export default function ContactUsForm() {
     }
 
     return (
-        <div>
+        <div className='ContactUsForm'>
             <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '1rem', justifyContent: 'left'}}>
                 <p style={{fontSize: '15px', paddingRight: '1rem', color: 'black'}}>Communication Preference: </p>
                 <div>
@@ -83,7 +83,7 @@ export default function ContactUsForm() {
                     </button>
                 </div>
             </div>
-            <form style={{display: 'flex', flexDirection: 'column', width: '400px'}}>
+            <form style={{display: 'flex', flexDirection: 'column'}}>
                 <input required
                     className='ContactUsInput'
                     value={text.name}
