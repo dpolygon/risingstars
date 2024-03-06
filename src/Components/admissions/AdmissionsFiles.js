@@ -5,7 +5,7 @@ import { FiArrowDownCircle } from "react-icons/fi";
 export default function AdmissionsFiles() {
 
   return (
-    <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 150px)', gap:'1rem', width: '100%', paddingTop: '70px'}}>
+    <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, 150px)', gap:'1rem', width: '100%', paddingTop: '70px', justifyContent: 'center', alignItems: 'center'}}>
         <FilesCell
             title="Allergy Alert"
             fileName="AllergyAlert.pdf"
