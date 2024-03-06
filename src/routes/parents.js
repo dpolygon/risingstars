@@ -6,7 +6,7 @@ import InfoSplash from '../Components/parents/InfoSplash';
 
 export default function Parents() {
   return (
-    <div className='Parents' style={{background: 'url(./images/parentsbg.jpg)', backgroundSize: 'cover', backgroundPosition: '20%'}}>
+    <div className='Parents' style={{background: 'url(./images/parentsbg.webp)', backgroundSize: 'cover', backgroundPosition: '20%'}}>
         <InfoSplash/>
         <InfoCards/>
         <Footer/>

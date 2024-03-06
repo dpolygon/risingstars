@@ -21,7 +21,7 @@ export default function ContactUsForm() {
     }
 
     const sendMail = () => {
-        fetch('/send-mail', {
+        fetch('/api/send-mail', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const sendText = () => {
-        fetch('/send-text', {
+        fetch('/api/send-text', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -66,8 +66,6 @@ export default function ContactUsForm() {
         } else {
             sendMail();
         }
-
-
     }
 
     return (

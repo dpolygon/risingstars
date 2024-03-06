@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 export default function InfoCards() {
 
     const handleHandbookClick = () => {
-        const urlToOpen = 'http://127.0.0.1:5000/get-pdf/Handbook.pdf';
+        const urlToOpen = 'http://127.0.0.1:5000/api/get-pdf/Handbook.pdf';
         window.open(urlToOpen, '_blank');
     }
 
