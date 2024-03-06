@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { subDays, addDays } from 'date-fns'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import './AdmissionsForm.css'
 
 export default function AdmissionsForm() {
     const [activeButton, setActiveButton] = useState('text');
@@ -23,13 +24,12 @@ export default function AdmissionsForm() {
             ...text,
             [name]: value
         });
-        console.log(text)
     }
 
     const handleDateChange = (date) => {
         setText({
             ...text,
-            ['date']: date
+            ['date']: date.toString()
         });
     }
 
@@ -61,20 +61,20 @@ export default function AdmissionsForm() {
     }
 
   return (
-        <form style={{display: 'flex', flexDirection: 'column', margin: '110px'}}>
+        <form style={{display: 'flex', flexDirection: 'column', marginTop: '110px'}}>
             <input required
                 className='ContactUsInput'
                 value={text.name}
                 onChange={handleStateChange}
                 name="name"
-                placeholder="First Name"
+                placeholder="Full Name"
             />
             <input required
                 className='ContactUsInput'
                 value={text.phoneNumber}
                 onChange={handleStateChange}
                 name="phoneNumber"
-                placeholder={"Mobile Number"}
+                placeholder={"Phone Number"}
             />
             <input required
                 className='ContactUsInput'
@@ -88,7 +88,7 @@ export default function AdmissionsForm() {
                 value={text.childName}
                 onChange={handleStateChange}
                 name="childName"
-                placeholder={"Childs Name"}
+                placeholder={"Childs Full Name"}
             />
             <input required
                 className='ContactUsInput'
@@ -113,7 +113,7 @@ export default function AdmissionsForm() {
                 name='message'
                 placeholder='Leave us your message'
                 style={{height: '400px', 
-                        width: '100%',
+                        width: '400px',
                         resize: 'none',
                         border: 'none'}}
                 maxLength="4000"
