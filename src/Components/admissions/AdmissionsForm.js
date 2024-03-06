@@ -47,7 +47,7 @@ export default function AdmissionsForm() {
             formData.append('files', file, file.name);
         });
     
-        fetch('/send-application', {
+        fetch('/api/send-application', {
             method: 'POST',
             body: formData
         })
