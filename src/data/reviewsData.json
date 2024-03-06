@@ -9,7 +9,7 @@
             "user": {
                 "id": "PYi3kmiVor-2s2efUoWMFg",
                 "profile_url": "https://www.yelp.com/user_details?userid=PYi3kmiVor-2s2efUoWMFg",
-                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/1P9ZMnBOP16IGR8CMvz2LA/o.jpg",
+                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/1P9ZMnBOP16IGR8CMvz2LA/o.webp",
                 "name": "Robert E."
             }
         },
@@ -22,7 +22,7 @@
             "user": {
                 "id": "u6dgNrbJbh8FCCe5D6B48Q",
                 "profile_url": "https://www.yelp.com/user_details?userid=u6dgNrbJbh8FCCe5D6B48Q",
-                "image_url": "https://s3-media3.fl.yelpcdn.com/photo/Smdwr4JiKopjtf_mRVX-WA/o.jpg",
+                "image_url": "https://s3-media3.fl.yelpcdn.com/photo/Smdwr4JiKopjtf_mRVX-WA/o.webp",
                 "name": "Cameron P."
             }
         },
@@ -35,7 +35,7 @@
             "user": {
                 "id": "8QdbKvv6kkGZTaKTFYpbOw",
                 "profile_url": "https://www.yelp.com/user_details?userid=8QdbKvv6kkGZTaKTFYpbOw",
-                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/u2kLd_02Nn0zUfsSix8m5Q/o.jpg",
+                "image_url": "https://s3-media1.fl.yelpcdn.com/photo/u2kLd_02Nn0zUfsSix8m5Q/o.webp",
                 "name": "Sule T."
             }
         }

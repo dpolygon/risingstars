@@ -8,7 +8,7 @@ import Footer from '../Components/Footer';
 
 export default function OurTeam() {
     return (
-        <div className='OurTeam' style={{background: 'url(./images/background.jpg)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '50%'}}>
+        <div className='OurTeam' style={{background: 'url(./images/background.webp)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: '50%'}}>
             <TeamSplash/>
             <p style={{padding: '3%', textAlign: 'center', mixBlendMode: 'hard-light'}}>
                 <mark className='team-message-one'>WITH OUR APPROACH, WE NURTURE CHILDREN'S CURIOSITY AND TURN THEIR POTENTIAL INTO SKILLS THAT HELP THEM GROW CONFIDENTLY, CREATING A STRONG FOUNDATION FOR THEIR FUTURE.</mark>

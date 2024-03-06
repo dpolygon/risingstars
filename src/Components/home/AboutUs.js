@@ -29,7 +29,7 @@ const Teachers = () => {
         './images/ourteam/claudia.webp',
         './images/ourteam/rosy.webp',
         './images/ourteam/martha.webp',
-        './images/ourteam/grisphoto.jpg'
+        './images/ourteam/grisphoto.webp'
     ];
 
     // Function to render teacher images

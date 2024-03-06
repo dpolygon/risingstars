@@ -7,7 +7,7 @@ import AdmissionsForm from '../Components/admissions/AdmissionsForm';
 
 function Admissions() {
     return (
-        <div style={{background: 'url(./images/admissionsbg.jpg)', backgroundSize: 'cover'}} className='Admissions'>
+        <div style={{background: 'url(./images/admissionsbg.webp)', backgroundSize: 'cover'}} className='Admissions'>
             <div style={{padding: '3%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <h1 className='AdmissionsTitle'>Admissions</h1>
                 <div style={{background: '#A5E99B', borderRadius: '33px', padding: '15px'}}>

@@ -7,12 +7,12 @@ import { MdInsertPhoto } from "react-icons/md";
 export default function Gallery() {
     // Array of image URLs
     const kidsUrls = [
-        './images/homepagephotos/girl-with-plants.jpg',
+        './images/homepagephotos/girl-with-plants.webp',
         './images/homepagephotos/play1.webp',
-        './images/homepagephotos/kids-painting-with-teacher.jpg',
+        './images/homepagephotos/kids-painting-with-teacher.webp',
         './images/homepagephotos/play2.webp',
-        './images/homepagephotos/epreschool5.jpg',
-        './images/homepagephotos/babies-in-cribs.jpg',
+        './images/homepagephotos/epreschool5.webp',
+        './images/homepagephotos/babies-in-cribs.webp',
         './images/homepagephotos/play5.webp',
         './images/homepagephotos/play6.webp'
     ];
