@@ -75,7 +75,7 @@ export default function Footer() {
                         </div>
                         <div>
                             <IoMail style={{fontSize: '1.3rem'}}/>
-                            <a href='mailto:risingstarsaustintexas@gmail.com' style={{color: 'white'}}> risingStarsAustinTexas@gmail.com</a>
+                            <a href='mailto:risingstarsaustintexas@gmail.com' style={{color: 'white'}}> RisingStarsAustinTexas@gmail.com</a>
                         </div>
                     </div>
                 </div>
