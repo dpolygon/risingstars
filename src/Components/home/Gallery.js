@@ -25,7 +25,7 @@ export default function Gallery() {
     };
 
   return (
-    <div style={{padding: '3%', marginTop: '3rem', marginBottom: '3rem'}}>
+    <div style={{backgroundColor: '#f5f5f7', padding: '3%', paddingTop: '3rem', paddingBottom: '3rem'}}>
         <div style={{display: 'flex', justifyContent: 'start', overflow: 'auto'}}>
             {renderKids()}
         </div>

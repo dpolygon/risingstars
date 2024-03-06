@@ -12,6 +12,7 @@
 
 .react-datepicker__calendar-icon {
     display: none;
+    visibility: hidden;
 }
 
 .ContactUsSendButton2 {

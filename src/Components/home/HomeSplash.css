@@ -1,3 +1,10 @@
+.splashBg {
+    background: url('/public/images/titlephoto.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
 .titleArea {
     display: flex;
     flex-direction: column;
