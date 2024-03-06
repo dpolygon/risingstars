@@ -127,14 +127,14 @@ export default function AdmissionsForm() {
                     placeholderText="Desired Start Date"
                 />
             </div>
-            <div>
+            <div style={{width: '400px'}}>
                 <textarea required
                     className='ContactUsInput'
                     value={application.message}
                     onChange={handleStateChange}
                     name='message'
                     placeholder='Leave us your message'
-                    style={{height: '200px', 
+                    style={{height: '400px', 
                             width: '100%',
                             resize: 'none',
                             border: 'none'}}
@@ -214,6 +214,7 @@ const DropZone = ({ application, setApplication }) => {
                     style={{ display: 'none' }}
                 />
                 <p>Drag & drop files here or click select files</p>
+                <button type="button" onClick={handleClick}>Select Files</button>
                 <input
                 ref={hiddenFileInput}
                     type="file"
@@ -232,7 +233,6 @@ const DropZone = ({ application, setApplication }) => {
                     ))}
                 </ul>
             </div>
-            <button type="button" onClick={handleClick}>Select Files</button>
         </div>
     );
 };

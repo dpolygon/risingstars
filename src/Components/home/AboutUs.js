@@ -61,7 +61,7 @@ const Teachers = () => {
 const RightInfo = () => {
     const nav = useNavigate();
     const handleVisitUs = () => {
-        nav('visit-us')
+        nav('contact-us')
     };
     
     return (
