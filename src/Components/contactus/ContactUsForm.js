@@ -66,8 +66,6 @@ export default function ContactUsForm() {
         } else {
             sendMail();
         }
-
-
     }
 
     return (
