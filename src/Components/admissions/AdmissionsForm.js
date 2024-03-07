@@ -47,7 +47,7 @@ export default function AdmissionsForm() {
             formData.append('files', file, file.name);
         });
     
-        fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-application`, {
+        fetch(`https://risingstars-backend-cmutwtnqhq-uc.a.run.app/api/send-application`, {
             method: 'POST',
             body: formData
         })
