@@ -1,5 +1,3 @@
-# [RisingStars](https://www.risingstarsaustin.com)
-
 # Getting Started with Rising Stars Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
