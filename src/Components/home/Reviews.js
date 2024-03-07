@@ -25,9 +25,10 @@ export default function Reviews() {
     }, [count]);
 
     const getYelpReviews = () => {
-        return fetch("/api/reviews")
+        return fetch(`${process.env.REACT_APP_BACKEND_URL}/api/reviews`)
             .then((res) => res.json())
             .then((json) => {setReviewsData(json);})
+            .then(data => console.log(data))
     };
 
     useEffect(() => {

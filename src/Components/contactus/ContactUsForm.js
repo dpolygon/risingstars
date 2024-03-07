@@ -21,7 +21,7 @@ export default function ContactUsForm() {
     }
 
     const sendMail = () => {
-        fetch('/api/send-mail', {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-mail`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const sendText = () => {
-        fetch('/api/send-text', {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-text`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
