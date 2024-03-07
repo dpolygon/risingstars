@@ -59,7 +59,7 @@ export default function AdmissionsFiles() {
 }
 
 const handleFileClick = (fileName) => {
-    const urlToOpen = 'http://127.0.0.1:5000/api/get-pdf/' + fileName;
+    const urlToOpen = 'https://risingstars-backend-cmutwtnqhq-uc.a.run.app/api/get-pdf/' + fileName;
     window.open(urlToOpen, '_blank');
 }
 
