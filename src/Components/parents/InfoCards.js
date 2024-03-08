@@ -4,11 +4,12 @@ import './InfoCards.css'
 
 import Button from '../Button'
 import { useNavigate } from 'react-router-dom';
+import { config } from '../../Constants'
 
 export default function InfoCards() {
 
     const handleHandbookClick = () => {
-        const urlToOpen = '${process.env.RS_BACKEND}/api/get-pdf/Handbook.pdf';
+        const urlToOpen = `${config.url.BACKEND_URL}/api/get-pdf/Handbook.pdf`;
         window.open(urlToOpen, '_blank');
     }
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './Reviews.css';
 import { FaYelp } from "react-icons/fa";
 import { FaSquareArrowUpRight } from "react-icons/fa6";
+import { config } from '../../Constants'
 
 import reviewData from '../../data/reviewsData.json';
 
@@ -25,7 +26,7 @@ export default function Reviews() {
     }, [count]);
 
     const getYelpReviews = () => {
-        return fetch(`${process.env.RS_BACKEND}/api/reviews`)
+        return fetch(`${config.url.BACKEND_URL}/api/reviews`)
             .then((res) => res.json())
             .then((json) => {setReviewsData(json);})
             .then(data => console.log(data))

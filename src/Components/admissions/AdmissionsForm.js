@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import DatePicker from "react-datepicker";
 import { addDays } from 'date-fns'
 import { MdOutlineDeleteForever } from "react-icons/md";
-import "react-datepicker/dist/react-datepicker.css";
+import { config } from '../../Constants'
 
+import "react-datepicker/dist/react-datepicker.css";
 import './AdmissionsForm.css'
 
 export default function AdmissionsForm() {
@@ -47,7 +48,7 @@ export default function AdmissionsForm() {
             formData.append('files', file, file.name);
         });
     
-        fetch(`${process.env.RS_BACKEND}/api/send-application`, {
+        fetch(`${config.url.BACKEND_URL}/api/send-application`, {
             method: 'POST',
             body: formData
         })
