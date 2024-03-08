@@ -47,7 +47,7 @@ export default function AdmissionsForm() {
             formData.append('files', file, file.name);
         });
     
-        fetch(`https://risingstars-backend-cmutwtnqhq-uc.a.run.app/api/send-application`, {
+        fetch(`${process.env.RS_BACKEND}/api/send-application`, {
             method: 'POST',
             body: formData
         })

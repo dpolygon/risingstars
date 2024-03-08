@@ -21,7 +21,7 @@ export default function ContactUsForm() {
     }
 
     const sendMail = () => {
-        fetch(`https://risingstars-backend-cmutwtnqhq-uc.a.run.app/api/send-mail`, {
+        fetch(`${process.env.RS_BACKEND}/api/send-mail`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const sendText = () => {
-        fetch(`https://risingstars-backend-cmutwtnqhq-uc.a.run.app/api/send-text`, {
+        fetch(`${process.env.RS_BACKEND}/api/send-text`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
