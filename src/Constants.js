@@ -7,7 +7,7 @@ const prod = {
 
 const dev = {
 	url: {
-		BACKEND_URL: 'http://localhost:5000',
+		BACKEND_URL: 'http://127.0.0.1:5000',
 	},
 };
 
