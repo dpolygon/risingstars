@@ -10,7 +10,8 @@ export default function ContactLeft() {
     return (
         <div style={{display: 'flex', flexDirection: 'column'}}>
             <h1 className='ContactUsTitle'>Contact Us</h1>
-            <p style={{fontSize: '17px', width: '400px', paddingBottom: '2rem'}}>We warmly welcome you to contact Rising Stars for any inquiries, we're always ready to answer any questions you may have. Whether you prefer to reach out through the convenient form or to call or email us directly using the information below, we're here to help. Your inquiries are important to us, and we look forward to assisting you in any way we can.</p>
+            <p style={{fontSize: '17px', width: '400px', paddingBottom: '1rem'}}>We warmly welcome you to contact Rising Stars for any inquiries, we're always ready to answer any questions you may have. Whether you prefer to reach out through the convenient form or to call or email us directly using the information below, we're here to help. Your inquiries are important to us, and we look forward to assisting you in any way we can.</p>
+            <p style={{fontSize: '17px', fontWeight: '600', width: '400px', paddingBottom: '2rem'}}>Experience our nurturing environment firsthand! Schedule a personalized tour of our daycare today. Tours are by appointment only, ensuring we can give you our full attention and answer all your questions. We can't wait to show you around!</p>
             <div  className='ContactUsInfo' style={{borderRadius: '10px'}}>
                 <h3 style={{paddingBottom: '1rem'}}>Contact Information:</h3>
                 <div style={{paddingBottom: '1rem'}}>
