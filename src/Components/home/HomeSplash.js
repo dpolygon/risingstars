@@ -12,7 +12,7 @@ export default function HomeSplash() {
                     <img className='logo' src="./images/logo.webp"></img>
                     <div style={{textAlign: 'center'}}>
                         <h1 className='blcTitle'>Bilingual Learning Center</h1>
-                        <p className='blcDesc'>Where Little Ones Shine & Smart Futures Begin!</p>
+                        <p className='blcDesc'>To speak two langauges is to be part of two worlds!</p>
                         <p className='blcDesc'>located in South Austin</p>
                     </div>
                 </div>

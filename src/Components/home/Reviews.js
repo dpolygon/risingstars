@@ -46,7 +46,7 @@ export default function Reviews() {
                         onClick={() => {const urlToOpen = reviewsData.reviews[count].url;
                                         window.open(urlToOpen, '_blank');
                         }}>
-                            <img src={reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
+                            <img src={reviewsData.reviews[count].user.image_url === null ? "/images/defaultpfp.webp" : reviewsData.reviews[count].user.image_url} style={{borderRadius: '50%', height: '80px', width: '80px'}}></img>
                             <p className='reviewName'>{reviewsData.reviews[count].user.name}</p>
                             <p>⭐️⭐️⭐️⭐️⭐️</p>
                             <p className='usrReview'>{'"' + reviewsData.reviews[count].text + '"'}</p>
