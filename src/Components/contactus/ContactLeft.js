@@ -33,7 +33,7 @@ export default function ContactLeft() {
                     </div>
                 </div>
             </div>
-            <iframe style={{width: '100%', height: '400px', border: 'none', borderRadius: '33px', marginTop: '2rem'}} loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyB48-gDCL53UTqOwyqeQ4id7dzt9tpQ-NY&center=30.139902598949337,-97.8072801380266&maptype=satellite&zoom=18"></iframe>
+            <iframe style={{width: '100%', height: '400px', border: 'none', borderRadius: '33px', marginTop: '2rem'}} loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyBo081gQyzvQ_BzLZFl3XJeHqTX0bxe1mI&center=30.139902598949337,-97.8072801380266&maptype=satellite&zoom=18"></iframe>
 
         </div>
     )
