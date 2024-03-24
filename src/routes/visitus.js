@@ -43,48 +43,44 @@ function VisitUs() {
 
     return (
 
-        <div id='VisitUs'>
+        <div className = 'VisitUs'>
             <div className='columnContainer'>
                 <div className='VSTitle'>
                         Visit Us
                 </div>   
-            </div>
 
-
-        <div className='columnContainer'>
-
-            <div className='VSTextContainer'>
-                    Come experience the magic of our daycare! 
-                    Our doors are open, and we look forward to sharing smiles, laughter, and 
-                    endless adventures with you and your little ones.
-            </div>
-        
-        
-            <div className='linkText'>
-                <a href= "/contact-us">Schedule a tour with Rising Stars!</a> 🗓️
-            </div>
-            
-
-            <div className='rowContainer'>
-                <div className="slideshow-container">
-                    <button className= "prevButton" onClick={prevImage}>←</button>
-                        {quickImages.map((imageUrl, index) => (
-                            <div key={index} className={
-                                index === currentImageIndex
-                                    ? 'slide active'
-                                    : 'slide'}>
-                                <img src={imageUrl} alt={`Slide ${index + 1}`} style={{height: "450px", width: "auto", borderRadius: "6px", border: "8px white solid"}} />
-                            </div>
-                        ))}
-                    <button className= "nextButton" onClick={nextImage}>→</button>
+                <div className='VSTextContainer'>
+                        Come experience the magic of our daycare! 
+                        Our doors are open, and we look forward to sharing smiles, laughter, and 
+                        endless adventures with you and your little ones.
                 </div>
+            
+            
+                <div className='linkText'>
+                    <a href= "/contact-us">Schedule a tour with Rising Stars!</a> 🗓️
+                </div>
+                
+
+                <div className='rowContainer'>
+                    <div className="slideshow-container">
+                        <button className= "prevButton" onClick={prevImage}>←</button>
+                            {quickImages.map((imageUrl, index) => (
+                                <div key={index} className={
+                                    index === currentImageIndex
+                                        ? 'slide active'
+                                        : 'slide'}>
+                                    <img className= "image" src={imageUrl} alt={`Slide ${index + 1}`} />
+                                </div>
+                            ))}
+                        <button className= "nextButton" onClick={nextImage}>→</button>
+                    </div>
+
+                </div>
+            
+                
+                
 
             </div>
-        
-            
-            
-
-        </div>
 
         </div>
 
