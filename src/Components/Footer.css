@@ -45,19 +45,6 @@
     flex-direction: column;
 }
 
-.copyrightTag {
-    color: white;
-    text-align: center;
-    padding: 2px;
-    font-size: 12px;
-}
-
-@media screen and (max-width: 1024px) {
-    .copyrightTag {
-        padding-bottom: 15px;
-    }
-}
-
 @media screen and (max-width: 700px) {
     .logoName {
         font-size: 1.2rem;

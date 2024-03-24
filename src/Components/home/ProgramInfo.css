@@ -48,9 +48,20 @@
 
 }
 
-/* Super cool trick to center image around whatever point you choose!*/
 .leftImg {
-    object-position: calc(50 / 540 * 100%) calc(250 / 960 * 100%);  
+    object-position: 50% -350px;
+}
+
+@media screen and (max-width: 2250px) {
+    .leftImg {
+        object-position: 50% -175px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .leftImg {
+        object-position: 50%;
+    }
 }
 
 @media screen and (max-width: 1064px) {

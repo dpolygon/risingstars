@@ -46,8 +46,7 @@ export default function OurValues() {
 const ValueCell = (props) => (
     <div className='valueCell' style={{
         backgroundImage: "url(" + props.imageUrl + ")",
-        backgroundSize: 'cover', 
-        backgroundPosition: '50%'
+        backgroundSize: 'cover'
     }}>
         <div style={{    
             display: 'flex',

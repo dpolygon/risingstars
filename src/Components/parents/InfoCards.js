@@ -4,12 +4,11 @@ import './InfoCards.css'
 
 import Button from '../Button'
 import { useNavigate } from 'react-router-dom';
-import { config } from '../../Constants'
 
 export default function InfoCards() {
 
     const handleHandbookClick = () => {
-        const urlToOpen = `${config.url.BACKEND_URL}/api/get-pdf/Handbook.pdf`;
+        const urlToOpen = 'http://127.0.0.1:5000/get-pdf/Handbook.pdf';
         window.open(urlToOpen, '_blank');
     }
 
@@ -19,7 +18,7 @@ export default function InfoCards() {
     }
 
   return (
-    <div style={{padding: '3%', paddingTop: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div style={{padding: '3%', paddingTop: '80px'}}>
         <ul className="info-grid">
             <li className="info-card">
                 <div className='card-content'>
