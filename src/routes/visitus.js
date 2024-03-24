@@ -76,7 +76,7 @@ function VisitUs() {
                     </div>
                 </div>                                    
             </div>
-            <Footer/>  
+            <Footer/>
         </div>
         
 
