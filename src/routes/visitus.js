@@ -1,5 +1,5 @@
-// VisitUs.js
 import './visitus.css';
+import Footer from '../Components/Footer';
 import React, { useState, useEffect } from 'react';
 
 
@@ -74,15 +74,11 @@ function VisitUs() {
                             ))}
                         <button className= "nextButton" onClick={nextImage}>→</button>
                     </div>
-
-                </div>
-            
-                
-                
-
+                </div>                                    
             </div>
-
+            <Footer/>  
         </div>
+        
 
     );
 }
