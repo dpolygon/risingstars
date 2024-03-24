@@ -1,0 +1,37 @@
+.applicationForm {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.react-datepicker__view-calendar-icon input {
+    padding: 5%;
+    width: 100%;
+}
+
+.react-datepicker__calendar-icon {
+    display: none;
+    visibility: hidden;
+}
+
+.ContactUsSendButton2 {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .applicationForm {
+        flex-direction: column;
+    }
+
+    .ContactUsSendButton1 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .ContactUsSendButton2 {
+        display: block;
+        visibility: visible;
+    }
+}

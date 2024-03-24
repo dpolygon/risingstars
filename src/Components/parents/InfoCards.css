@@ -1,9 +1,11 @@
 .info-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
     padding: 3%;
     list-style-type: none;
+    width: 70%;
   }
   
 .info-card {
@@ -58,7 +60,5 @@
 }
 
 @media screen and (max-width: 960px) {
-    .info-card {
-        width: 89vw;
-    }
+    
 }

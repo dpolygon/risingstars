@@ -1,0 +1,16 @@
+.ContactUsTitle {
+    font-size: 120px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .ContactUsTitle {
+        font-size: 96px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ContactUsTitle {
+        font-size: 70px;
+    }
+}
