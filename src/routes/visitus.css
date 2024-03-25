@@ -1,17 +1,15 @@
 .VisitUs {
-
   background-image: url("/public/images/visitusphotos/newlego.webp");
   background-size: cover;
   background-position: center;
-
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
 }
 
-
 .VSTitle {
-    padding-top: 100px;
     font-size: 120px;
+    font-weight: 700;
     color: black;
     font-weight: bold;
     padding-bottom: 50px;
@@ -126,7 +124,6 @@
 
 @media screen and (max-width: 767px) {
   .VSTitle{
-    padding-top: 25%;
     font-size: 70px;
     padding-bottom: 30px;
   }

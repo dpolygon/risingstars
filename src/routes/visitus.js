@@ -42,7 +42,6 @@ function VisitUs() {
 
 
     return (
-
         <div className = 'VisitUs'>
             <div className='columnContainer'>
                 <div className='VSTitle'>
