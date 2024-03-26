@@ -9,10 +9,10 @@ function VisitUs() {
      const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
      const quickImages = [
-        './images/visitusphotos/gallery1.webp',
-        './images/visitusphotos/gallery2.webp',
-        './images/visitusphotos/gallery3.webp',
-        './images/visitusphotos/gallery4.webp'
+        '/images/visitusphotos/gallery1.webp',
+        '/images/visitusphotos/gallery2.webp',
+        '/images/visitusphotos/gallery3.webp',
+        '/images/visitusphotos/gallery4.webp'
     ];
 
     useEffect(() => {
