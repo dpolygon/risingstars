@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import './ContactUsForm.css'
-import { act } from 'react-dom/test-utils';
+import { config } from '../../Constants'
 
 export default function ContactUsForm() {
     const [activeButton, setActiveButton] = useState('text');
@@ -21,7 +21,7 @@ export default function ContactUsForm() {
     }
 
     const sendMail = () => {
-        fetch('/api/send-mail', {
+        fetch(`${config.url.BACKEND_URL}/api/send-mail`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const sendText = () => {
-        fetch('/api/send-text', {
+        fetch(`${config.url.BACKEND_URL}/api/send-text`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)

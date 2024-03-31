@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { FiArrowDownCircle } from "react-icons/fi";
+import { config } from '../../Constants'
+
 
 export default function AdmissionsFiles() {
 
@@ -59,7 +61,7 @@ export default function AdmissionsFiles() {
 }
 
 const handleFileClick = (fileName) => {
-    const urlToOpen = 'http://127.0.0.1:5000/api/get-pdf/' + fileName;
+    const urlToOpen = `${config.url.BACKEND_URL}/api/get-pdf/` + fileName;
     window.open(urlToOpen, '_blank');
 }
 

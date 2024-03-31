@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import DatePicker from "react-datepicker";
 import { addDays } from 'date-fns'
 import { MdOutlineDeleteForever } from "react-icons/md";
-import "react-datepicker/dist/react-datepicker.css";
+import { config } from '../../Constants'
 
+import "react-datepicker/dist/react-datepicker.css";
 import './AdmissionsForm.css'
 
 export default function AdmissionsForm() {
@@ -47,7 +48,7 @@ export default function AdmissionsForm() {
             formData.append('files', file, file.name);
         });
     
-        fetch('/api/send-application', {
+        fetch(`${config.url.BACKEND_URL}/api/send-application`, {
             method: 'POST',
             body: formData
         })
@@ -140,15 +141,12 @@ export default function AdmissionsForm() {
                             border: 'none'}}
                     maxLength="4000"
                 />
-                <button onClick={handleEmailClick} style={{height: '80px', width: '100%', fontSize: '15px', border: '1px solid black'}} className='ContactUsSendButton ContactUsSendButton1' disabled={isLoading}>
-                    {isLoading ? 'Sending...' : 'Send'}
-                </button>         
-            </div>
-            <DropZone application={application} setApplication={setApplication} />
-            <button onClick={handleEmailClick} style={{height: '80px', width: '100%', fontSize: '15px', border: '1px solid black'}} className='ContactUsSendButton ContactUsSendButton2' disabled={isLoading}>
-                    {isLoading ? 'Sending...' : 'Send'}
+      
+                <DropZone application={application} setApplication={setApplication} />
+                <button onClick={handleEmailClick} style={{height: '80px', width: '100%', fontSize: '15px', border: '1px solid black'}} className='ContactUsSendButton' disabled={isLoading}>
+                        {isLoading ? 'Sending...' : 'Send'}
                 </button>  
-
+            </div>
         </form>
     </div>        
   )
