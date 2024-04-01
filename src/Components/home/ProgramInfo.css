@@ -48,6 +48,11 @@
 
 }
 
+/* Super cool trick to center image around whatever point you choose!*/
+.leftImg {
+    object-position: calc(50 / 540 * 100%) calc(250 / 960 * 100%);  
+}
+
 @media screen and (max-width: 1064px) {
     .progTitle {
         font-size: 64px;

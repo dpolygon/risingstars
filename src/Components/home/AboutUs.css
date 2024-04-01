@@ -1,24 +1,26 @@
 .aboutUsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgb(20, 23, 26);
-    border-radius: 12px;
-    height: auto;
-    padding: 40px;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    padding-bottom: 70px;
 }
 
 .aboutUsTitle {
     color: white;
     font-size: larger;
     font-stretch: expanded;
+    position: relative;
+    top: 0;
 }
 
 .aboutUsTeacherArea {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    margin-top: auto;
 }
 
 .daycareData {
@@ -56,20 +58,18 @@
 }
 
 .aboutUsTop {
-    display: flex;
-    flex-direction: row; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 2rem;
     justify-content: space-between;
-    padding-left: 60px;
 }
 
 .aboutUsBottom {
     display: flex; 
     flex-direction: row; 
-    padding-top: 80px;
-    padding-left: 0px; 
-    align-items: center; 
     justify-content: space-between;
-    padding-left: 60px;
+    align-items: flex-start; 
+    padding-bottom: 90px;
 }
 
 .expertsDesc {
@@ -81,12 +81,28 @@
 }
 
 .video {
+    border-radius: 24px;
     width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .aboutUsBottom {
+        flex-direction: column;
+    }
+
+    .video {
+        margin-top: 70px;
+    }
 }
 
 @media screen and (max-width: 1064px) {
     .daycareDataTitle {
         font-size: 64px;
+    }
+
+    .aboutUsBottom {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 700px) {
@@ -105,9 +121,8 @@
     }
 
     .aboutUsBottom {
+        padding-top: 70px;
         flex-direction: column;
-        padding-left: 0px;
-        margin-left: -80px;
     }
 
     .aboutUsTeacherArea {
@@ -126,7 +141,5 @@
 
     .video {
         width: 100%;
-        margin-top: 2rem;
-        vertical-align: middle;
     }
 }

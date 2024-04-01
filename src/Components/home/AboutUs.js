@@ -9,10 +9,11 @@ import { IoIosArrowUp } from "react-icons/io";
 export default function AboutUs() {
 
     return (
-        <div style={{WebkitBackdropFilter: 'brightness(50%)', backdropFilter: 'brightness(50%)', paddingBottom: '70px'}}>
+        <div className="aboutUsContainer">
             <div style={{padding: '3%'}}>
-                <div className="aboutUsContainer">
-                    <LeftInfo/>
+                <p className="aboutUsTitle">ABOUT US</p>
+                <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <Teachers/>
                     <RightInfo/>
                 </div>
             </div>
@@ -20,14 +21,15 @@ export default function AboutUs() {
     );
 }
 
-const LeftInfo = () => {
+const Teachers = () => {
 
     //Array of teacher image URLs
     const teacherUrls = [
-        './images/homepagephotos/teacher1.webp',
-        './images/homepagephotos/teacher2.webp',
-        './images/homepagephotos/teacher3.webp',
-        './images/homepagephotos/teacher4.webp'
+        './images/ourteam/monica.webp',
+        './images/ourteam/claudia.webp',
+        './images/ourteam/rosy.webp',
+        './images/ourteam/martha.webp',
+        './images/ourteam/grisphoto.webp'
     ];
 
     // Function to render teacher images
@@ -37,18 +39,20 @@ const LeftInfo = () => {
         ));
     };
 
+    const nav = useNavigate();
+    const handleMeetTeachers = () => {
+        nav('our-team')
+    };
+
     return (
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
-            <p className="aboutUsTitle">ABOUT US</p>
-            <div className="aboutUsTeacherArea">
-                <div style={{color: 'white', marginBottom: '30px', fontSize: '30px'}}>
-                    <IoIosArrowUp />
-                </div>
-                {renderTeachers()}
-                <div style={{color: 'white', paddingTop: '10px'}}>
-                    <p>Meet the</p>
-                    <p>teachers</p>
-                </div>
+        <div className="aboutUsTeacherArea" onClick={handleMeetTeachers}>
+            <div style={{color: 'white', marginBottom: '30px', fontSize: '30px'}}>
+                <IoIosArrowUp />
+            </div>
+            {renderTeachers()}
+            <div style={{color: 'white', paddingTop: '10px'}}>
+                <p>Meet the</p>
+                <p>teachers</p>
             </div>
         </div>
     )
@@ -57,46 +61,42 @@ const LeftInfo = () => {
 const RightInfo = () => {
     const nav = useNavigate();
     const handleVisitUs = () => {
-        nav('visit-us')
+        nav('contact-us')
     };
     
     return (
-        <div style={{display: 'flex', flexDirection: 'column'}}>
-            <div className='aboutUsTop'>
-                <div className='daycareData'>
-                    <h1 className='daycareDataTitle'>5</h1>
-                    <p className='daycareDataDesc'>Classrooms, tailored learning environments designed for each developmental stage.</p>
-                </div>
-                <div className='daycareData'>
-                    <h1 className='daycareDataTitle'>6</h1>
-                    <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
-                </div>
-                <div className='daycareData'>
-                    <h1 className='daycareDataTitle'>8+</h1>
-                    <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
-                </div>
-                <div className='daycareData'>
-                    <h1 className='daycareDataTitle'>2500+</h1>
-                    <p className='daycareDataDesc'>Children Empowered: Receiving top-tier care and education at our esteemed daycare.</p>
-                </div>
-            </div>
+        <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '60px'}}>
             <div className='aboutUsBottom'>
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'start'}}>
-                    <div style={{maxWidth: '600px'}}>
-                        <h1 className='expertsTitle'>OUR COMPREHENSIVE CURRICULUM</h1>
-                        <p className='expertsDesc'>Encompasses both English and Spanish language proficiency. We nurture giggles and growth in all aspects social, physical, emotional, and cognitive, ensuring your little one is kindergarten-ready. Our goal is that each kid leave with a pocketful of skills, ready to blossom into someone who sparkles in every situation, always eager to learn more and more. 🌟📚</p>
-                    </div>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                    <h1 className='expertsTitle'>OUR COMPREHENSIVE CURRICULUM</h1>
+                    <p className='expertsDesc'>Encompasses both English and Spanish language proficiency. We nurture giggles and growth in all aspects social, physical, emotional, and cognitive, ensuring your little one is kindergarten-ready. Our goal is that each kid leave with a pocketful of skills, ready to blossom into someone who sparkles in every situation, always eager to learn more and more. 🌟📚</p>
                     <div style={{paddingTop: '40px', width: '70%'}}>
                         <Button buttonSize='btn-medium' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour'/>
                     </div>
                 </div>
-                <div className='video'>
-                    <video controls autoPlay loop style={{width: '100%', borderRadius: '30px'}}y>
-                        <source src="videos/video1.mp4" type="video/mp4"/>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <video className='video' controls autoPlay loop y>
+                    <source src="videos/video1.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
             </div>
+            <ul className='aboutUsTop'>
+                <li className='daycareData'>
+                    <h1 className='daycareDataTitle'>5</h1>
+                    <p className='daycareDataDesc'>Classrooms, tailored learning environments designed for each developmental stage.</p>
+                </li>
+                <li className='daycareData'>
+                    <h1 className='daycareDataTitle'>6</h1>
+                    <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
+                </li>
+                <li className='daycareData'>
+                    <h1 className='daycareDataTitle'>9+</h1>
+                    <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
+                </li>
+                <li className='daycareData'>
+                    <h1 className='daycareDataTitle'>2500+</h1>
+                    <p className='daycareDataDesc'>Children Empowered: Receiving top-tier care and education at our esteemed daycare.</p>
+                </li>
+            </ul>
         </div>
     )
 };

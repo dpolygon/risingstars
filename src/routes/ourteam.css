@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Slackside';
+    src: local('Slackside'), url('../fonts/Slackside.ttf') format('truetype');
+}
+
 .OurTeam {
     padding-top: 80px;
+}
+
+.team-message-one {
+    background-color: rgb(179, 174, 245);
+    font-size: 42px;
+    font-weight: 700; 
+    color: black;
+    font-style: italic;
+}
+
+@media screen and (max-width: 960px) {
+    .team-message-one {
+        font-size: 42px;
+    }
 }

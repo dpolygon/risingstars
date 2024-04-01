@@ -1,0 +1,82 @@
+.applicationForm {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.ContactUsInput{
+    border: 4px solid #B0C6D8;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.ContactUsInput:hover{
+    border: 4px solid #607274;
+}
+
+.DragDropArea {
+    border: 4px dotted #3C3633;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.DragDropArea button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #BACDDB;
+    border-radius: 10px;
+}
+
+.react-datepicker__view-calendar-icon input {
+    padding: 5%;
+    width: 100%;
+}
+
+.react-datepicker__calendar-icon {
+    display: none;
+    visibility: hidden;
+}
+
+.ContactUsSendButton2 {
+    display: none;
+    visibility: hidden;
+}
+
+.ContactUsSendButton{
+    height: 80px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 767px) {
+    .ContactUsInput{
+        align-self: center;
+        width: 250px;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .applicationForm {
+        flex-direction: column;
+    }
+
+    .ContactUsSendButton1 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .ContactUsSendButton2 {
+        display: block;
+        visibility: visible;
+    }
+}

@@ -1,12 +1,3 @@
-.home {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background: url('/public/images/titlephoto.webp') center/cover;
-    background-size: fill;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .smallText {
     color: rgba(255, 255, 255, 0.8);
@@ -42,5 +33,6 @@
 
     .programTitle {
         font-size: 64px;
+        text-align: center;
     }
 }
