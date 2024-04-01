@@ -81,7 +81,7 @@ export default function AdmissionsForm() {
   return (
     <div>
         <form className='applicationForm'>
-            <div style={{display: 'flex', flexDirection: 'column'}}>
+            <div style={{display: 'flex', flexDirection: 'column', marginRight: "10px"}}>
                 <input required
                     className='ContactUsInput'
                     value={application.name}
@@ -108,18 +108,19 @@ export default function AdmissionsForm() {
                     value={application.childName}
                     onChange={handleStateChange}
                     name="childName"
-                    placeholder={"Childs Full Name"}
+                    placeholder={"Child's Full Name"}
                 />
                 <input required
                     className='ContactUsInput'
                     value={application.childAge}
                     onChange={handleStateChange}
                     name="childAge"
-                    placeholder={"Childs Age"}
+                    placeholder={"Child's Age"}
                 />
                 <DatePicker
                     required
                     showIcon
+                    className='ContactUsInput'
                     selected={application.date}
                     onChange={handleDateChange}
                     includeDateIntervals={[
@@ -134,16 +135,15 @@ export default function AdmissionsForm() {
                     value={application.message}
                     onChange={handleStateChange}
                     name='message'
-                    placeholder='Leave us your message'
+                    placeholder='Leave us your message!'
                     style={{height: '400px', 
                             width: '100%',
-                            resize: 'none',
-                            border: 'none'}}
+                            resize: 'none'}}
                     maxLength="4000"
                 />
       
                 <DropZone application={application} setApplication={setApplication} />
-                <button onClick={handleEmailClick} style={{height: '80px', width: '100%', fontSize: '15px', border: '1px solid black'}} className='ContactUsSendButton' disabled={isLoading}>
+                <button className='ContactUsSendButton' onClick={handleEmailClick} disabled={isLoading}>
                         {isLoading ? 'Sending...' : 'Send'}
                 </button>  
             </div>
@@ -202,7 +202,7 @@ const DropZone = ({ application, setApplication }) => {
             <div
                 onDrop={handleDrop}
                 onDragOver={(e) => e.preventDefault()}
-                style={{ border: '1px dotted black', padding: '20px', textAlign: 'center', cursor: 'pointer', WebkitBackdropFilter: 'blur(12px)'}}
+                className= 'DragDropArea'
             >
                 <input
                     type="file"
