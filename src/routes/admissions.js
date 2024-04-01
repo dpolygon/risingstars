@@ -14,7 +14,7 @@ function Admissions() {
                     <p style={{textAlign: 'center', fontSize: '20px', fontWeight:"600"}}>Rising Stars is currently accepting new admissions ✅</p>
                 </div>
                 <div className='QuoteBubble'>
-                    <img src='./images/headshot.webp'></img>
+                    <img src='/images/headshot.webp'></img>
                     <p>Welcome! Parents, you can start your application online right here. No need to submit a full application yet—just get started. To expedite the process, scroll to the bottom of the page to fill out the necessary forms. We're here to help! <br></br><br></br>- Griselda, Director</p>
                 </div>
                 <AdmissionsForm/>
