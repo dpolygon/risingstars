@@ -20,3 +20,14 @@
     background: white;
     color: black
 }
+
+.ContactUsForm {
+    padding-top: 3rem;
+    width: 33%;
+}
+
+@media screen and (max-width: 1024px) {
+    .ContactUsForm {
+        width: 80%;
+    }
+}

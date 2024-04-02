@@ -30,7 +30,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className='nav-item'>
-                  <NavLink to='/visit-us' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
+                  <NavLink to='/book-a-tour' className={({ isActive }) => 'nav-links' + (isActive ? ' activated' : '')} onClick={closeMobileMenu}>
                     Visit Us
                   </NavLink>
                 </li>

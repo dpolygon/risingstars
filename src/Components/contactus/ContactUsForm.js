@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import './ContactUsForm.css'
-import { act } from 'react-dom/test-utils';
+import { config } from '../../Constants'
 
 export default function ContactUsForm() {
     const [activeButton, setActiveButton] = useState('text');
@@ -21,7 +21,7 @@ export default function ContactUsForm() {
     }
 
     const sendMail = () => {
-        fetch('/send-mail', {
+        fetch(`${config.url.BACKEND_URL}/api/send-mail`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const sendText = () => {
-        fetch('/send-text', {
+        fetch(`${config.url.BACKEND_URL}/api/send-text`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -66,12 +66,10 @@ export default function ContactUsForm() {
         } else {
             sendMail();
         }
-
-
     }
 
     return (
-        <div>
+        <div className='ContactUsForm'>
             <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '1rem', justifyContent: 'left'}}>
                 <p style={{fontSize: '15px', paddingRight: '1rem', color: 'black'}}>Communication Preference: </p>
                 <div>
@@ -83,7 +81,7 @@ export default function ContactUsForm() {
                     </button>
                 </div>
             </div>
-            <form style={{display: 'flex', flexDirection: 'column', width: '400px'}}>
+            <form style={{display: 'flex', flexDirection: 'column'}}>
                 <input required
                     className='ContactUsInput'
                     value={text.name}

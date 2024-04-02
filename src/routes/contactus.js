@@ -9,7 +9,7 @@ import './contactus.css'
 function ContactUs() {
 
     return (
-        <div style={{background: 'url(./images/contactusbg.jpg)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+        <div style={{background: 'url(./images/contactusbg.webp)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div style={{padding: '3%', paddingBottom: '110px'}}>
                 <div className='ContactUs'>
                     <ContactLeft/>

@@ -29,7 +29,7 @@ const Teachers = () => {
         './images/ourteam/claudia.webp',
         './images/ourteam/rosy.webp',
         './images/ourteam/martha.webp',
-        './images/ourteam/grisphoto.jpg'
+        './images/ourteam/grisphoto.webp'
     ];
 
     // Function to render teacher images
@@ -61,7 +61,7 @@ const Teachers = () => {
 const RightInfo = () => {
     const nav = useNavigate();
     const handleVisitUs = () => {
-        nav('visit-us')
+        nav('contact-us')
     };
     
     return (
@@ -89,7 +89,7 @@ const RightInfo = () => {
                     <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
                 </li>
                 <li className='daycareData'>
-                    <h1 className='daycareDataTitle'>8+</h1>
+                    <h1 className='daycareDataTitle'>9+</h1>
                     <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
                 </li>
                 <li className='daycareData'>
