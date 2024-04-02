@@ -55,6 +55,40 @@
     -webkit-text-fill-color: transparent;
 }
 
+.GG{
+    font-size: 22px;
+}
+
+.RV{
+    font-size: 22px;
+}
+
+.MG {
+    font-size: 19px;
+}
+
+.CLH{
+    font-size: 20px;
+}
+
+.MPP{
+    font-size: 19px;
+}
+
+@media screen and (max-width: 767px) {
+    .RV{
+        font-size: 20px;
+    }
+
+    .MG {
+        font-size: 18px;
+    }
+
+    .MPP{
+        font-size: 18px;
+    }
+}
+
 
 @media screen and (max-width: 960px) {
     .team-grid {
