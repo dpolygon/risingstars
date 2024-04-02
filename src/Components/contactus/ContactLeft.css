@@ -3,6 +3,24 @@
     margin-bottom: 2rem;
 }
 
+.ContactLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.Text1{
+    font-size: 18px;
+    width: 450px;
+    padding-bottom: 1rem;
+}
+
+.Text2{
+    font-size: 18px;
+    font-weight: 600;
+    width: 450px;
+    padding-bottom: 2rem;
+}
+
 @media screen and (max-width: 1024px) {
     .ContactUsTitle {
         font-size: 96px;
@@ -11,6 +29,20 @@
 
 @media screen and (max-width: 800px) {
     .ContactUsTitle {
-        font-size: 70px;
+        font-size: 50px;
+        align-self: center;
     }
+
+    .Text1 {
+        font-size: 15px;
+        max-width: 330px;
+        text-align: center;
+    }
+
+    .Text2 {
+        font-size: 15px;
+        max-width: 330px;
+        text-align: center;
+    }
+
 }

@@ -73,39 +73,38 @@ export default function ContactUsForm() {
             <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '1rem', justifyContent: 'left'}}>
                 <p style={{fontSize: '15px', paddingRight: '1rem', color: 'black'}}>Communication Preference: </p>
                 <div>
-                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('text')} style={{backgroundColor: activeButton === "text" ? "black" : "lightgrey", color: "white"}}>
+                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('text')} style={{backgroundColor: activeButton === "text" ? "black" : "#A9A9A9", color: "white"}}>
                         Text
                     </button>
-                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('email')} style={{backgroundColor: activeButton === "email" ? "black" : "lightgrey", color: "white"}}>
+                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('email')} style={{backgroundColor: activeButton === "email" ? "black" : "#A9A9A9", color: "white"}}>
                         Email
                     </button>
                 </div>
             </div>
             <form style={{display: 'flex', flexDirection: 'column'}}>
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInput1'
                     value={text.name}
                     onChange={handleStateChange}
                     name="name"
                     placeholder="First Name"
                 />
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInput1'
                     value={text.contactInfo}
                     onChange={handleStateChange}
                     name="contactInfo"
                     placeholder={activeButton === "text" ? "Mobile Number" : "E-mail"}
                 />
                 <textarea required
-                    className='ContactUsInput'
+                    className='ContactUsInput1'
                     value={text.message}
                     onChange={handleStateChange}
                     name='message'
-                    placeholder='ask us anything!'
+                    placeholder='Ask us anything!'
                     style={{height: '400px', 
                             width: '100%',
-                            resize: 'none',
-                            border: 'none'}}
+                            resize: 'none'}}
                     maxLength="4000"
                 />
                 <button onClick={handleEmailClick} style={{height: '80px', fontSize: '15px', border: '1px solid black'}} className='ContactUsSendButton' disabled={isLoading}>
