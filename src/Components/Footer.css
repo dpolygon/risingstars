@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     height: 25vh; 
-    width: auto;
+    width: 100vw;
     color: white; 
     align-content: center;
     justify-content: space-between; 
@@ -43,6 +43,19 @@
     font-weight: 500;
     display: flex;
     flex-direction: column;
+}
+
+.copyrightTag {
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+    .copyrightTag {
+        padding-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 700px) {

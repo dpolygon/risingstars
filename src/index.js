@@ -39,16 +39,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/parents",
-        element: <Parents />
-      },
-      {
-        path: "/visit-us",
+        path: "/book-a-tour",
         element: <VisitUs />
       },
       {
         path: "/admissions",
         element: <Admissions />
+      },
+      {
+        path: "/parents",
+        element: <Parents />
       },
       {
         path: "/our-team",

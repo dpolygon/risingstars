@@ -1,0 +1,25 @@
+
+.ContactUs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    font-size: 3rem;
+    color: black;
+    padding-top: 5rem;
+}
+
+.ContactUsInfo {
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+    .ContactUs {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}

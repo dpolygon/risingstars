@@ -1,0 +1,93 @@
+.Admissions {
+    padding-top: 80px;
+}
+
+.AdmissionsTitle {
+    text-align: center;
+    font-size: 120px;
+}
+
+.AdmissionsStatus{
+    background: #A5E99B;
+    border-radius: 33px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.QuoteBubble {
+    background-color: white;
+    border-radius: 33px;
+    padding: 30px;
+    width: 50%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.QuoteBubble img {
+    width: 150px;
+    border-radius: 7px;
+}
+
+.QuoteBubble p {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 20px;
+    line-height: 1.3;
+}
+
+.FormMessage{
+    background-color: lightgray;
+    border-radius: 33px;
+    padding: 30px;
+    width: 75%;
+    margin-top: 110px;
+    line-height: 1.3;
+}
+
+.FormMessage p {
+    font-size: 17px;
+}
+
+@media screen and (max-width: 767px) {
+    .Admissions {
+        padding-top: 100px;
+    }
+
+    .AdmissionsTitle {
+        font-size: 60px;
+    }
+
+    .QuoteBubble p {
+        font-size: 18px;
+        margin-top: 40px;
+        max-width: 250px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .QuoteBubble img {
+        width: 180px;
+        border-radius: 7px;
+        margin-top: 20px;
+        align-self: center;
+    }
+    
+    .QuoteBubble {
+        padding: 30px;
+        width: 90%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FormMessage{
+        width: 85%;
+        margin-top: 90px;
+    }
+
+    .FormMessage p {
+       text-align: center;
+    }
+}
