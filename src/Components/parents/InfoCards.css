@@ -59,13 +59,33 @@
     text-align: left;
 }
 
-.EnrollmentAnswer{
+.EnrollmentAnswer {
     font-size: 25px;
 }
+
+.MealsAnswer {
+    font-size: 20px;
+    text-align: left;
+}
+
+.SafetyAnswer {
+    font-size: 22px;
+    text-align: left;
+}
+
+.CommunicationAnswer {
+    font-size: 24px;
+}
+
+
 
 @media screen and (max-width: 767px) {
     .DisciplineAnswer{
         font-size: 15px;
+    }
+
+    .PickupAnswer {
+        font-size: 20px;
     }
 
     .EnrollmentAnswer{
@@ -78,6 +98,15 @@
 
     .ClosedAnswer{
         font-size: 15px;
+    }
+
+    .SafetyAnswer {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .BadWeatherAnswer{
+        font-size: 20px;
     }
 }
 

@@ -80,7 +80,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How will parents be informed about bad weather closures?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"25px"}}>We follow the Austin Independent School District (AISD) Advisories, Warnings and Severe Weather Alerts so you may also check local TV stations and websites for an announcement of school/daycare closures.</p>
+                    <p className ='BadWeatherAnswer' >We follow the Austin Independent School District (AISD) Advisories, Warnings and Severe Weather Alerts so you may also check local TV stations and websites for an announcement of school/daycare closures.</p>
                 </div>
             </li>
             <li className="info-card">
@@ -88,7 +88,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>Is it okay to bring my child to Rising Stars if they're sick?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <ul className="SickAnswer" style={{textAlign: 'left'}}>
+                    <ul className= "SickAnswer" style={{textAlign: 'left'}}>
                         <p style={{textAlign: 'center'}}>Children should not attend Rising Stars if they are ill and:</p>
                         <br></br>
                         <li>
@@ -118,7 +118,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>Who is authorized to pick up a child from Rising Stars?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"25px"}}>Our normal procedure is to release the child only to his/her parents, or someone else the parents designated on the Autihorized Pick up and Emergency Contact Form. If someone other than the parent is to pick up the child, please notify us ahead of time. We MUST have written permission to release your child.</p>
+                    <p className='PickupAnswer'>Our normal procedure is to release the child only to his/her parents, or someone else the parents designated on the Autihorized Pick up and Emergency Contact Form. If someone other than the parent is to pick up the child, please notify us ahead of time. We MUST have written permission to release your child.</p>
                 </div>
             </li>
             <li className="info-card">
@@ -148,7 +148,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How are meals and snacks handled at Rising Stars?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"20px", textAlign:"left"}}>Parents, please remember to bring meals for your child as we <span style={{fontWeight:"800"}}>do not</span> provide food. 
+                    <p className='MealsAnswer'>Parents, please remember to bring meals for your child as we <span style={{fontWeight:"800"}}>do not</span> provide food. 
                     <br></br>
                     <br></br>
                     We serve morning breakfast from 8:00-8:45 am, lunch from 11:20-12:00 pm, and an afternoon snack at 3:00 pm. Milk is served with all snacks, and water is available throughout the day.
@@ -176,7 +176,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>What security measures are in place at Rising Stars to ensure my child's safety?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"22px", textAlign:"left"}}>To ensure your child's safety, we have implemented several security measures. Caregivers are never alone with a child. We ensure that all children and caregivers are observable at all times. This includes keeping classroom doors open, ensuring a second caregiver is present, and utilizing closed-circuit cameras. 
+                    <p className='SafetyAnswer'>To ensure your child's safety, we have implemented several security measures. Caregivers are never alone with a child. We ensure that all children and caregivers are observable at all times. This includes keeping classroom doors open, ensuring a second caregiver is present, and utilizing closed-circuit cameras. 
                     <br></br>
                     <br></br>
                     Additionally, our security cameras cover outdoor areas, and all doors remain locked to prevent unknown individuals from entering the daycare.</p>
@@ -187,7 +187,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How does Rising Stars communicate with parents about their child's progress and daily activities?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"24px"}}>At Rising Stars, we communicate with parents about their child's progress and daily activities through our end-of-day report card.</p>
+                    <p className='CommunicationAnswer'>At Rising Stars, we communicate with parents about their child's progress and daily activities through our end-of-day report card.</p>
                 </div>
             </li>
             <li className="info-card">
