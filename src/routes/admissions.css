@@ -24,9 +24,15 @@
     flex-direction: row;
 }
 
-.QuoteBubble img {
-    width: 150px;
+.ImageContainer {
+    max-width: 100%;
+    overflow: visible;  
+}
+
+.ImageContainer img {
     border-radius: 7px;
+    width: 150px;
+    height: auto; 
 }
 
 .QuoteBubble p {
@@ -67,11 +73,13 @@
         align-self: center;
     }
 
-    .QuoteBubble img {
-        width: 180px;
-        border-radius: 7px;
-        margin-top: 20px;
+    .ImageContainer {
         align-self: center;
+    }
+
+    .ImageContainer img {
+        align-self: center;
+        width: 150px;
     }
     
     .QuoteBubble {
