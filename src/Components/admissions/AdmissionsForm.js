@@ -83,35 +83,35 @@ export default function AdmissionsForm() {
         <form className='applicationForm'>
             <div style={{display: 'flex', flexDirection: 'column', marginRight: "10px"}}>
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     value={application.name}
                     onChange={handleStateChange}
                     name="name"
                     placeholder="Full Name"
                 />
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     value={application.phoneNumber}
                     onChange={handleStateChange}
                     name="phoneNumber"
                     placeholder={"Phone Number"}
                 />
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     value={application.email}
                     onChange={handleStateChange}
                     name="email"
                     placeholder={"E-mail"}
                 />
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     value={application.childName}
                     onChange={handleStateChange}
                     name="childName"
                     placeholder={"Child's Full Name"}
                 />
                 <input required
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     value={application.childAge}
                     onChange={handleStateChange}
                     name="childAge"
@@ -120,7 +120,7 @@ export default function AdmissionsForm() {
                 <DatePicker
                     required
                     showIcon
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     selected={application.date}
                     onChange={handleDateChange}
                     includeDateIntervals={[
@@ -129,16 +129,14 @@ export default function AdmissionsForm() {
                     placeholderText="Desired Start Date"
                 />
             </div>
-            <div style={{width: '400px'}}>
+            <div >
                 <textarea required
-                    className='ContactUsInput'
+                    className='ContactUsInputAdmissions'
                     value={application.message}
                     onChange={handleStateChange}
                     name='message'
+                    id = 'MessageInput'
                     placeholder='Leave us your message!'
-                    style={{height: '400px', 
-                            width: '100%',
-                            resize: 'none'}}
                     maxLength="4000"
                 />
       
