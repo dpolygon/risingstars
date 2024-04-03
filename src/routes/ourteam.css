@@ -15,8 +15,21 @@
     font-style: italic;
 }
 
+.team-message-two {
+    padding: 3%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
 @media screen and (max-width: 960px) {
     .team-message-one {
-        font-size: 42px;
+        font-size: 25px;
+    }
+
+    .team-message-two{
+        font-size: 35px;
     }
 }
