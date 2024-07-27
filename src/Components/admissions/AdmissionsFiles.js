@@ -73,14 +73,16 @@ const FilesCell = (props) => (
             alignItems: 'center',
             height: '150px',
             width: '150px',
-            backgroundColor: 'lightgrey',
+            color: 'rgb(0, 122, 225)',
+            backgroundColor: 'rgb(229, 229, 234)',
             borderRadius: '20px',
-            padding: '3%'
+            padding: '3%',
+            cursor: 'pointer'
     }}
             onClick={() => handleFileClick(props.fileName)}
     >
         <p style={{textAlign: 'center', paddingBottom: '10px'}}>{props.title}</p>
-        <button style={{background: 'transparent', border: 'none', fontSize: '17px'}}><FiArrowDownCircle /></button>
+        <FiArrowDownCircle/>
     </div>
 )
 

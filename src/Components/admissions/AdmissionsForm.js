@@ -81,7 +81,7 @@ export default function AdmissionsForm() {
   return (
     <div>
         <form className='applicationForm'>
-            <div style={{display: 'flex', flexDirection: 'column', marginRight: "10px"}}>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
                 <input required
                     className='ContactUsInput'
                     value={application.name}
@@ -138,7 +138,8 @@ export default function AdmissionsForm() {
                     placeholder='Leave us your message!'
                     style={{height: '400px', 
                             width: '100%',
-                            resize: 'none'}}
+                            resize: 'none',
+                            border: 'none'}}
                     maxLength="4000"
                 />
       

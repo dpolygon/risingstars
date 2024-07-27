@@ -16,32 +16,35 @@
 
 .QuoteBubble {
     background-color: white;
+    width: 50%;
     border-radius: 33px;
     padding: 30px;
-    width: 50%;
     margin-top: 60px;
+    align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: horizontal;
+    justify-content: space-between;
 }
 
 .QuoteBubble img {
-    width: 150px;
-    border-radius: 7px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: fit;
+    margin-right: 15px;
 }
 
 .QuoteBubble p {
     font-size: 17px;
     font-weight: 600;
-    margin-top: 40px;
-    margin-left: 20px;
     line-height: 1.3;
 }
 
 .FormMessage{
-    background-color: lightgray;
+    background-color: white;
     border-radius: 33px;
     padding: 30px;
-    width: 75%;
+    width: 100%;
     margin-top: 110px;
     line-height: 1.3;
 }
@@ -50,7 +53,7 @@
     font-size: 17px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1080px) {
     .Admissions {
         padding-top: 100px;
     }
@@ -59,32 +62,20 @@
         font-size: 60px;
     }
 
-    .QuoteBubble p {
-        font-size: 18px;
-        margin-top: 40px;
-        max-width: 250px;
-        text-align: center;
-        align-self: center;
-    }
-
     .QuoteBubble img {
-        width: 180px;
-        border-radius: 7px;
-        margin-top: 20px;
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
         align-self: center;
+        margin-bottom: 15px;
+        margin-right: 0px;
     }
     
     .QuoteBubble {
-        padding: 30px;
-        width: 90%;
+        padding: 35px;
         margin-top: 30px;
         display: flex;
         flex-direction: column;
-    }
-
-    .FormMessage{
-        width: 85%;
-        margin-top: 90px;
     }
 
     .FormMessage p {

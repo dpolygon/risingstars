@@ -20,8 +20,8 @@ function Admissions() {
                 <AdmissionsForm/>
                 <div className="FormMessage">
                     <p>To expedite the enrollment process, parents are welcome to fill out as many forms as they'd like before contacting Rising Stars. We understand your commitment to your child's well-being. To maintain high standards and comply with Texas state law, we kindly request the necessary documents to be signed. We're here to help answer any questions you may have about the documents.</p>
+                    <AdmissionsFiles/>
                 </div>
-                <AdmissionsFiles/>
             </div>
             <Footer/>
         </div>
