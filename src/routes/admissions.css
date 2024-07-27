@@ -9,7 +9,7 @@
 
 .AdmissionsStatus{
     background: #A5E99B;
-    border-radius: 33px;
+    border-radius: 10px;
     padding: 20px;
     margin-top: 15px;
 }
@@ -76,6 +76,7 @@
         margin-top: 30px;
         display: flex;
         flex-direction: column;
+        width: 70%;
     }
 
     .FormMessage p {

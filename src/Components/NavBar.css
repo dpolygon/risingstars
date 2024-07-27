@@ -82,7 +82,7 @@
 
 .activated {
   color: white;
-  background: linear-gradient(120deg, #4286f4c9, #1ed75fca);
+  background: linear-gradient(120deg, #4286f4, black);
 }
 
 .fa-bars {
@@ -101,12 +101,12 @@
     position: absolute;
     top: 80px;
     left: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease;
     padding: 40px;
+    background: linear-gradient(300deg, #4286f455, #1ed75fff);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background: linear-gradient(120deg, #4286f4c9, #1ed75fca);
   }
 
   .nav-menu.active {
