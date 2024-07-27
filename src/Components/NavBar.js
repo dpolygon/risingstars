@@ -17,7 +17,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="nav-wrapper">
           <nav className='navbar'>
-              <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
+              <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                 <RiStarSmileLine className='navbar-icon'/> Rising Stars
               </Link>
               <div className="menu-icon" onClick={handleClick}>

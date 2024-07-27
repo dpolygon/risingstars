@@ -2,6 +2,7 @@ import React from 'react'
 
 import './ProgramInfo.css'
 import programsData from '../../data/programsData.json'
+import MoreDetail from '../MoreDetail';
 
 export default function ProgramInfo(prop) {
 
@@ -25,14 +26,10 @@ export default function ProgramInfo(prop) {
 const InfoLeft = (prop) => (
     <div className='infoL' style={{display: 'flex', flexDirection: 'column'}}>
         <h1>{programsData[prop.program].milestones}</h1>
-        <h3 style={{paddingTop: '1rem'}}>{programsData[prop.program].mile1}</h3>
-        <p className='miles'>{programsData[prop.program].mile1d}</p>
-        <h3>{programsData[prop.program].mile2}</h3>
-        <p className='miles'>{programsData[prop.program].mile2d}</p>
-        <h3>{programsData[prop.program].mile3}</h3>
-        <p className='miles'>{programsData[prop.program].mile3d}</p>
-        <h3>{programsData[prop.program].mile4}</h3>
-        <p className='miles'>{programsData[prop.program].mile4d}</p>
+        <MoreDetail title={programsData[prop.program].mile1} insideText={programsData[prop.program].mile1d}/>
+        <MoreDetail title={programsData[prop.program].mile2} insideText={programsData[prop.program].mile2d}/>
+        <MoreDetail title={programsData[prop.program].mile3} insideText={programsData[prop.program].mile3d}/>
+        <MoreDetail title={programsData[prop.program].mile4} insideText={programsData[prop.program].mile4d}/>
         <img className='leftImg' src={programsData[prop.program].pic1} style={{marginTop: '4vh', borderRadius: '10px', objectFit: 'cover', height: '25vh'}}></img>
     </div>
 );
@@ -47,16 +44,11 @@ const InfoRight = (prop) => (
         <div style={{display: 'flex', flexDirection: 'column', marginTop: '4vh'}}>
             <h1>{programsData[prop.program].activities}</h1>
             <p style={{fontWeight: '500'}}>{programsData[prop.program].title2}</p>
-            <h3 style={{paddingTop: '1rem'}}>{programsData[prop.program].act1}</h3>
-            <p className='acts'>{programsData[prop.program].act1d}</p>
-            <h3>{programsData[prop.program].act2}</h3>
-            <p className='acts'>{programsData[prop.program].act2d}</p>
-            <h3>{programsData[prop.program].act3}</h3>
-            <p className='acts'>{programsData[prop.program].act3d}</p>
-            <h3>{programsData[prop.program].act4}</h3>
-            <p className='acts'>{programsData[prop.program].act4d}</p>
-            <h3>{programsData[prop.program].act5}</h3>
-            <p className='acts'>{programsData[prop.program].act5d}</p>
+            <MoreDetail title={programsData[prop.program].act1} insideText={programsData[prop.program].act1d}/>
+            <MoreDetail title={programsData[prop.program].act2} insideText={programsData[prop.program].act2d}/>
+            <MoreDetail title={programsData[prop.program].act3} insideText={programsData[prop.program].act3d}/>
+            <MoreDetail title={programsData[prop.program].act4} insideText={programsData[prop.program].act4d}/>
+            <MoreDetail title={programsData[prop.program].act5} insideText={programsData[prop.program].act5d}/>
         </div>
     </div>
 );

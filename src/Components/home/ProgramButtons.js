@@ -16,21 +16,18 @@ export default function ProgramButtons(props) {
             />
             <ProgramButton 
                 text='Toddlers' 
-                btnColor='rgb(213, 213, 213)'
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
             />
             <ProgramButton 
                 text='Early Preschool' 
-                btnColor='rgb(213, 213, 213)'
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
             />
             <ProgramButton 
                 text='Preschool' 
-                btnColor='rgb(213, 213, 213)'
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
@@ -45,7 +42,7 @@ const ProgramButton = (props) => (
             display: 'flex',
             alignItems: 'center', 
             justifyContent: 'center',
-            backgroundColor: props.activeButton === props.text ? 'rgb(20, 23, 26)' : 'rgb(213, 213, 213)',
+            backgroundColor: props.activeButton === props.text ? 'rgb(20, 23, 26)' : 'rgb(229, 229, 234)',
             padding: '8px 20px',
             borderRadius: '33px',
             cursor: 'pointer'
@@ -53,6 +50,6 @@ const ProgramButton = (props) => (
         onClick = {() => {props.setActiveButton(props.text); 
                         props.setPrograms(props.text)}}
     >
-        <p  className='progBttnText'>{props.text}</p>
+        <p className={props.activeButton === props.text ? 'progBttnTextActive' : 'progBttnText'}>{props.text}</p>
     </div>
 );
