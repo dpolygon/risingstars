@@ -35,7 +35,7 @@ const InfoLeft = (prop) => (
 );
 
 const InfoMiddle = (prop) => (
-    <img className='infoM' style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover'}} src={programsData[prop.program].pic2}></img>
+    <img className='infoM' style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover', height: '85vh'}} src={programsData[prop.program].pic2}></img>
 );
 
 const InfoRight = (prop) => (
