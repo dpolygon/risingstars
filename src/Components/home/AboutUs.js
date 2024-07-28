@@ -13,49 +13,11 @@ export default function AboutUs() {
             <div style={{padding: '3%'}}>
                 <p className="aboutUsTitle">ABOUT US</p>
                 <div style={{display: 'flex', flexDirection: 'row'}}>
-                    <Teachers/>
                     <RightInfo/>
                 </div>
             </div>
         </div>
     );
-}
-
-const Teachers = () => {
-
-    //Array of teacher image URLs
-    const teacherUrls = [
-        './images/ourteam/monica.webp',
-        './images/ourteam/claudia.webp',
-        './images/ourteam/rosy.webp',
-        './images/ourteam/martha.webp',
-        './images/ourteam/grisphoto.webp'
-    ];
-
-    // Function to render teacher images
-    const renderTeachers = () => {
-        return teacherUrls.map((url, index) => (
-            <img className="teacherImages" key={index} src={url} alt={`Image ${index + 1}`} />
-        ));
-    };
-
-    const nav = useNavigate();
-    const handleMeetTeachers = () => {
-        nav('our-team')
-    };
-
-    return (
-        <div className="aboutUsTeacherArea" onClick={handleMeetTeachers}>
-            <div style={{color: 'white', marginBottom: '30px', fontSize: '30px'}}>
-                <IoIosArrowUp />
-            </div>
-            {renderTeachers()}
-            <div style={{color: 'white', paddingTop: '10px'}}>
-                <p>Meet the</p>
-                <p>teachers</p>
-            </div>
-        </div>
-    )
 }
 
 const RightInfo = () => {
@@ -65,7 +27,7 @@ const RightInfo = () => {
     };
     
     return (
-        <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '60px'}}>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
             <div className='aboutUsBottom'>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                     <h1 className='expertsTitle'>OUR COMPREHENSIVE CURRICULUM</h1>

@@ -48,7 +48,11 @@ export default function Footer() {
                                                     window.open(urlToOpen, '_blank');
                                                 }}
                             />
-                            <p style={{fontFamily: 'OEGP', fontSize: '1.5rem'}}>LoneStarDev</p>
+                            <p style={{fontFamily: 'OEGP', fontSize: '1.5rem', cursor: 'pointer'}}
+                                onClick={ () => {   const urlToOpen = 'https://www.lonestardev.net';
+                                    window.open(urlToOpen, '_blank');
+                                }}
+                            >LoneStarDev</p>
                         </div>
                         <Button/>
                     </div>

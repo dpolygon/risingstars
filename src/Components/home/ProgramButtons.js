@@ -38,14 +38,7 @@ export default function ProgramButtons(props) {
 const ProgramButton = (props) => (
     <div className='progButtons'
         style={{
-            display: 'flex',
-            alignItems: 'center', 
-            justifyContent: 'center',
-            backgroundColor: props.activeButton === props.text ? 'rgb(20, 23, 26)' : 'rgb(229, 229, 234)',
-            padding: '8px 20px',
-            borderRadius: '33px',
-            cursor: 'pointer',
-            transition: 'background-color .45s ease-in'
+            backgroundColor: props.activeButton === props.text ? 'rgb(20, 23, 26)' : 'rgb(229, 229, 234)'
         }}
         onClick = {() => {props.setActiveButton(props.text); 
                         props.setPrograms(props.text)}}

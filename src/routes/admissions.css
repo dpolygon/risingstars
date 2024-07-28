@@ -32,6 +32,7 @@
     border-radius: 20px;
     object-fit: fit;
     margin-right: 15px;
+    object-position: calc(50 / 540 * 100%) calc(100 / 960 * 100%);  
 }
 
 .QuoteBubble p {
