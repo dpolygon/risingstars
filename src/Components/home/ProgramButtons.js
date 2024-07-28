@@ -9,7 +9,6 @@ export default function ProgramButtons(props) {
         <div style={{display: 'flex', flexDirection: 'row'}}>
             <ProgramButton 
                 text='Infants' 
-                btnColor='black' 
                 activeButton={activeButton} 
                 setActiveButton={setActiveButton}
                 setPrograms={props.setProgram}
@@ -45,7 +44,8 @@ const ProgramButton = (props) => (
             backgroundColor: props.activeButton === props.text ? 'rgb(20, 23, 26)' : 'rgb(229, 229, 234)',
             padding: '8px 20px',
             borderRadius: '33px',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            transition: 'background-color .45s ease-in'
         }}
         onClick = {() => {props.setActiveButton(props.text); 
                         props.setPrograms(props.text)}}

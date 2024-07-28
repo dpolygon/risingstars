@@ -34,10 +34,21 @@
 }
 
 .miles {
+    overflow: hidden;
+    opacity: 0;
+    height: 0;
+    position: absolute;
     font-size: 21px;
     font-weight: 600;
     padding-top: 15px;
     color: #86868b;
+    transition: height .3s ease-in, opacity .4s ease-in, position 0s ease-in;
+}
+
+.miles.active {
+    opacity: 1;
+    height: auto;
+    position: relative;
 }
 
 .acts {

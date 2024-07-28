@@ -20,7 +20,7 @@ export default function MoreDetail(props) {
                     <h3>{props.title}</h3>
                     {click ? <IoIosArrowUp/> : <IoIosArrowDown/>}
                 </div>
-                {click ? <p className='miles'>{props.insideText}</p> : <p></p>}
+                <p className={click ? 'miles active' : 'miles'}>{props.insideText}</p>
             </div>
         </div>
     )

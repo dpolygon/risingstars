@@ -30,7 +30,7 @@ const InfoLeft = (prop) => (
         <MoreDetail title={programsData[prop.program].mile2} insideText={programsData[prop.program].mile2d}/>
         <MoreDetail title={programsData[prop.program].mile3} insideText={programsData[prop.program].mile3d}/>
         <MoreDetail title={programsData[prop.program].mile4} insideText={programsData[prop.program].mile4d}/>
-        <img className='leftImg' src={programsData[prop.program].pic1} style={{marginTop: '4vh', borderRadius: '10px', objectFit: 'cover', height: '25vh'}}></img>
+        <img className='leftImg' src={programsData[prop.program].pic1} style={{marginTop: '4vh', borderRadius: '10px', objectFit: 'cover', height: '35vh'}}></img>
     </div>
 );
 
