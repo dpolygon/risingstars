@@ -34,6 +34,7 @@ export default function Footer() {
                         <div style={{marginBottom: '1rem'}}>
                             <p className='logoName'>Rising Stars</p>
                             <p className='logoName'>Bilingual Learning Center</p>
+                            <p className='logoName' style={{fontSize: '12px'}}>located in South Austin</p>
                         </div>
                         <div className='footerSocialLinks' style={{display: 'flex', flexDirection: 'row', alignItems: 'center', marginBottom: '1rem'}}>
                             <IoLogoFacebook 

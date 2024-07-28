@@ -37,6 +37,7 @@
     overflow: hidden;
     opacity: 0;
     height: 0;
+    width: 0;
     position: absolute;
     font-size: 21px;
     font-weight: 600;
@@ -47,6 +48,7 @@
 
 .miles.active {
     opacity: 1;
+    width: auto;
     height: auto;
     position: relative;
 }
