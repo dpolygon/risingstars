@@ -73,7 +73,7 @@ function VisitUs() {
                             ))}
                         <button className= "nextButton" onClick={nextImage}>→</button>
                     </div>
-                </div>                                    
+                </div>
             </div>
             <Footer/>
         </div>
