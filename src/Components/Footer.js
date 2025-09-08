@@ -85,7 +85,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div style={{background: 'rgb(0,0,0, .12)'}}>
-                    <p className='copyrightTag'>2024 Rising Stars & LoneStarDev. All Rights Reserved.</p>
+                    <p className='copyrightTag'>2025 Rising Stars & LoneStarDev. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,38 @@
+.hourly-list-item {
+    text-align: center;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.75);
+    /* fixed transparency (0–1 instead of 0–100) */
+    padding: 1rem;
+    border-radius: 32px;
+    align-content: center;
+}
+
+.hourly-rates-fees {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 1rem;
+    border-radius: 32px;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hourly-data {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+    border-radius: 32px;
+    padding: 2rem;
+}
+
+.hourly-info-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem 0 0 0; /* top right bottom left */
+}
+
+@media screen and (max-width: 800px) {
+    .hourly-info-list {
+        flex-direction: column;
+    }
+}

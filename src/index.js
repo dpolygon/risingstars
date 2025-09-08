@@ -16,8 +16,9 @@ import Parents from './routes/parents';
 import OurTeam from './routes/ourteam';
 import VisitUs from './routes/visitus';
 import Admissions from './routes/admissions'
+import Hourly from "./routes/hourly";
 import ContactUs from "./routes/contactus";
-import Navbar from "./Components/NavBar";
+import Navbar from "./Components/navbar.jsx";
 import ErrorPage from "./routes/errorpage";
 
 const Applayout = () => {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
         element: <Admissions />
       },
       {
+        path: "/hourly",
+        element: <Hourly />
+      },
+      {
         path: "/parents",
         element: <Parents />
       },
@@ -55,7 +60,7 @@ const router = createBrowserRouter([
         element: <OurTeam />,
       },
       {
-        path:"/contact-us",
+        path: "/contact-us",
         element: <ContactUs />
       }
     ]

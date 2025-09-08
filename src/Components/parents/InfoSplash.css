@@ -1,6 +1,4 @@
 .info-splash {
-    padding: 3%;
-    padding-top: calc(80px + 75px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +8,7 @@
 
 .info-splash-title {
     font-weight: 700;
-    font-size: 120px;
+    font-size: 7rem;
 }
 
 .card-content2 p {

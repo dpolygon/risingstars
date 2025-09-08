@@ -186,8 +186,18 @@ export default function InfoCards() {
                 <div className='card-content'>
                     <h2 className='info-card-title'>How does Rising Stars communicate with parents about their child's progress and daily activities?</h2>
                 </div>
-                <div className='card-content2'> 
-                    <p style={{fontSize:"24px"}}>At Rising Stars, we communicate with parents about their child's progress and daily activities through our end-of-day report card.</p>
+                <div className='card-content2' style={{gap: '1rem'}}> 
+                    <p style={{fontSize: 'clamp(1rem, 1.9vw, 1.5rem'}}> We are excited to let you know that our daycare uses the Brightwheel app to stay connected with parents and keep you updated throughout the day. Brightwheel allows us to share important information such as:</p>
+                    <ul style={{fontSize: 'clamp(.75rem, 2.5vw, 1rem', textAlign: 'center', display: 'flex', justifyContent: 'center', justifyItems: 'center', gap: '1rem', listStyle: 'none'}}>
+                        <li>Daily reports and activities</li>
+                        <li>Photos and updates of your child</li>
+                        <li>Messaging with teachers and staff</li>
+                        <li>Attendance and check-in/out records</li>
+                    </ul>
+                    <p style={{fontSize: 'clamp(1rem, 1.9vw, 1.5rem'}}>
+                        We encourage all families to download the Brightwheel app so you don’t miss any updates about your child’s day.
+                        Thank you for partnering with us to make communication simple and convenient.
+                    </p>
                 </div>
             </li>
             <li className="info-card">

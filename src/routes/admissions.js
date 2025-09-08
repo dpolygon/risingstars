@@ -8,7 +8,7 @@ import AdmissionsForm from '../Components/admissions/AdmissionsForm';
 function Admissions() {
     return (
         <div style={{background: 'url(./images/admissionsbg.webp)', backgroundSize: 'cover'}} className='Admissions'>
-            <div style={{padding: '3%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <div style={{padding: '3rem 1rem 1rem 1rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <h1 className='AdmissionsTitle'>Admissions</h1>
                 <div className='AdmissionsStatus'>
                     <p style={{textAlign: 'center', fontSize: '20px', fontWeight:"600"}}>Rising Stars is currently accepting new admissions ✅</p>

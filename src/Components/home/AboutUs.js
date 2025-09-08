@@ -36,7 +36,7 @@ const RightInfo = () => {
                         <Button buttonSize='btn-medium' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour'/>
                     </div>
                 </div>
-                <video className='video' controls autoPlay loop y>
+                <video loop autoPlay muted playsInline className='video'>
                     <source src="videos/video1.mp4" type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>

@@ -9,11 +9,13 @@ import './contactus.css'
 function ContactUs() {
 
     return (
-        <div style={{background: 'url(./images/contactusbg.webp)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
-            <div style={{padding: '3%', paddingBottom: '110px'}}>
-                <div className='ContactUs'>
-                    <ContactLeft/>
-                    <ContactUsForm/>
+        <div>
+            <div style={{background: 'url(/images/contactusbg.webp)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: '8rem 1rem 1rem 1rem'}}>
+                <div>
+                    <div className='ContactUs'>
+                        <ContactLeft/>
+                        {/* <ContactUsForm/> */}
+                    </div>
                 </div>
             </div>
             <Footer/>

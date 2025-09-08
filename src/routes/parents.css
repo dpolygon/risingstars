@@ -1,4 +1,5 @@
 .Parents {
     display: flex;
     flex-direction: column;
+    padding: 9rem 1rem 1rem 1rem;
 }
