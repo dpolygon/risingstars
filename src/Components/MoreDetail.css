@@ -4,3 +4,11 @@
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
+.more-detail-info {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 15px;
+    color: #86868b;
+}

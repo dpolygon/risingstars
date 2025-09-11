@@ -10,10 +10,10 @@ export default function AboutUs() {
 
     return (
         <div className="aboutUsContainer">
-            <div style={{padding: '3%'}}>
+                <div style={{padding: '3rem 1rem 0 1rem'}}>
                 <p className="aboutUsTitle">ABOUT US</p>
-                <div style={{display: 'flex', flexDirection: 'row'}}>
-                    <RightInfo/>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                    <RightInfo />
                 </div>
             </div>
         </div>
@@ -25,19 +25,19 @@ const RightInfo = () => {
     const handleVisitUs = () => {
         nav('contact-us')
     };
-    
+
     return (
-        <div style={{display: 'flex', flexDirection: 'column'}}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div className='aboutUsBottom'>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <h1 className='expertsTitle'>OUR COMPREHENSIVE CURRICULUM</h1>
                     <p className='expertsDesc'>Encompasses both English and Spanish language proficiency. We nurture giggles and growth in all aspects social, physical, emotional, and cognitive, ensuring your little one is kindergarten-ready. Our goal is that each kid leave with a pocketful of skills, ready to blossom into someone who sparkles in every situation, always eager to learn more and more. 🌟📚</p>
-                    <div style={{paddingTop: '40px', width: '70%'}}>
-                        <Button buttonSize='btn-medium' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour'/>
+                    <div style={{ paddingTop: '40px', width: '70%' }}>
+                        <Button buttonSize='btn-medium' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour' />
                     </div>
                 </div>
                 <video loop autoPlay muted playsInline className='video'>
-                    <source src="videos/video1.mp4" type="video/mp4"/>
+                    <source src="videos/video1.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>

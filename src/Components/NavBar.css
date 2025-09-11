@@ -22,7 +22,7 @@
 .navbar-content {
     position: relative;
     display: flex;
-    height: 85px;
+    height: 50px;
     width: 100%;
     padding: 25px 0 1rem 0;
     transition: all 0.3s ease;

@@ -14,14 +14,9 @@
 .cells {
     display: flex; 
     flex-direction: row; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 2rem;
-}
-
-.valueCell {
-    border-radius: 50px;
-    height: 40vh;
-    width: 30%;
+    gap: 1rem;
 }
 
 .valueContent{
