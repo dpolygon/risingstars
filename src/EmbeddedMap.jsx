@@ -1,4 +1,4 @@
-// EmbeddedMap.js
+// EmbeddedMap.jsx
 import React from 'react';
 
 const EmbeddedMap = () => {

@@ -9,17 +9,17 @@ import {
   Outlet,
 } from "react-router-dom";
 
-import './App.css';
+import './index.css';
 
-import Home from './routes/home';
-import Parents from './routes/parents';
-import OurTeam from './routes/ourteam';
-import VisitUs from './routes/visitus';
-import Admissions from './routes/admissions'
-import Hourly from "./routes/hourly";
-import ContactUs from "./routes/contactus";
+import Home from './routes/home.jsx';
+import Parents from './routes/parents.jsx';
+import OurTeam from './routes/ourteam.jsx';
+import VisitUs from './routes/visitus.jsx';
+import Admissions from './routes/admissions.jsx'
+import Hourly from "./routes/hourly.jsx";
+import ContactUs from "./routes/contactus.jsx";
 import Navbar from "./Components/navbar.jsx";
-import ErrorPage from "./routes/errorpage";
+import ErrorPage from "./routes/errorpage.jsx";
 
 const Applayout = () => {
   return (
