@@ -19,8 +19,8 @@ export default function InfoCards() {
     }
 
   return (
-    <div style={{padding: '3%', paddingTop: '80px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <ul className="info-grid">
+    <div style={{padding: '8rem 1rem 1rem 1rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div className="info-grid">
             <li className="info-card">
                 <div className='card-content'>
                     <h2 className='info-card-title'>When are Rising Stars' holiday and scheduled closure dates?</h2>
@@ -216,7 +216,7 @@ export default function InfoCards() {
                     </div>
                 </div>
             </li>
-        </ul>
+        </div>
     </div>
   )
 }

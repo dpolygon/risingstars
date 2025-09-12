@@ -42,8 +42,8 @@ export default function MoreDetail({ title, insideText }) {
   if (!title) return null;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', marginTop: '10px', borderRadius: '32px', background: '#e5e5ea', overflow: 'hidden' }}>
-      <div style={{ padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }} onClick={toggleOpen}>
+    <div style={{ display: 'flex', flexDirection: 'column', marginTop: '10px', borderRadius: '32px', background: '#e5e5ea', overflow: 'hidden', cursor: 'pointer' }}>
+      <div style={{ padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} onClick={toggleOpen}>
         <h3>{title}</h3>
         {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </div>
