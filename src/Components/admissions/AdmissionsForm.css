@@ -1,13 +1,30 @@
 .applicationForm {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 2rem;
-    width: 100%;
+    gap: 1rem;
+    min-width: 500px;
+    border-radius: 32px;
+    overflow: hidden;
 }
 
-.react-datepicker__view-calendar-icon input {
-    padding: 5%;
-    width: 100%;
+.allInputFields {
+    display: flex;
+    flex-direction: row;
+}
+
+.smallInput {
+    display: flex;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.AdmissionsInput {
+    padding: 1.5rem;
+    flex: 1;
 }
 
 .react-datepicker__calendar-icon {
@@ -17,13 +34,13 @@
 
 .DragDropArea {
     border: 1px dotted black;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
-    cursor: pointer; 
+    cursor: pointer;
     backdrop-filter: blur(12px);
 }
 
-.DragDropArea button{
+.DragDropArea button {
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -36,6 +53,8 @@
     width: 100%;
     font-size: 15px;
     border: 1px solid black;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
 }
 
 .ContactUsSendButton2 {
@@ -46,6 +65,15 @@
 @media screen and (max-width: 1024px) {
     .applicationForm {
         flex-direction: column;
+        gap: 0rem;
+    }
+
+    .allInputFields {
+        flex-direction: column;
+    }
+
+    .admissions-text-area {
+        min-height: 12rem;
     }
 
     .ContactUsSendButton1 {

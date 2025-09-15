@@ -1,6 +1,6 @@
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(600px, max-content));
     gap: 1rem;
     list-style-type: none;
   }
@@ -17,11 +17,12 @@
 .card-content2 {
     color: black;
     height: 600px;
-    width: 80%;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    overflow-y: auto;
 }
 
 .card-content2 {

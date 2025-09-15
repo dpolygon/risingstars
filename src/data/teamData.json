@@ -4,15 +4,37 @@
             "name": "Griselda Gonzalez",
             "id": "GG",
             "member-desc": "Early Childhood Educator | Director",
-            "image": "./images/ourteam/grisphoto.webp",
+            "image": "./images/ourteam/gris.avif",
             "summary": "Hello, I'm Griselda Gonzalez, the owner and care provider at Rising Stars. With many years of experience working with children of all age levels, I founded Rising Stars in 2015 to create a bilingual, diverse, and nurturing environment. At Rising Stars, we strive to help young children grow into independent, self-confident, and inquisitive learners."
         },
         {
-            "name": "Martha Galvis",
+            "name": "Ms. Martha",
             "id": "MG",
             "member-desc": "Educator | Caregiver",
-            "image": "./images/ourteam/martha.webp",
+            "image": "./images/ourteam/martha.avif",
             "summary": "My name is Martha Galvis. I was born in Villavicencio, Colombia, I am the third of five siblings and I have four children, I have worked with young children in my native country. I offer them genuine care and a loving, family and respectful environment, providing a clean environment and confidence in learning. I am cheerful and enjoy offering children a wide range of activities such as art, music, and movement. I use all my knowledge in a way that works for the benefit of the children, their families, and our educational center. I advocate for my work represented by high-quality care in which  helps enable children to become productive citizens. When I have free time I like to cook food from my country, read, and enjoy time with my husband. I love coffee and flowers."
+        },
+        {
+            "name": "Ms. Bibi",
+            "id": "Bb",
+            "member-desc": "Educator | Caregiver",
+            "image": "/images/ourteam/Bibi.avif",
+            "summary": ""
+        },
+        {
+            "name": "Ms. Julia",
+            "id": "ju",
+            "member-desc":"Educator | Caregiver",
+            "image": "./images/ourteam/julia.avif",
+            "summary": ""
+        }, 
+        {
+            "name": "Ms. Maria",
+            "id": "maria",
+            "member-desc": "Educator | Caregiver",
+            "image": "/images/ourteam/maria.avif",
+            "summary": ""
         }
+
     ]
 }

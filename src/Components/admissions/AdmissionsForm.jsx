@@ -9,6 +9,8 @@ import './AdmissionsForm.css'
 
 export default function AdmissionsForm() {
     const [isLoading, setIsLoading] = useState(false);
+      const [selected, setSelected] = useState(null);
+
     const [application, setApplication] = useState({
         name: "",
         phoneNumber: "",
@@ -47,28 +49,28 @@ export default function AdmissionsForm() {
         application.pdfs.forEach((file, index) => {
             formData.append('files', file, file.name);
         });
-    
+
         fetch(`${config.url.BACKEND_URL}/api/send-application`, {
             method: 'POST',
             body: formData
         })
-        .then(() => {
-            setApplication({
-                name: "",
-                phoneNumber: "",
-                email: "",
-                childName: "",
-                childAge: "",
-                date: "",
-                message: "",
-                pdfs: []
+            .then(() => {
+                setApplication({
+                    name: "",
+                    phoneNumber: "",
+                    email: "",
+                    childName: "",
+                    childAge: "",
+                    date: "",
+                    message: "",
+                    pdfs: []
+                })
             })
-        })
-        .finally(() => {
-            setIsLoading(false);
-        });
+            .finally(() => {
+                setIsLoading(false);
+            });
     }
-    
+
 
     const handleEmailClick = async () => {
         if (application.name === "" || application.message === "" || application.contactInfo === "") {
@@ -78,79 +80,79 @@ export default function AdmissionsForm() {
         sendApplication();
     }
 
-  return (
-    <div>
+    return (
         <form className='applicationForm'>
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-                <input required
-                    className='ContactUsInput'
-                    value={application.name}
-                    onChange={handleStateChange}
-                    name="name"
-                    placeholder="Full Name"
-                />
-                <input required
-                    className='ContactUsInput'
-                    value={application.phoneNumber}
-                    onChange={handleStateChange}
-                    name="phoneNumber"
-                    placeholder={"Phone Number"}
-                />
-                <input required
-                    className='ContactUsInput'
-                    value={application.email}
-                    onChange={handleStateChange}
-                    name="email"
-                    placeholder={"E-mail"}
-                />
-                <input required
-                    className='ContactUsInput'
-                    value={application.childName}
-                    onChange={handleStateChange}
-                    name="childName"
-                    placeholder={"Child's Full Name"}
-                />
-                <input required
-                    className='ContactUsInput'
-                    value={application.childAge}
-                    onChange={handleStateChange}
-                    name="childAge"
-                    placeholder={"Child's Age"}
-                />
-                <DatePicker
-                    required
-                    showIcon
-                    className='ContactUsInput'
-                    selected={application.date}
-                    onChange={handleDateChange}
-                    includeDateIntervals={[
-                        { start: new Date(), end: addDays(new Date(), 365) },
-                    ]}
-                    placeholderText="Desired Start Date"
-                />
-            </div>
-            <div style={{width: '400px'}}>
+            <div className='allInputFields'>
+                <div className="smallInput" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <input required
+                        className='AdmissionsInput'
+                        value={application.name}
+                        onChange={handleStateChange}
+                        name="name"
+                        placeholder="Full Name"
+                    />
+                    <input required
+                        className='AdmissionsInput'
+                        value={application.phoneNumber}
+                        onChange={handleStateChange}
+                        name="phoneNumber"
+                        placeholder={"Phone Number"}
+                    />
+                    <input required
+                        className='AdmissionsInput'
+                        value={application.email}
+                        onChange={handleStateChange}
+                        name="email"
+                        placeholder={"E-mail"}
+                    />
+                    <input required
+                        className='AdmissionsInput'
+                        value={application.childName}
+                        onChange={handleStateChange}
+                        name="childName"
+                        placeholder={"Child's Full Name"}
+                    />
+                    <input required
+                        className='AdmissionsInput'
+                        value={application.childAge}
+                        onChange={handleStateChange}
+                        name="childAge"
+                        placeholder={"Child's Age"}
+                    />
+                    <DatePicker
+                        required
+                        className='AdmissionsInput'
+                        selected={application.date}
+                        onChange={handleDateChange}
+                        includeDateIntervals={[
+                            { start: new Date(), end: addDays(new Date(), 365) },
+                        ]}
+                        placeholderText="Desired Start Date"
+                    />
+                </div>
                 <textarea required
-                    className='ContactUsInput'
+                    className='admissions-text-area'
                     value={application.message}
                     onChange={handleStateChange}
                     name='message'
                     placeholder='Leave us your message!'
-                    style={{height: '400px', 
-                            width: '100%',
-                            resize: 'none',
-                            border: 'none'}}
+                    style={{
+                        flex: '1',
+                        padding: '1.5rem',
+                        resize: 'none',
+                        border: 'none'
+                    }}
                     maxLength="4000"
                 />
-      
+            </div>
+            <div>
                 <DropZone application={application} setApplication={setApplication} />
                 <button className='ContactUsSendButton' onClick={handleEmailClick} disabled={isLoading}>
-                        {isLoading ? 'Sending...' : 'Send'}
-                </button>  
+                    {isLoading ? 'Sending...' : 'Send'}
+                </button>
             </div>
         </form>
-    </div>        
-  )
+    )
 }
 
 const DropZone = ({ application, setApplication }) => {
@@ -199,11 +201,11 @@ const DropZone = ({ application, setApplication }) => {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column'}}>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div
                 onDrop={handleDrop}
                 onDragOver={(e) => e.preventDefault()}
-                className= 'DragDropArea'
+                className='DragDropArea'
             >
                 <input
                     type="file"
@@ -215,7 +217,7 @@ const DropZone = ({ application, setApplication }) => {
                 <p>Drag & drop files here or click select files</p>
                 <button type="button" onClick={handleClick}>Select Files</button>
                 <input
-                ref={hiddenFileInput}
+                    ref={hiddenFileInput}
                     type="file"
                     onChange={handleInputChange}
                     multiple
@@ -225,7 +227,7 @@ const DropZone = ({ application, setApplication }) => {
             <div>
                 <ul>
                     {application.pdfs.map((file, index) => (
-                        <li key={index} style={{ listStyleType: 'none'}}>
+                        <li key={index} style={{ listStyleType: 'none' }}>
                             {file.name}{' '}
                             <button type="button" onClick={() => removeFile(index)}><MdOutlineDeleteForever /></button>
                         </li>

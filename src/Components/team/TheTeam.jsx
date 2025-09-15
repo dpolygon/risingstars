@@ -8,29 +8,23 @@ export default function TheTeam() {
 
     const renderTeam = () => {
         return teamMembers["team-members"].map((member, index) => (
-            <li key={index} className="team-card">
-                <div style={{backgroundImage: `url(${member.image})`, backgroundSize: 'cover', borderRadius: '12px', backgroundPosition: '50%', fontSize: '12px', fontWeight: '600'}} className='team-member-card'>
-                    <div className='team-member-wrapper'>
-                        <div className='team-member-card2'>
-                            <p className ={member.id}style={{lineHeight: '1.15', textAlign: "left", fontSize: "18px"}}>{member.summary}</p>
-                        </div>
-                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 'auto', fontSize: '17px', fontWeight: '400'}}>
-                            <p>{member['name']}</p>
-                            <p style={{textAlign: 'right'}}>{member['member-desc']}</p>
-                        </div>
-                    </div>
+            <div key={index} className='team-member-face' style={{ backgroundImage: `url(${member.image})`, backgroundSize: 'cover', backgroundPosition: 'center', borderRadius: '32px', height: '400px', color: 'white'}}>
+                <div className='team-member-inside'>
+                    <p style={{ textAlign: "left", fontSize: "18px" }}>{member.summary}</p>
                 </div>
-            </li>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', fontSize: '17px', fontWeight: '400' }}>
+                    <p>{member['name']}</p>
+                    <p>{member['member-desc']}</p>
+                </div>
+            </div>
         ));
-    } 
+    }
 
-  return (
-    <div style={{padding: '3%'}}>
-        <div className='teamSplash'>
-            <ul className="team-grid">
+    return (
+        <div style={{ padding: "8rem 1rem 1rem 1rem" }}>
+            <div className="team-grid">
                 {renderTeam()}
-            </ul>
+            </div>
         </div>
-    </div>
-  )
+    )
 }

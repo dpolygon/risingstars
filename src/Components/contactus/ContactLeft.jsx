@@ -14,10 +14,10 @@ export default function ContactLeft() {
             <p style={{fontSize: '17px', fontWeight: '600', maxWidth: '400px', paddingBottom: '2rem'}}>Experience our nurturing environment firsthand! Schedule a personalized tour of our daycare today. Tours are by appointment only, ensuring we can give you our full attention and answer all your questions. We can't wait to show you around!</p>
             <div  className='ContactUsInfo' style={{borderRadius: '10px'}}>
                 <h3 style={{paddingBottom: '1rem'}}>Contact Information:</h3>
-                <div style={{paddingBottom: '1rem'}}>
-                    <FaPhone/><a href='tel:7372260768' style={{color: 'black'}}> +1 (737) 226-0768</a>
+                <div style={{paddingBottom: '1rem', display: 'flex', alignItems: 'center'}}>
+                    <FaPhone/><a href='tel:7372260768' style={{color: 'black', paddingLeft: '.5rem'}}> +1 (737) 226-0768</a>
                 </div>
-                <div>
+                <div style={{display: 'flex', alignItems: 'center', gap: '.5rem'}}>
                     <IoMail style={{fontSize: '1.3rem'}}/>
                     <a href='mailto:risingstarsaustintexas@gmail.com' style={{color: 'black'}}> RisingStarsAustinTexas@gmail.com</a>
                 </div>

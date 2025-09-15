@@ -14,7 +14,7 @@ function ContactUs() {
                 <div>
                     <div className='ContactUs'>
                         <ContactLeft/>
-                        {/* <ContactUsForm/> */}
+                        <ContactUsForm/>
                     </div>
                 </div>
             </div>

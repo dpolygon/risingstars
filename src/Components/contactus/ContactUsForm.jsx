@@ -70,18 +70,18 @@ export default function ContactUsForm() {
 
     return (
         <div className='ContactUsForm'>
-            <div style={{display: 'flex', flexDirection: 'column', paddingBottom: '1rem', justifyContent: 'left'}}>
-                <p style={{fontSize: '15px', paddingRight: '1rem', color: 'black'}}>Communication Preference: </p>
+            <div style={{ display: 'flex', flexDirection: 'column', paddingBottom: '1rem', justifyContent: 'left' }}>
+                <p style={{ fontSize: '15px', paddingRight: '1rem', color: 'black' }}>Communication Preference: </p>
                 <div>
-                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('text')} style={{backgroundColor: activeButton === "text" ? "black" : "lightgrey", color: "white"}}>
+                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('text')} style={{ backgroundColor: activeButton === "text" ? "black" : "lightgrey", color: "white" }}>
                         Text
                     </button>
-                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('email')} style={{backgroundColor: activeButton === "email" ? "black" : "lightgrey", color: "white"}}>
+                    <button className='contactUsPreferenceButton' onClick={() => setActiveButton('email')} style={{ backgroundColor: activeButton === "email" ? "black" : "lightgrey", color: "white" }}>
                         Email
                     </button>
                 </div>
             </div>
-            <form style={{display: 'flex', flexDirection: 'column'}}>
+            <form style={{ display: 'flex', flexDirection: 'column', borderRadius: '32px', overflow: 'hidden' }}>
                 <input required
                     className='ContactUsInput'
                     value={text.name}
@@ -102,13 +102,13 @@ export default function ContactUsForm() {
                     onChange={handleStateChange}
                     name='message'
                     placeholder='ask us anything!'
-                    style={{height: '400px', 
-                            width: '100%',
-                            resize: 'none',
-                            border: 'none'}}
+                    style={{
+                        minHeight: '400px', resize: 'none',
+                        border: 'none'
+                    }}
                     maxLength="4000"
                 />
-                <button onClick={handleEmailClick} style={{height: '80px', fontSize: '15px', border: '1px solid black'}} className='ContactUsSendButton' disabled={isLoading}>
+                <button onClick={handleEmailClick} style={{ height: '80px', fontSize: '15px', border: '1px solid black', borderBottomRightRadius: '32px', borderBottomLeftRadius: '32px' }} className='ContactUsSendButton' disabled={isLoading}>
                     {isLoading ? 'Sending...' : 'Send'}
                 </button>
             </form>
