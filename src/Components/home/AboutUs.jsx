@@ -27,12 +27,12 @@ const RightInfo = () => {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column'}}>
             <div className='aboutUsBottom'>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <h1 className='expertsTitle'>OUR COMPREHENSIVE CURRICULUM</h1>
                     <p className='expertsDesc'>Encompasses both English and Spanish language proficiency. We nurture giggles and growth in all aspects social, physical, emotional, and cognitive, ensuring your little one is kindergarten-ready. Our goal is that each kid leave with a pocketful of skills, ready to blossom into someone who sparkles in every situation, always eager to learn more and more. 🌟📚</p>
-                    <div style={{ paddingTop: '40px', width: '70%' }}>
+                    <div style={{ paddingTop: '40px' }}>
                         <Button buttonSize='btn-medium' buttonStyle={'btn-outline'} onClick={handleVisitUs} children='Book A Tour' />
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const RightInfo = () => {
                     <p className='daycareDataDesc'>Teachers dedicated and committed to nurturing young minds and fostering growth.</p>
                 </li>
                 <li className='daycareData'>
-                    <h1 className='daycareDataTitle'>9+</h1>
+                    <h1 className='daycareDataTitle'>10+</h1>
                     <p className='daycareDataDesc'>Years of dedicated trusted care and early childhood education since establishment</p>
                 </li>
                 <li className='daycareData'>

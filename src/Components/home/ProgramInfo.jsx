@@ -4,23 +4,22 @@ import './ProgramInfo.css'
 import programsData from '../../data/programsData.json'
 import MoreDetail from '../MoreDetail';
 
-export default function ProgramInfo(prop) {
 
-    return (
-        <div className='progInfo'>
-            <img className='infoH' src={programsData[prop.selectedProgram].pic2}/>
-            <div style={{display: 'flex', flexDirection: 'column', width: '75%', marginTop: '3vh'}}>
-                <h1 className='progTitle'>{programsData[prop.selectedProgram].title}</h1>
-                <p className='progDesc'>{programsData[prop.selectedProgram].desc1}</p>
-            </div>
-            <div className='progInfoMain'>
-                <InfoLeft program={prop.selectedProgram}/>
-                <InfoMiddle program={prop.selectedProgram}/>
-                <InfoRight program={prop.selectedProgram}/>
-            </div>
-        </div>
-    );
-
+export default function ProgramInfo({ selectedProgram }) {
+  return (
+    <div className="progInfo">
+      <img className="infoH" src={programsData[selectedProgram].pic2} />
+      <div className="progHeader">
+        <h1 className="progTitle">{programsData[selectedProgram].title}</h1>
+        <p className="progDesc">{programsData[selectedProgram].desc1}</p>
+      </div>
+      <div className="progInfoMain">
+        <InfoLeft program={selectedProgram} />
+        <InfoMiddle program={selectedProgram} />
+        <InfoRight program={selectedProgram} />
+      </div>
+    </div>
+  );
 }
 
 const InfoLeft = (prop) => (
@@ -35,7 +34,7 @@ const InfoLeft = (prop) => (
 );
 
 const InfoMiddle = (prop) => (
-    <img className='infoM' style={{width: '36.6%', borderRadius: '10px', objectFit: 'cover', height: '85vh'}} src={programsData[prop.program].pic2}></img>
+    <img className='infoM' src={programsData[prop.program].pic2}></img>
 );
 
 const InfoRight = (prop) => (
@@ -43,7 +42,7 @@ const InfoRight = (prop) => (
         <img src={programsData[prop.program].pic3} style={{height: '300px', objectFit: 'cover', borderRadius: '10px'}}></img>
         <div style={{display: 'flex', flexDirection: 'column', marginTop: '4vh'}}>
             <h1>{programsData[prop.program].activities}</h1>
-            <p style={{fontWeight: '500'}}>{programsData[prop.program].title2}</p>
+            <p style={{fontWeight: '500', paddingTop: '1rem'}}>{programsData[prop.program].title2}</p>
             <MoreDetail title={programsData[prop.program].act1} insideText={programsData[prop.program].act1d}/>
             <MoreDetail title={programsData[prop.program].act2} insideText={programsData[prop.program].act2d}/>
             <MoreDetail title={programsData[prop.program].act3} insideText={programsData[prop.program].act3d}/>

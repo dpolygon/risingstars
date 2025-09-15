@@ -1,10 +1,10 @@
 .VisitUs {
-  background-image: url("/public/images/visitusphotos/newlego.webp");
+  background-image: url("/images/visitusphotos/newlego.avif");
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 
 .VSTitle {

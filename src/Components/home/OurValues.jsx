@@ -20,19 +20,19 @@ export default function OurValues() {
                 </p>
                 <div className='cells'>
                     <ValueCell
-                        imageUrl='./images/homepagephotos/curiosity.webp'
+                        imageUrl='./images/homepagephotos/curiosity.avif'
                         icon={RiLightbulbFlashLine}
                         value='Curiosity'
                         desc="We celebrate your child's boundless curiosity by nurturing their insatiable desire to explore and discover."
                     />
                     <ValueCell
-                        imageUrl='./images/homepagephotos/empathy.webp'
+                        imageUrl='./images/homepagephotos/empathy.avif'
                         icon={FaChildren}
                         value='Empathy'
                         desc="Here, their unique journey is understood, ensuring they feel valued, secure, and cherished."
                     />
                     <ValueCell
-                        imageUrl='./images/homepagephotos/explore.webp'
+                        imageUrl='./images/homepagephotos/explore.avif'
                         icon={IoRocket}
                         value='Exploration'
                         desc="Through our programs, we ignite a passion for discovery, fostering a lifelong love of learning."

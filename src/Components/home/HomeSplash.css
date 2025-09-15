@@ -1,5 +1,5 @@
 .splashBg {
-    background: url('/images/titlephoto.webp');
+    background: url('/images/titlephoto.avif');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     background-color: #2525259e; 
     backdrop-filter: blur(3px); 
     border-radius: 33px; 
-    padding: 1%; 
+    padding: 1rem; 
     text-align: center;
 }
 

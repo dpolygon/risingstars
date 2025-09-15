@@ -6,7 +6,7 @@ export default function ProgramButtons(props) {
     const [activeButton, setActiveButton] = useState('Infants');
 
     return (
-        <div style={{display: 'flex', flexDirection: 'row'}}>
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1rem', paddingTop: '1rem'}}>
             <ProgramButton 
                 text='Infants' 
                 activeButton={activeButton} 

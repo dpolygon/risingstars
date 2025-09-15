@@ -1,9 +1,9 @@
 .progInfoMain {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    margin-top: 3rem; 
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 2rem;
 }
 
 .progTitle {
@@ -17,20 +17,29 @@
     padding-top: 15px;
 }
 
+.infoM {
+    flex: 1;
+    display: block;
+    width: 33%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .1s ease;
+}
+
+.infoL {
+    width: 33%;
+}
+
+.infoR {
+    width: 33%;
+}
+
 .infoH {
-    border-radius: 10px; 
+    border-radius: 10px;
     object-fit: cover;
     visibility: hidden;
     display: none;
     height: 40vh;
-}
-
-.infoL {
-    width: 31.6%;
-}
-
-.infoR {
-    width: 26.6%;
 }
 
 .miles {
@@ -65,7 +74,7 @@
 
 /* Super cool trick to center image around whatever point you choose!*/
 .leftImg {
-    object-position: calc(50 / 540 * 100%) calc(250 / 960 * 100%);  
+    object-position: calc(50 / 540 * 100%) calc(250 / 960 * 100%);
 }
 
 @media screen and (max-width: 1064px) {
@@ -92,7 +101,9 @@
     }
 
     .infoH {
-        margin-top: 4vh;
+        margin: 2rem 0;
+        border-radius: 32px;
+        overflow: hidden;
         width: 100%;
         visibility: visible;
         display: block;

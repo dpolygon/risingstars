@@ -63,10 +63,10 @@
 }
 
 .aboutUsBottom {
-    display: flex; 
-    flex-direction: row; 
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
     padding-bottom: 90px;
 }
 
@@ -112,6 +112,8 @@
     .aboutUsBottom {
         padding-top: 70px;
         flex-direction: column;
+        align-items: center;
+
     }
 
     .aboutUsTeacherArea {

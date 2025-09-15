@@ -1,7 +1,7 @@
 import './home.css'
 
 import React, { useState } from 'react'
-import { PiBooksDuotone } from "react-icons/pi";
+import { TbSchool } from "react-icons/tb";
 
 
 import HomeSplash from '../Components/home/HomeSplash';
@@ -22,13 +22,11 @@ function Home() {
             <AboutUs/>
             <div style={{backgroundColor: 'white', paddingBottom: '70px', zIndex: '3'}}>
                 <div style={{padding: '3%'}}>
-                    <div className='programsTop'>
-                        <div className='programTitle' style={{display: 'flex', alignItems: 'end'}}>
-                            <h1 className='programTitle'>OUR PROGRAMS</h1>     
-                            <PiBooksDuotone/>                   
-                        </div>
-                        <ProgramButtons setProgram={setProgram}/>
+                    <div className='programTitle' style={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '4rem'}}>
+                        <h1 className='programTitle'>OUR PROGRAMS</h1>     
+                        <TbSchool/>                   
                     </div>
+                    <ProgramButtons setProgram={setProgram}/>
                     <ProgramInfo selectedProgram={program}/>
                 </div>
             </div>

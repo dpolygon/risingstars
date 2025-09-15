@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DatePicker from "react-datepicker";
+import DatePicker from 'react-datepicker'
 import { addDays } from 'date-fns'
 import { MdOutlineDeleteForever } from "react-icons/md";
 import { config } from '../../Constants'

@@ -10,7 +10,7 @@ function ContactUs() {
 
     return (
         <div>
-            <div style={{background: 'url(/images/contactusbg.webp)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: '8rem 1rem 1rem 1rem'}}>
+            <div style={{background: 'url(/images/contactusbg.avif)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: '8rem 1rem 1rem 1rem'}}>
                 <div>
                     <div className='ContactUs'>
                         <ContactLeft/>

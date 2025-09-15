@@ -9,7 +9,7 @@ export default function HomeSplash() {
         <div className='splashBg'>
             <div style={{padding: '4rem 1rem 1rem 1rem', WebkitBackdropFilter: 'brightness(40%)', backdropFilter: 'brightness(40%)'}}>
                 <div className="titleArea">
-                    <img className='logo' src="./images/logo.webp"></img>
+                    <img className='logo' src="./images/logo.avif"></img>
                     <div style={{textAlign: 'center'}}>
                         <h1 className='blcTitle'>Bilingual Learning Center</h1>
                         <i className='blcDesc' style={{fontSize: '20px'}}>To speak two languages is to be part of two worlds!</i>
