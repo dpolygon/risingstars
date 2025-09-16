@@ -1,10 +1,10 @@
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30vw, 400px), 1fr));
     gap: 1rem;
     list-style-type: none;
-  }
-  
+}
+
 .info-card {
     line-height: 1;
     height: 600px;
@@ -12,7 +12,7 @@
     justify-content: center;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .card-content,
@@ -29,11 +29,11 @@
     padding: 2rem;
 }
 
-.info-card:hover .card-content{
+.info-card:hover .card-content {
     display: none;
-  }
-  
-.info-card:hover .card-content2{
+}
+
+.info-card:hover .card-content2 {
     display: flex;
     text-align: center;
     font-size: 17px;
@@ -58,7 +58,7 @@
     text-align: left;
 }
 
-.EnrollmentAnswer{
+.EnrollmentAnswer {
     font-size: 25px;
 }
 
@@ -67,23 +67,21 @@
         grid-template-columns: 1fr;
     }
 
-    .DisciplineAnswer{
+    .DisciplineAnswer {
         font-size: 15px;
     }
 
-    .EnrollmentAnswer{
+    .EnrollmentAnswer {
         font-size: 20px;
     }
 
-    .SickAnswer{
+    .SickAnswer {
         font-size: 15px;
     }
 
-    .ClosedAnswer{
+    .ClosedAnswer {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 960px) {
-    
-}
+@media screen and (max-width: 960px) {}
