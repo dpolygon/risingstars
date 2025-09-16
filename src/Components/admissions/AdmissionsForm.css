@@ -3,7 +3,7 @@
     flex-direction: column;
     margin-top: 2rem;
     gap: 1rem;
-    min-width: 500px;
+    width: 60%;
     border-radius: 32px;
     overflow: hidden;
 }
@@ -84,5 +84,9 @@
     .ContactUsSendButton2 {
         display: block;
         visibility: visible;
+    }
+
+    .applicationForm {
+        width: 90%;
     }
 }

@@ -1,11 +1,13 @@
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
     gap: 1rem;
     list-style-type: none;
   }
   
 .info-card {
+    line-height: 1;
+    height: 600px;
     display: flex;
     justify-content: center;
     background-color: #fff;
@@ -16,17 +18,15 @@
 .card-content,
 .card-content2 {
     color: black;
-    height: 600px;
-    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    overflow-y: auto;
 }
 
 .card-content2 {
     display: none;
+    padding: 2rem;
 }
 
 .info-card:hover .card-content{
@@ -43,6 +43,7 @@
 .info-card-title {
     font-size: 48px;
     font-weight: 600;
+    padding: 2rem;
     background: linear-gradient(120deg, #4286f4c9, #1ed75fca);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -62,6 +63,10 @@
 }
 
 @media screen and (max-width: 767px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
     .DisciplineAnswer{
         font-size: 15px;
     }
