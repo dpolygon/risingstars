@@ -27,7 +27,11 @@
 .card-content2 {
     display: none;
     padding: 2rem;
+}
+
+.card-content2 p {
     font-size: clamp(0.8rem, 2vw, 1.2rem);
+
 }
 
 .info-card:hover .card-content {
