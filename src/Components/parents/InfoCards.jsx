@@ -27,7 +27,7 @@ export default function InfoCards() {
                 </div>
                 <div className='card-content2'> 
                     <p>Rising Star Bilingual Learning Center will be closed:</p>
-                    <ul className= "ClosedAnswer" style={{marginTop: '20px', marginBottom: '20px', textAlign: 'left'}}>
+                    <ul style={{marginTop: '20px', marginBottom: '20px', textAlign: 'left'}}>
                         <li>
                             New Year's Break
                         </li>
@@ -80,7 +80,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How will parents be informed about bad weather closures?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"25px"}}>We follow the Austin Independent School District (AISD) Advisories, Warnings and Severe Weather Alerts so you may also check local TV stations and websites for an announcement of school/daycare closures.</p>
+                    <p >We follow the Austin Independent School District (AISD) Advisories, Warnings and Severe Weather Alerts so you may also check local TV stations and websites for an announcement of school/daycare closures.</p>
                 </div>
             </li>
             <li className="info-card">
@@ -88,7 +88,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>Is it okay to bring my child to Rising Stars if they're sick?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <ul className="SickAnswer" style={{textAlign: 'left'}}>
+                    <ul style={{textAlign: 'left'}}>
                         <p style={{textAlign: 'center'}}>Children should not attend Rising Stars if they are ill and:</p>
                         <br></br>
                         <li>
@@ -118,7 +118,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>Who is authorized to pick up a child from Rising Stars?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"25px"}}>Our normal procedure is to release the child only to his/her parents, or someone else the parents designated on the Autihorized Pick up and Emergency Contact Form. If someone other than the parent is to pick up the child, please notify us ahead of time. We MUST have written permission to release your child.</p>
+                    <p >Our normal procedure is to release the child only to his/her parents, or someone else the parents designated on the Autihorized Pick up and Emergency Contact Form. If someone other than the parent is to pick up the child, please notify us ahead of time. We MUST have written permission to release your child.</p>
                 </div>
             </li>
             <li className="info-card">
@@ -126,7 +126,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>What is the process for enrolling my child at Rising Stars?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p className="EnrollmentAnswer">Enrolling at Rising Stars is easy! Let us know you're interested by calling or emailing us and we'll send you information about our tuition, policies, and a calendar. 
+                    <p>Enrolling at Rising Stars is easy! Let us know you're interested by calling or emailing us and we'll send you information about our tuition, policies, and a calendar. 
                     <br></br>
                     <br></br>
                     If you're interested, you can schedule a tour of our center. Alternatively visit our Admissions tab to submit an application on our website and well reach out to you.</p>
@@ -148,7 +148,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How are meals and snacks handled at Rising Stars?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"20px", textAlign:"left"}}>Parents, please remember to bring meals for your child as we <span style={{fontWeight:"800"}}>do not</span> provide food. 
+                    <p style={{textAlign:"left"}}>Parents, please remember to bring meals for your child as we <span style={{fontWeight:"800"}}>do not</span> provide food. 
                     <br></br>
                     <br></br>
                     We serve morning breakfast from 8:00-8:45 am, lunch from 11:20-12:00 pm, and an afternoon snack at 3:00 pm. Milk is served with all snacks, and water is available throughout the day.
@@ -162,7 +162,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How does Rising Stars handle discipline and behavior management?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p className="DisciplineAnswer" style={{textAlign:"left"}}>Our positive discipline policy focuses on prevention, redirection, love, consistency, and firmness. We emphasize respect for others and property, explaining center rules frequently to ensure all children understand. 
+                    <p style={{textAlign:"left"}}>Our positive discipline policy focuses on prevention, redirection, love, consistency, and firmness. We emphasize respect for others and property, explaining center rules frequently to ensure all children understand. 
                         <br></br>
                         <br></br>
                         Disagreements are expected, and we help children express feelings appropriately. We prevent problems, redirect behavior, discuss inappropriate actions, encourage making amends, and sometimes withdraw privileges. Time outs are used rarely, mainly for a brief cooling off period. We use positive behavior support strategies and welcome suggestions. 
@@ -176,7 +176,7 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>What security measures are in place at Rising Stars to ensure my child's safety?</h2>
                 </div>
                 <div className='card-content2'> 
-                    <p style={{fontSize:"22px", textAlign:"left"}}>To ensure your child's safety, we have implemented several security measures. Caregivers are never alone with a child. We ensure that all children and caregivers are observable at all times. This includes keeping classroom doors open, ensuring a second caregiver is present, and utilizing closed-circuit cameras. 
+                    <p style={{textAlign:"left"}}>To ensure your child's safety, we have implemented several security measures. Caregivers are never alone with a child. We ensure that all children and caregivers are observable at all times. This includes keeping classroom doors open, ensuring a second caregiver is present, and utilizing closed-circuit cameras. 
                     <br></br>
                     <br></br>
                     Additionally, our security cameras cover outdoor areas, and all doors remain locked to prevent unknown individuals from entering the daycare.</p>
@@ -187,14 +187,14 @@ export default function InfoCards() {
                     <h2 className='info-card-title'>How does Rising Stars communicate with parents about their child's progress and daily activities?</h2>
                 </div>
                 <div className='card-content2' style={{gap: '1rem'}}> 
-                    <p style={{fontSize: 'clamp(1rem, 1.9vw, 1.5rem'}}> We are excited to let you know that our daycare uses the Brightwheel app to stay connected with parents and keep you updated throughout the day. Brightwheel allows us to share important information such as:</p>
-                    <ul style={{fontSize: 'clamp(.75rem, 2.5vw, 1rem', textAlign: 'center', display: 'flex', justifyContent: 'center', justifyItems: 'center', gap: '1rem', listStyle: 'none'}}>
-                        <li>Daily reports and activities</li>
-                        <li>Photos and updates of your child</li>
-                        <li>Messaging with teachers and staff</li>
-                        <li>Attendance and check-in/out records</li>
-                    </ul>
-                    <p style={{fontSize: 'clamp(1rem, 1.9vw, 1.5rem'}}>
+                    <p> We are excited to let you know that our daycare uses the Brightwheel app to stay connected with parents and keep you updated throughout the day. Brightwheel allows us to share important information such as:</p>
+                    <div style={{textAlign: 'center',justifyItems: 'center', gap: '1rem', listStyle: 'none'}}>
+                        <li>- Daily reports and activities</li>
+                        <li>- Photos and updates of your child</li>
+                        <li>- Messaging with teachers and staff</li>
+                        <li>- Attendance and check-in/out records</li>
+                    </div>
+                    <p>
                         We encourage all families to download the Brightwheel app so you don’t miss any updates about your child’s day.
                         Thank you for partnering with us to make communication simple and convenient.
                     </p>
@@ -203,7 +203,7 @@ export default function InfoCards() {
             <li className="info-card">
                 <div className='card-content-handbook'>
                     <h2 className='info-card-title'>Have a question? Want to read our handbook? Access it below!</h2>
-                    <div style={{paddingTop: '1rem'}}>
+                    <div>
                         <Button buttonSize='btn-large' buttonStyle='btn-primary' onClick={handleHandbookClick} children='Click Me!'/>
                     </div>
                 </div>
@@ -211,7 +211,7 @@ export default function InfoCards() {
             <li className="info-card">
                 <div className='card-content-handbook'>
                     <h2 className='info-card-title'>Have a question? Want to call or message us instead?</h2>
-                    <div style={{paddingTop: '1rem'}}>
+                    <div>
                         <Button buttonSize='btn-large' buttonStyle='btn-primary' onClick={handleContactUsClick} children='Contact Us'/>
                     </div>
                 </div>
