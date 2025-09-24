@@ -26,7 +26,7 @@ export default function Reviews() {
     }, [count]);
 
     const getYelpReviews = () => {
-        return fetch(`${config.url.BACKEND_URL}/api/reviews`)
+        return fetch(`https://get-reviews-47bbwwmbga-uc.a.run.app`)
             .then((res) => res.json())
             .then((json) => {setReviewsData(json);})
             .then(data => console.log(data))

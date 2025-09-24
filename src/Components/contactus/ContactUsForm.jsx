@@ -21,7 +21,7 @@ export default function ContactUsForm() {
     }
 
     const sendMail = () => {
-        fetch(`${config.url.BACKEND_URL}/api/send-mail`, {
+        fetch(`https://enqueue-mail-47bbwwmbga-uc.a.run.app`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)
@@ -39,7 +39,7 @@ export default function ContactUsForm() {
     }
 
     const sendText = () => {
-        fetch(`${config.url.BACKEND_URL}/api/send-text`, {
+        fetch(`https://enqueue-text-47bbwwmbga-uc.a.run.app`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(text)

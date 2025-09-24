@@ -61,7 +61,7 @@ export default function AdmissionsFiles() {
 }
 
 const handleFileClick = (fileName) => {
-    const urlToOpen = `${config.url.BACKEND_URL}/api/get-pdf/` + fileName;
+    const urlToOpen = `${config.url.BACKEND_URL}/api/get-pdf/?file=` + fileName;
     window.open(urlToOpen, '_blank');
 }
 
